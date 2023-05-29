@@ -4,6 +4,7 @@ import { RouteContext } from "@/components/contexts/RouteContext";
 type Props = {
   params: {
     lang: string;
+    product: string;
   };
 };
 
@@ -12,7 +13,7 @@ const Page: React.FC<Props> = ({ params }) => {
     <RouteContext.Provider
       value={{
         language: params.lang,
-        product: "",
+        product: params.product,
         version: "latest",
         rest: [],
       }}

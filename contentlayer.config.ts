@@ -16,7 +16,7 @@ const FeaturedLinks = defineNestedType(() => ({
   name: "FeaturedLinks",
   fields: {
     title: { type: "string", required: true },
-    links: { type: "list", of: { type: "string" }, required: true },
+    items: { type: "list", of: { type: "string" }, required: true },
   },
 }));
 
@@ -41,16 +41,33 @@ const Article = defineDocumentType(() => ({
       required: false,
     },
     intro: { type: "string", required: false },
-    introLinks: { type: "nested", of: IntroLinks, required: false },
-    featuredLinks: { type: "nested", of: FeaturedLinks, required: false },
+    introLinks: { type: "list", of: IntroLinks, required: false },
+    featuredLinks: { type: "list", of: FeaturedLinks, required: false },
     versions: { type: "list", of: { type: "string" } },
     children: { type: "list", of: { type: "string" }, required: false },
     changelog: { type: "nested", of: Changelog, required: false },
   },
   computedFields: {
+    // lang field is required
     lang: {
       type: "string",
-      resolve: (doc) => doc._raw.sourceFilePath.split("/")[0],
+      resolve: (doc) => doc._raw.flattenedPath.split("/")[0],
+    },
+    // product field is not required
+    product: {
+      type: "string",
+      resolve: (doc) => {
+        const path = doc._raw.flattenedPath.split("/");
+        return path.length > 1 ? path[1] : null;
+      },
+    },
+    // path fields is required
+    path: {
+      type: "string",
+      resolve: (doc) => {
+        const path = doc._raw.flattenedPath.split("/");
+        return path.length > 2 ? path.slice(2).join("/") : "";
+      },
     },
   },
 }));
