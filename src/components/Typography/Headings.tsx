@@ -21,7 +21,7 @@ const Heading: React.FC<Props> = ({ level, children, className }) => {
       return (
         <h2
           className={merge(
-            "border-b border-neutral-200 pb-2 text-2xl font-bold",
+            "border-b border-neutral-600 pb-2 text-2xl font-bold [&:not(:first-child)]:mt-12",
             className
           )}
         >
@@ -33,7 +33,7 @@ const Heading: React.FC<Props> = ({ level, children, className }) => {
       return (
         <h3
           className={merge(
-            "border-b border-neutral-200 pb-2 text-xl font-bold",
+            "border-b border-neutral-600 pb-2 text-xl font-bold [&:not(:first-child)]:mt-12",
             className
           )}
         >

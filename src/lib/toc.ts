@@ -136,8 +136,8 @@ const getToc: Plugin<void[], Root> = () => (node, file) => {
   file.data = items;
 };
 
-const getTableOfContents = async (markdown: string): Promise<Items> => {
-  const result = await remark().use(getToc).process(markdown);
+const getTableOfContents = (markdown: string): Items => {
+  const result = remark().use(getToc).processSync(markdown);
   return result.data as Items;
 };
 

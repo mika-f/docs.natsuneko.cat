@@ -1,14 +1,21 @@
-import { Heading } from "../Typography";
+import { getTableOfContents } from "@/lib/toc";
+import { Markdown } from "../Markdown";
 import { useArticleContext } from "../contexts/ArticleContext";
 import { BaseLayout } from "./BaseLayout";
 
 const ProductArticle = () => {
   const ctx = useArticleContext();
   const { article } = ctx;
+  const body = article!.body;
+  const toc = getTableOfContents(body.raw);
+
+  console.log({ toc });
 
   return (
     <BaseLayout>
-      <Heading level={1}>{article!.shortTitle}</Heading>
+      <div>
+        <Markdown markdown={body.code} />
+      </div>
     </BaseLayout>
   );
 };

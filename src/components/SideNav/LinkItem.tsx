@@ -1,5 +1,3 @@
-"use client";
-
 import Link from "next/link";
 
 import type { SideBarLinkItem } from "@/components/contexts/ArticleContext";

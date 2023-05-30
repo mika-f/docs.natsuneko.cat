@@ -4,6 +4,9 @@ import {
   makeSource,
 } from "@contentlayer/source-files";
 
+import RemarkGfm from "remark-gfm";
+import RemarkGitHubAdmonitions from "remark-github-beta-blockquote-admonitions";
+
 const IntroLinks = defineNestedType(() => ({
   name: "IntroLinks",
   fields: {
@@ -77,4 +80,22 @@ export { IntroLinks, FeaturedLinks, Changelog, Article };
 export default makeSource({
   contentDirPath: "contents",
   documentTypes: [Article],
+  mdx: {
+    remarkPlugins: [
+      RemarkGfm,
+      [
+        RemarkGitHubAdmonitions,
+        {
+          classNameMaps: {
+            block: (title: string) => {
+              return ["admonition", `admonition-${title.toLowerCase()}`];
+            },
+            title: () => {
+              return ["hidden"];
+            },
+          },
+        },
+      ],
+    ],
+  },
 });
