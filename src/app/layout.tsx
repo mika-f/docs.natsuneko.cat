@@ -1,7 +1,13 @@
-import "@/styles/globals.css";
-import { Inter } from "next/font/google";
+import { Noto_Sans_JP } from "next/font/google";
+import Script from "next/script";
 
-const inter = Inter({ subsets: ["latin"] });
+import { Footer } from "@/components/Footer";
+import { Header } from "@/components/Header";
+
+import { merge } from "@/lib/utils";
+import "@/styles/globals.css";
+
+const noto = Noto_Sans_JP({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Create Next App",
@@ -15,7 +21,23 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body
+        className={merge(
+          "grid min-h-screen grid-rows-[auto_1fr_auto] bg-neutral-800 text-neutral-300",
+          noto.className
+        )}
+      >
+        <Header />
+        <main>
+          <div>{children}</div>
+        </main>
+        <Footer />
+
+        <Script
+          src="https://kit.fontawesome.com/c291a616a9.js"
+          crossOrigin="anonymous"
+        />
+      </body>
     </html>
   );
 }
