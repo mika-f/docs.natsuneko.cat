@@ -8,7 +8,7 @@ type RouteContextProps = {
 };
 
 type RouteContextT = RouteContextProps & {
-  build: (ctx: Partial<RouteContextProps>) => string;
+  build: (ctx: Partial<RouteContextProps> & { relative?: string }) => string;
 };
 
 const RouteContext = createServerContext<RouteContextProps | null>(
@@ -27,8 +27,11 @@ const useRouteContext = (): RouteContextT => {
 
   return {
     ...context,
-    build: (ctx: Partial<RouteContextProps>) => {
-      const { language, product, version, rest } = { ...context, ...ctx };
+    build: (ctx) => {
+      const { language, product, version, rest, relative } = {
+        ...context,
+        ...ctx,
+      };
       const url: string[] = [language];
 
       if (product) {
@@ -43,7 +46,12 @@ const useRouteContext = (): RouteContextT => {
         url.push(...rest);
       }
 
-      return `/${url.join("/")}`;
+      const path = `/${url.join("/")}`;
+      if (relative) {
+        return new URL(relative, `https://docs.natsuneko.cat${path}`).pathname;
+      }
+
+      return path;
     },
   };
 };

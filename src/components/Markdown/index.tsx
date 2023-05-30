@@ -9,6 +9,7 @@ import {
   Heading5,
   Heading6,
 } from "./Headings";
+import { Hyperlink } from "./Hyperlink";
 import { ListItem, OrderedList, UnorderedList } from "./List";
 import { Paragraph } from "./Paragraph";
 
@@ -24,6 +25,7 @@ const components: any = {
   h5: Heading5,
   h6: Heading6,
   p: Paragraph,
+  a: Hyperlink,
   blockquote: Blockquote,
   ul: UnorderedList,
   ol: OrderedList,
