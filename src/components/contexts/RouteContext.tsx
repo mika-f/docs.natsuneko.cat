@@ -1,15 +1,22 @@
 import { createServerContext, useContext } from "react";
 
-type RouteContextT = {
+type RouteContextProps = {
   language: string;
-  product: string;
-  version: string;
+  product: string | null;
+  version: string | null;
   rest: string[];
 };
 
-const RouteContext = createServerContext<RouteContextT | null>("route", null);
+type RouteContextT = RouteContextProps & {
+  build: (ctx: Partial<RouteContextProps>) => string;
+};
 
-const useRouteContext = () => {
+const RouteContext = createServerContext<RouteContextProps | null>(
+  "route",
+  null
+);
+
+const useRouteContext = (): RouteContextT => {
   const context = useContext(RouteContext);
 
   if (!context) {
@@ -18,7 +25,27 @@ const useRouteContext = () => {
     );
   }
 
-  return context;
+  return {
+    ...context,
+    build: (ctx: Partial<RouteContextProps>) => {
+      const { language, product, version, rest } = { ...context, ...ctx };
+      const url: string[] = [language];
+
+      if (product) {
+        url.push(product);
+      }
+
+      if (version) {
+        url.push(version);
+      }
+
+      if (rest) {
+        url.push(...rest);
+      }
+
+      return `/${url.join("/")}`;
+    },
+  };
 };
 
 export { RouteContext, useRouteContext };

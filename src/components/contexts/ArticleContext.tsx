@@ -22,6 +22,7 @@ type SideBar = SideBarItem[];
 type ArticleContextT = {
   article: Article | null;
   sidebar: SideBar | null;
+  product: string | null;
   isFallbackContent: boolean;
 };
 
@@ -35,8 +36,8 @@ const findArticle = (route: RouteContextT): Article | null => {
     (w) => w.product === route.product && w.path === route.rest.join("/")
   );
 
-  const matchedVersionArticles = matchedRouteArticles.filter(
-    (w) => w.versions?.includes(route.version) ?? true
+  const matchedVersionArticles = matchedRouteArticles.filter((w) =>
+    route.version ? w.versions?.includes(route.version) : true ?? true
   );
 
   const article =
@@ -47,27 +48,32 @@ const findArticle = (route: RouteContextT): Article | null => {
   return article;
 };
 
+const findRootArticle = (route: RouteContextT): Article | null => {
+  return findArticle({ ...route, rest: [] });
+};
+
 const getSidebarItems = (route: RouteContextT): SideBar | null => {
-  const article = findArticle({ ...route, rest: [] });
+  const article = findRootArticle(route);
   if (!article || !article.children || article.children.length === 0) {
     return null;
   }
 
   return article.children
     .flatMap((child) => {
+      const rest = child.split("/").filter((w) => !!w);
       const item = findArticle({
         ...route,
-        rest: child.split("/").filter((w) => !!w),
+        rest,
       });
 
       if (item) {
         if (item.children && item.children.length > 0) {
-          return getSidebarItems({ ...route, rest: [child] });
+          return getSidebarItems({ ...route, rest });
         }
 
         return {
           title: item.title,
-          href: `/${route.language}/${route.product}/${route.version}/${child}`,
+          href: route.build({ rest }),
         };
       }
 
@@ -79,11 +85,13 @@ const getSidebarItems = (route: RouteContextT): SideBar | null => {
 
 const getArticleContext = (route: RouteContextT): ArticleContextT => {
   const article = findArticle(route);
+  const root = findRootArticle(route);
   const sidebar = getSidebarItems(route);
 
   return {
     article,
     sidebar,
+    product: root?.shortTitle ?? null,
     isFallbackContent: route.language !== article?.lang,
   };
 };
@@ -101,4 +109,10 @@ const useArticleContext = () => {
 };
 
 export { ArticleContext, getArticleContext, useArticleContext };
-export type { ArticleContextT };
+export type {
+  ArticleContextT,
+  SideBar,
+  SideBarItem,
+  SideBarLinkItem,
+  SideBarNestItem,
+};

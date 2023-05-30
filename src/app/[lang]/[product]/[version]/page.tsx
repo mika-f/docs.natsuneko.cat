@@ -1,6 +1,6 @@
-import { Article } from "@/components/Article";
 import { RouteContext } from "@/components/contexts/RouteContext";
 import { isValidVersion } from "@/lib/versions";
+import { GlobalArticle } from "../../GlobalArticle";
 
 type Props = {
   params: {
@@ -16,11 +16,11 @@ const Page: React.FC<Props> = ({ params }) => {
       value={{
         language: params.lang,
         product: params.product,
-        version: isValidVersion(params.version) ? params.version : "latest",
+        version: isValidVersion(params.version) ? params.version : null,
         rest: isValidVersion(params.version) ? [] : [params.version],
       }}
     >
-      <Article />
+      <GlobalArticle />
     </RouteContext.Provider>
   );
 };

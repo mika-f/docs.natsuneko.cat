@@ -1,5 +1,5 @@
-import { Article } from "@/components/Article";
 import { RouteContext } from "@/components/contexts/RouteContext";
+import { GlobalArticle } from "./GlobalArticle";
 
 type Props = {
   params: {
@@ -12,12 +12,12 @@ const Page: React.FC<Props> = ({ params }) => {
     <RouteContext.Provider
       value={{
         language: params.lang,
-        product: "",
-        version: "latest",
+        product: null,
+        version: null,
         rest: [],
       }}
     >
-      <Article />
+      <GlobalArticle />
     </RouteContext.Provider>
   );
 };
