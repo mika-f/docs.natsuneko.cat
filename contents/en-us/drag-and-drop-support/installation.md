@@ -10,8 +10,8 @@ versions:
 ## Installation Guide
 
 > **Note**
-> Please refer to the [security guide](/drag-and-drop-support/security-guides) before using this add-on.
-> The relevant document contains information that you SHOULD know before using it.
+> Please refer to the [security guide](./security-guides) before using this add-on.
+> The relevant document contains information that you **SHOULD** know before using it.
 
 1. Download Installation Archive from [GitHub Releases](https://github.com/mika-f/blender-drag-and-drop/releases/latest)
 2. Extract downloaded archive
