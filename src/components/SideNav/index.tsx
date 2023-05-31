@@ -8,6 +8,7 @@ import React from "react";
 type Props = {
   title?: string;
   items: SideBar;
+  overlay?: boolean;
 };
 
 const SideNav: React.FC<Props> = ({ title, items }) => {
@@ -15,7 +16,7 @@ const SideNav: React.FC<Props> = ({ title, items }) => {
   const { product } = route;
 
   return (
-    <nav className="py-8 text-sm">
+    <nav className="text-sm">
       {product && (
         <div className="mr-2">
           <span className="mr-2">

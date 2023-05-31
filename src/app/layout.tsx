@@ -70,6 +70,7 @@ export default function RootLayout({
       >
         <Header />
         <main>{children}</main>
+        <div id="portal" />
         <Footer />
 
         <Script
