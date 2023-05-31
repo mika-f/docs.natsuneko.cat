@@ -12,7 +12,7 @@ const Heading: React.FC<Props> = ({ level, children, className }) => {
   switch (level) {
     case 1:
       return (
-        <h1 className={merge("pb-4 text-3xl font-bold", className)}>
+        <h1 className={merge("mb-4 text-3xl font-bold", className)}>
           {children}
         </h1>
       );

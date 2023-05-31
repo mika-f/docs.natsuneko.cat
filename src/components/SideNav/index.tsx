@@ -17,7 +17,7 @@ const SideNav: React.FC<Props> = ({ title, items }) => {
   return (
     <nav className="py-8 text-sm">
       {product && (
-        <div className="ml-8 mr-2">
+        <div className="mr-2">
           <span className="mr-2">
             <i className="fa-regular fa-arrow-left" />
           </span>
@@ -27,13 +27,13 @@ const SideNav: React.FC<Props> = ({ title, items }) => {
 
       {title && (
         <div className="my-4 border-b border-neutral-600 pb-4 text-base font-bold">
-          <div className="ml-8 mr-2">
+          <div className="mr-2">
             <Link href={route.build({ product, rest: [] })}>{title}</Link>
           </div>
         </div>
       )}
 
-      <ul className="ml-8 mr-2">
+      <ul className="mr-2">
         {items.map((w) => {
           if ("href" in w) {
             return <LinkItem key={w.href} item={w} />;
