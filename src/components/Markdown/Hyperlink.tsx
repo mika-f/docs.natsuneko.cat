@@ -14,14 +14,14 @@ const Hyperlink: React.FC<Props> = ({ className, ...props }) => {
 
   return isExternalUrl(href) ? (
     <a
-      className={merge("text-sky-300 underline", className)}
+      className={merge("text-sky-300 hover:underline", className)}
       {...props}
       target="_blank"
       rel="noopener noreferrer"
     />
   ) : (
     <Link
-      className={merge("text-sky-300 underline", className)}
+      className={merge("text-sky-300 hover:underline", className)}
       href={route.build({ relative: href })}
       {...rest}
     />
