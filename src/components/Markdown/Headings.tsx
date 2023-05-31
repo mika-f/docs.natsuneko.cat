@@ -9,9 +9,9 @@ const Heading1: React.FC<Props> = ({ className, ...props }) => (
   <Heading level={1} className={className} {...props} />
 );
 
-const Heading2: React.FC<Props> = ({ className, ...props }) => (
-  <Heading level={2} className={className} {...props} />
-);
+const Heading2: React.FC<Props> = ({ className, ...props }) => {
+  return <Heading level={2} className={className} {...props} />;
+};
 
 const Heading3: React.FC<Props> = ({ className, ...props }) => (
   <Heading level={3} className={className} {...props} />

@@ -4,6 +4,7 @@ import {
   makeSource,
 } from "@contentlayer/source-files";
 
+import RehypeSlug from "rehype-slug";
 import RemarkGfm from "remark-gfm";
 import RemarkGitHubAdmonitions from "remark-github-beta-blockquote-admonitions";
 
@@ -81,6 +82,7 @@ export default makeSource({
   contentDirPath: "contents",
   documentTypes: [Article],
   mdx: {
+    rehypePlugins: [RehypeSlug],
     remarkPlugins: [
       RemarkGfm,
       [
@@ -94,6 +96,7 @@ export default makeSource({
               return ["hidden"];
             },
           },
+          titleFilter: ["Note", "Important"],
         },
       ],
     ],

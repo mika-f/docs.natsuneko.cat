@@ -8,11 +8,11 @@ type Props = {
   className?: string;
 };
 
-const Heading: React.FC<Props> = ({ level, children, className }) => {
+const Heading: React.FC<Props> = ({ level, children, className, ...props }) => {
   switch (level) {
     case 1:
       return (
-        <h1 className={merge("mb-4 text-3xl font-bold", className)}>
+        <h1 className={merge("mb-4 text-3xl font-bold", className)} {...props}>
           {children}
         </h1>
       );
@@ -24,6 +24,7 @@ const Heading: React.FC<Props> = ({ level, children, className }) => {
             "border-b border-neutral-600 pb-2 text-2xl font-bold [&:not(:first-child)]:mt-12",
             className
           )}
+          {...props}
         >
           {children}
         </h2>
@@ -36,6 +37,7 @@ const Heading: React.FC<Props> = ({ level, children, className }) => {
             "border-b border-neutral-600 pb-2 text-xl font-bold [&:not(:first-child)]:mt-12",
             className
           )}
+          {...props}
         >
           {children}
         </h3>
@@ -43,17 +45,23 @@ const Heading: React.FC<Props> = ({ level, children, className }) => {
 
     case 4:
       return (
-        <h4 className={merge("text-md pb-2 font-bold", className)}>
+        <h4 className={merge("text-md pb-2 font-bold", className)} {...props}>
           {children}
         </h4>
       );
 
     case 5:
-      return <h5 className={merge("", className)}>{children}</h5>;
+      return (
+        <h5 className={merge("", className)} {...props}>
+          {children}
+        </h5>
+      );
 
     case 6:
       return (
-        <h6 className={merge("text-sm font-bold", className)}>{children}</h6>
+        <h6 className={merge("text-sm font-bold", className)} {...props}>
+          {children}
+        </h6>
       );
 
     default:
