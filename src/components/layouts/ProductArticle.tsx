@@ -23,8 +23,8 @@ const ProductArticle = () => {
 
   return (
     <BaseLayout>
-      <div className="flex flex-row">
-        <div>
+      <div className="flex items-start">
+        <div className="flex-1">
           {items.length > 1 && (
             <div className="mb-4">
               <Breadcrumb items={items} />
@@ -34,9 +34,11 @@ const ProductArticle = () => {
           <Markdown markdown={body.code} />
         </div>
 
-        <div className="ml-16 hidden flex-shrink-0 2xl:block 2xl:w-64">
-          <TableOfContents toc={toc} />
-        </div>
+        {toc.items.length > 0 && (
+          <div className="sticky top-24 ml-16 hidden flex-shrink-0 2xl:block 2xl:w-64">
+            <TableOfContents toc={toc} />
+          </div>
+        )}
       </div>
     </BaseLayout>
   );

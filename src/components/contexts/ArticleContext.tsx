@@ -72,7 +72,7 @@ const getSidebarItems = (route: RouteContextT): SideBar | null => {
         }
 
         return {
-          title: item.title,
+          title: item.shortTitle ?? item.title,
           href: route.build({ rest }),
         };
       }
