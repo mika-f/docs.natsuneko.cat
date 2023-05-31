@@ -7,8 +7,6 @@ versions:
   - "2.0"
 ---
 
-## Security Guides
-
 This add-on uses a technology called [DLL Injection](https://www.wikiwand.com/en/DLL%20injection) to achieve the following behaviours:
 
 - Receive the events on drop of Blender

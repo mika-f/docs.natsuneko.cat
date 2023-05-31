@@ -57,4 +57,4 @@ const useRouteContext = (): RouteContextT => {
 };
 
 export { RouteContext, useRouteContext };
-export type { RouteContextT };
+export type { RouteContextT, RouteContextProps };

@@ -1,6 +1,7 @@
 import { getTableOfContents } from "@/lib/toc";
 import { Markdown } from "../Markdown";
 import { TableOfContents } from "../TableOfContents";
+import { Heading } from "../Typography";
 import { useArticleContext } from "../contexts/ArticleContext";
 import { BaseLayout } from "./BaseLayout";
 
@@ -14,6 +15,7 @@ const ProductArticle = () => {
     <BaseLayout>
       <div className="flex flex-row">
         <div>
+          <Heading level={1}>{article!.shortTitle}</Heading>
           <Markdown markdown={body.code} />
         </div>
 

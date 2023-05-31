@@ -1,11 +1,27 @@
 import { RouteContext } from "@/components/contexts/RouteContext";
-import { GlobalArticle } from "../GlobalArticle";
+import { Metadata, ResolvingMetadata } from "next";
+import { GlobalArticle, getMetadata } from "../GlobalArticle";
 
 type Props = {
   params: {
     lang: string;
     product: string;
   };
+};
+
+const generateMetadata = async (
+  { params }: Props,
+  parent: ResolvingMetadata
+): Promise<Metadata> => {
+  return getMetadata(
+    {
+      language: params.lang,
+      product: params.product,
+      version: null,
+      rest: [],
+    },
+    parent
+  );
 };
 
 const Page: React.FC<Props> = ({ params }) => {
@@ -24,3 +40,4 @@ const Page: React.FC<Props> = ({ params }) => {
 };
 
 export default Page;
+export { generateMetadata };

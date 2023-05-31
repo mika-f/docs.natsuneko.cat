@@ -1,6 +1,7 @@
 import { RouteContext } from "@/components/contexts/RouteContext";
 import { isValidVersion } from "@/lib/versions";
-import { GlobalArticle } from "../../GlobalArticle";
+import { Metadata, ResolvingMetadata } from "next";
+import { GlobalArticle, getMetadata } from "../../GlobalArticle";
 
 type Props = {
   params: {
@@ -8,6 +9,21 @@ type Props = {
     product: string;
     version: string;
   };
+};
+
+const generateMetadata = async (
+  { params }: Props,
+  parent: ResolvingMetadata
+): Promise<Metadata> => {
+  return getMetadata(
+    {
+      language: params.lang,
+      product: params.product,
+      version: isValidVersion(params.version) ? params.version : null,
+      rest: isValidVersion(params.version) ? [] : [params.version],
+    },
+    parent
+  );
 };
 
 const Page: React.FC<Props> = ({ params }) => {
@@ -26,3 +42,4 @@ const Page: React.FC<Props> = ({ params }) => {
 };
 
 export default Page;
+export { generateMetadata };
