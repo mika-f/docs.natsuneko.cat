@@ -16,6 +16,7 @@ versions:
   - latest
   - "2.0"
 children:
+  - /overview
   - /installation
   - /using-addon
   - /supported-platforms
