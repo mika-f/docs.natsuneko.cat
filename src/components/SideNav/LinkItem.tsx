@@ -15,8 +15,8 @@ const LinkItem: React.FC<Props> = ({ item }) => {
   return (
     <li
       className={merge(
-        "my-2 ml-4 text-sm text-gray-400 hover:text-gray-300",
-        isActive && "text-gray-300"
+        "my-2 ml-4 text-sm text-neutral-500 hover:text-neutral-400",
+        isActive && "text-neutral-300"
       )}
     >
       <Link href={item.href}>{item.title}</Link>
