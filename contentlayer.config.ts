@@ -96,7 +96,16 @@ export default makeSource({
               return ["hidden"];
             },
           },
-          titleFilter: ["Note", "Important"],
+          titleFilter: [
+            "Bug",
+            "Danger",
+            "Important",
+            "Info",
+            "Note",
+            "Success",
+            "Tip",
+            "Warning",
+          ],
         },
       ],
     ],
