@@ -3,13 +3,13 @@ import { NextResponse } from "next/server";
 
 import { FALLBACK, LANGUAGE_CODES } from "@/lib/i18n";
 
-import type { NextRequest } from "next/server";
+import { NextRequest } from "next/server";
 
 const cookie = "lang";
 
 acceptLanguage.languages(LANGUAGE_CODES);
 
-const getLanguage = (req: NextRequest) => {
+const getLanguageFromRequest = (req: NextRequest) => {
   if (req.cookies.has(cookie)) {
     return acceptLanguage.get(req.cookies.get(cookie)?.value) ?? FALLBACK;
   }
@@ -17,7 +17,11 @@ const getLanguage = (req: NextRequest) => {
   return acceptLanguage.get(req.headers.get("accept-language")) ?? FALLBACK;
 };
 
-const hasLanguage = (path: string) => {
+const getLanguageFromPath = (path: string) => {
+  return LANGUAGE_CODES.find((w) => path.startsWith(`/${w}`)) ?? FALLBACK;
+};
+
+const hasLanguageInPath = (path: string) => {
   return LANGUAGE_CODES.some((w) => path.startsWith(`/${w}`));
 };
 
@@ -30,7 +34,7 @@ const normalizePathname = (path: string) => {
 };
 
 const i18n = async (req: NextRequest) => {
-  const lang = getLanguage(req);
+  const lang = getLanguageFromRequest(req);
   const pathname = normalizePathname(req.nextUrl.pathname);
 
   if (
@@ -42,13 +46,23 @@ const i18n = async (req: NextRequest) => {
     );
   }
 
+  if (hasLanguageInPath(pathname)) {
+    const requestLanguage = getLanguageFromPath(pathname);
+    if (requestLanguage !== lang) {
+      const response = NextResponse.next();
+      response.cookies.set(cookie, requestLanguage);
+
+      return response;
+    }
+  }
+
   if (req.headers.has("referer")) {
     const referrerUrl = new URL(req.headers.get("referer") ?? "", req.url);
     const langInReferrer = LANGUAGE_CODES.find((w) =>
       referrerUrl.pathname.startsWith(`/${w}`)
     );
 
-    const response = hasLanguage(pathname)
+    const response = hasLanguageInPath(pathname)
       ? NextResponse.next()
       : NextResponse.redirect(
           new URL(`/${lang}${pathname}${req.nextUrl.search}`, req.url)
