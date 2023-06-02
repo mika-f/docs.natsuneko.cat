@@ -3,7 +3,7 @@ import { createServerContext, useContext } from "react";
 
 import { FALLBACK } from "@/lib/i18n";
 
-import type { RouteContextT } from "./RouteContext";
+import { RouteContextT, useRouteContext } from "./RouteContext";
 
 type SideBarLinkItem = {
   title: string;
@@ -97,6 +97,7 @@ const getArticleContext = (route: RouteContextT): ArticleContextT => {
 };
 
 const useArticleContext = () => {
+  const route = useRouteContext();
   const context = useContext(ArticleContext);
 
   if (!context) {
@@ -105,7 +106,19 @@ const useArticleContext = () => {
     );
   }
 
-  return context;
+  const resolve = (path: { abs?: string; rel?: string }): RouteContextT => {
+    if (path.abs) {
+      return route.assign({ absolute: path.abs });
+    }
+
+    return route.assign({ relative: path.rel });
+  };
+
+  return {
+    ...context,
+    findAbsolute: (path: string) => findArticle(resolve({ abs: path })),
+    findRelative: (path: string) => findArticle(resolve({ abs: path })),
+  };
 };
 
 export { ArticleContext, getArticleContext, useArticleContext };

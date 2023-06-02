@@ -22,7 +22,7 @@ const Hyperlink: React.FC<Props> = ({ className, ...props }) => {
   ) : (
     <Link
       className={merge("text-sky-300 hover:underline", className)}
-      href={route.build({ relative: href })}
+      href={route.build({ relative: `../${href}` })}
       {...rest}
     />
   );
