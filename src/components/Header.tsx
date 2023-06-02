@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { LanguageSwitch } from "./LanguageSwitch";
 
 const Header: React.FC = () => {
   return (
@@ -10,9 +11,7 @@ const Header: React.FC = () => {
             <span>Natsuneko Docs</span>
           </a>
 
-          <button>
-            <i className="fa-sharp fa-solid fa-language text-2xl" />
-          </button>
+          <LanguageSwitch />
         </div>
       </div>
     </header>

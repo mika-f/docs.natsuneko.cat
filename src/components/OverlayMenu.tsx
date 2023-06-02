@@ -1,20 +1,25 @@
 "use client";
 
+import { useLockedBody } from "@/hooks/useLockedBody";
 import { merge } from "@/lib/utils";
-import { useState } from "react";
-import { useLockedBody } from "usehooks-ts";
-import { Portal } from "../Portal";
-import { SideNav } from "../SideNav";
-import { SideBar } from "../contexts/ArticleContext";
+import { usePathname } from "next/navigation";
+import { useEffect, useState } from "react";
+import { Portal } from "./Portal";
 
 type Props = {
   title?: string;
-  items: SideBar;
+  children: React.ReactNode;
 };
 
-const OverlayNav: React.FC<Props> = ({ title, items }) => {
+const OverlayMenu: React.FC<Props> = ({ title, children }) => {
   const [state, setState] = useState(false);
   const [locked, setLocked] = useLockedBody(false, "body");
+  const pathname = usePathname();
+
+  useEffect(() => {
+    setState(false);
+    setLocked(false);
+  }, [pathname, setLocked]);
 
   const toggleState = () => {
     setState(!state);
@@ -33,14 +38,12 @@ const OverlayNav: React.FC<Props> = ({ title, items }) => {
         <span className={merge("mr-2", state ? "hidden" : "inline")}>
           <i className="fa-regular fa-chevron-right fa-fw" />
         </span>
-        <span>Menu</span>
+        <span>{title}</span>
       </div>
       {state && (
         <Portal>
           <div className="fixed inset-0 top-28 z-10 bg-neutral-800 px-4">
-            <div className="z-10 overflow-y-auto pt-2">
-              <SideNav title={title} items={items} />
-            </div>
+            <div className="z-10 overflow-y-auto pt-2">{children}</div>
           </div>
         </Portal>
       )}
@@ -48,4 +51,4 @@ const OverlayNav: React.FC<Props> = ({ title, items }) => {
   );
 };
 
-export { OverlayNav };
+export { OverlayMenu };

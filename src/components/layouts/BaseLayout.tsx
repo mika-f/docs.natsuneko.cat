@@ -15,7 +15,7 @@ const BaseLayout: React.FC<Props> = ({ children }) => {
   return (
     <div className="flex h-full flex-col">
       {sidebar && (
-        <div className="sticky top-16 border-b border-neutral-700 lg:hidden">
+        <div className="sticky top-16 z-10 border-b border-neutral-700 lg:hidden">
           <OverlayNav title={product ?? undefined} items={sidebar} />
         </div>
       )}

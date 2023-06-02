@@ -5,7 +5,7 @@ type Language = { code: string; name: string };
 type Languages = Language[];
 
 const LANGUAGES = [
-  { code: "en-us", name: "English" },
+  { code: "en-us", name: "English - United States" },
   { code: "ja-jp", name: "日本語" },
 ] as const satisfies ReadonlyDeep<Languages>;
 
