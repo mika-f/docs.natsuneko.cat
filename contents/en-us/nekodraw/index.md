@@ -14,8 +14,8 @@ versions:
   - latest
   - "2.0"
 children:
-  - /overview
-  - /installation
+  - ./overview
+  - ./installation
 changelog:
   repository: mika-f/nekodraw
 ---

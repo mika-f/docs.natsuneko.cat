@@ -18,13 +18,13 @@ versions:
   - latest
   - "2.0"
 children:
-  - /overview
-  - /installation
-  - /using-addon
-  - /supported-platforms
-  - /supported-versions
-  - /issues
-  - /security-guides
+  - ./overview
+  - ./installation
+  - ./using-addon
+  - ./supported-platforms
+  - ./supported-versions
+  - ./issues
+  - ./security-guides
 changelog:
   repository: mika-f/blender-drag-and-drop
 ---
