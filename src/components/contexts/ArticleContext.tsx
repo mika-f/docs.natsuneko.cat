@@ -64,21 +64,26 @@ const getSidebarItems = (route: RouteContextT): SideBar | null => {
 
   return article.children
     .flatMap((child) => {
-      const rest = child.split("/").filter((w) => !!w);
-      const item = findArticle({
-        ...route,
-        rest,
-      });
+      const rel = route.assign({ relative: child, rest: [] });
+      const item = findArticle(rel);
 
       if (item) {
+        const navigations: SideBar = [
+          {
+            title: item.shortTitle ?? item.title,
+            href: rel.build({}),
+          },
+        ];
+
         if (item.children && item.children.length > 0) {
-          return getSidebarItems({ ...route, rest });
+          const items = getSidebarItems(rel);
+
+          if (items) {
+            navigations.push(...items);
+          }
         }
 
-        return {
-          title: item.shortTitle ?? item.title,
-          href: route.build({ rest }),
-        };
+        return navigations;
       }
 
       return null;
@@ -122,7 +127,7 @@ const useArticleContext = () => {
   return {
     ...context,
     findAbsolute: (path: string) => findArticle(resolve({ abs: path })),
-    findRelative: (path: string) => findArticle(resolve({ abs: path })),
+    findRelative: (path: string) => findArticle(resolve({ rel: path })),
   };
 };
 

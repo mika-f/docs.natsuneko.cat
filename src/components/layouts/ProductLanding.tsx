@@ -34,7 +34,7 @@ const ProductLanding = () => {
         </div>
       )}
 
-      <div className="my-16 grid gap-8 md:grid-cols-2 xl:grid-cols-3">
+      <div className="my-16 grid gap-x-8 gap-y-16 md:grid-cols-2 xl:grid-cols-3">
         {featuredLinks &&
           featuredLinks.map((w) => {
             return (
@@ -44,13 +44,13 @@ const ProductLanding = () => {
                 </div>
 
                 {w.items.map((v) => {
-                  const ref = ctx.findRelative(route.build({ relative: v }));
+                  const ref = ctx.findRelative(v);
 
                   return ref ? (
                     <Link
                       key={v}
                       className="block border-neutral-600 px-2 py-4 hover:bg-neutral-700 [&:not(:last-child)]:border-b"
-                      href={route.build({ relative: ref.path })}
+                      href={route.build({ relative: v })}
                     >
                       <p className="text-sky-300">{ref.shortTitle}</p>
                       {ref.intro && (

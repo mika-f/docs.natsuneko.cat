@@ -77,7 +77,7 @@ const useRouteContext = (): RouteContextT => {
           ? paths.slice(3)
           : paths.slice(2),
       assign,
-      build,
+      build: (ctx) => build({ ...ctx, absolute: url }),
     };
   };
 

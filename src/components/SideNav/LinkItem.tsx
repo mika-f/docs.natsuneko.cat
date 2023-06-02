@@ -1,16 +1,18 @@
+"use client";
+
 import Link from "next/link";
 
 import type { SideBarLinkItem } from "@/components/contexts/ArticleContext";
-import { useRouteContext } from "@/components/contexts/RouteContext";
 import { merge } from "@/lib/utils";
+import { usePathname } from "next/navigation";
 
 type Props = {
   item: SideBarLinkItem;
 };
 
 const LinkItem: React.FC<Props> = ({ item }) => {
-  const route = useRouteContext();
-  const isActive = item.href === route.build({});
+  const pathname = usePathname();
+  const isActive = `${item.href}/` === pathname;
 
   return (
     <li
