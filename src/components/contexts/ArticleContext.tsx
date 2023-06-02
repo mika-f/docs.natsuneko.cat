@@ -3,7 +3,11 @@ import { createServerContext, useContext } from "react";
 
 import { FALLBACK } from "@/lib/i18n";
 
-import { RouteContextT, useRouteContext } from "./RouteContext";
+import {
+  RouteContextProps,
+  RouteContextT,
+  useRouteContext,
+} from "./RouteContext";
 
 type SideBarLinkItem = {
   title: string;
@@ -31,7 +35,7 @@ const ArticleContext = createServerContext<ArticleContextT | null>(
   null
 );
 
-const findArticle = (route: RouteContextT): Article | null => {
+const findArticle = (route: RouteContextProps): Article | null => {
   const matchedRouteArticles = allArticles.filter(
     (w) => w.product === route.product && w.path === route.rest.join("/")
   );
@@ -48,7 +52,7 @@ const findArticle = (route: RouteContextT): Article | null => {
   return article;
 };
 
-const findRootArticle = (route: RouteContextT): Article | null => {
+const findRootArticle = (route: RouteContextProps): Article | null => {
   return findArticle({ ...route, rest: [] });
 };
 
@@ -83,10 +87,11 @@ const getSidebarItems = (route: RouteContextT): SideBar | null => {
     .map((w) => w!);
 };
 
-const getArticleContext = (route: RouteContextT): ArticleContextT => {
+const getArticleContext = (route: RouteContextProps): ArticleContextT => {
   const article = findArticle(route);
   const root = findRootArticle(route);
-  const sidebar = getSidebarItems(route);
+  const sidebar =
+    "assign" in route ? getSidebarItems(route as RouteContextT) : null;
 
   return {
     article,

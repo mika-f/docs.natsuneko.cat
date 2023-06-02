@@ -28,7 +28,7 @@ const getMetadata = async (
   route: RouteContextProps,
   parent: ResolvingMetadata
 ): Promise<Metadata> => {
-  const ctx = getArticleContext({ ...route, build: () => "" });
+  const ctx = getArticleContext({ ...route });
   const { article } = ctx;
   const title = getTitle(ctx);
 
