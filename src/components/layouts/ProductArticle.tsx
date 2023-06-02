@@ -13,6 +13,7 @@ const ProductArticle = () => {
 
   const { article, product } = ctx;
   const body = article!.body;
+  const { shortTitle, intro } = article!;
   const toc = getTableOfContents(body.raw);
   const items: BreadcrumbItem[] = product
     ? [
@@ -30,7 +31,8 @@ const ProductArticle = () => {
               <Breadcrumb items={items} />
             </div>
           )}
-          <Heading level={1}>{article!.shortTitle}</Heading>
+          <Heading level={1}>{shortTitle}</Heading>
+          {intro && <p className="text-lg text-neutral-400">{intro}</p>}
           <Markdown markdown={body.code} />
         </div>
 
