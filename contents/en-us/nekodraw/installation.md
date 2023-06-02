@@ -1,12 +1,10 @@
 ---
 title: Installation Guide
 shortTitle: Installation
-intro: ""
+intro: "This document describes how to install NekoDraw on your computer."
 versions:
   - latest
 ---
-
-This document describes how to install NekoDraw on your computer.
 
 ## Requirements
 
