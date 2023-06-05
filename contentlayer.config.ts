@@ -4,6 +4,8 @@ import {
   makeSource,
 } from "@contentlayer/source-files";
 
+import RehypeCodeTitles from "rehype-code-titles";
+import rehypePrettyCode from "rehype-pretty-code";
 import RehypeSlug from "rehype-slug";
 import RemarkGfm from "remark-gfm";
 import RemarkGitHubAdmonitions from "remark-github-beta-blockquote-admonitions";
@@ -82,7 +84,11 @@ export default makeSource({
   contentDirPath: "contents",
   documentTypes: [Article],
   mdx: {
-    rehypePlugins: [RehypeSlug],
+    rehypePlugins: [
+      RehypeSlug,
+      [RehypeCodeTitles, { titleSeparator: ":" }],
+      [rehypePrettyCode, { theme: "dark-plus" }],
+    ],
     remarkPlugins: [
       RemarkGfm,
       [

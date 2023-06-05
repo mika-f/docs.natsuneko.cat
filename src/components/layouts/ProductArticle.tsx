@@ -24,7 +24,7 @@ const ProductArticle = () => {
 
   return (
     <BaseLayout>
-      <div className="flex items-start">
+      <div className="items-start 2xl:flex">
         <div className="flex-1">
           {items.length > 1 && (
             <div className="mb-4">

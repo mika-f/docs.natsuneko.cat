@@ -64,7 +64,7 @@ export default function RootLayout({
     <html lang="en" className="scroll-pt-20">
       <body
         className={merge(
-          "grid min-h-screen grid-rows-[auto_1fr_auto] bg-neutral-800 text-neutral-300",
+          "grid min-h-screen grid-cols-1 grid-rows-[auto_1fr_auto] bg-neutral-800 text-neutral-300",
           noto.className
         )}
       >

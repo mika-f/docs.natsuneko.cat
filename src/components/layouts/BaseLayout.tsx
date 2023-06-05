@@ -13,7 +13,7 @@ const BaseLayout: React.FC<Props> = ({ children }) => {
   const { article, isFallbackContent, product, sidebar } = ctx;
 
   return (
-    <div className="flex h-full flex-col">
+    <div className="flex h-full w-full max-w-full flex-col">
       {sidebar && (
         <div className="sticky top-16 z-10 border-b border-neutral-700 lg:hidden">
           <OverlayNav title={product ?? undefined} items={sidebar} />
@@ -28,14 +28,16 @@ const BaseLayout: React.FC<Props> = ({ children }) => {
             <SideNav title={product ?? undefined} items={sidebar} />
           </div>
         )}
-        <article
-          className={merge(
-            "mx-4 h-full flex-1 py-6 md:border-neutral-600 lg:mx-0",
-            sidebar && "lg:border-l lg:pl-16 xl:pl-20"
-          )}
-        >
-          {children}
-        </article>
+        <div className="w-full max-w-full ">
+          <article
+            className={merge(
+              "mx-4 h-full flex-1 py-6 md:border-neutral-600 lg:mx-0",
+              sidebar && "lg:border-l lg:pl-16 xl:pl-20"
+            )}
+          >
+            {children}
+          </article>
+        </div>
       </div>
     </div>
   );
