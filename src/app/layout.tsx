@@ -2,6 +2,8 @@ import { Metadata } from "next";
 import { Noto_Sans_JP } from "next/font/google";
 import Script from "next/script";
 
+import { Analytics } from "@vercel/analytics/react";
+
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 
@@ -77,6 +79,8 @@ export default function RootLayout({
           src="https://kit.fontawesome.com/c291a616a9.js"
           crossOrigin="anonymous"
         />
+
+        <Analytics />
       </body>
     </html>
   );
