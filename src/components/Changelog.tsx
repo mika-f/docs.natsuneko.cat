@@ -6,6 +6,7 @@ type Release = {
   html_url: string;
   id: string;
   name: string;
+  tag_name: string;
   prerelease: boolean;
   published_at: string;
 };
@@ -26,6 +27,7 @@ const getReleases = async (repo: string): Promise<Response> => {
 
 const Changelog = async ({ repo }: Props) => {
   const re = await getReleases(repo);
+  console.log(re);
 
   return (
     <div className="flex flex-col">
@@ -44,7 +46,7 @@ const Changelog = async ({ repo }: Props) => {
               className="block border-neutral-600 px-2 py-4 hover:bg-neutral-700 [&:not(:last-child)]:border-b"
             >
               <p className="text-sky-300">
-                {w.name}
+                {w.name || w.tag_name}
                 {w.prerelease && (
                   <span className="ml-2 text-sm text-orange-300">
                     Prerelease
