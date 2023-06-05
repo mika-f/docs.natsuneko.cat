@@ -68,9 +68,9 @@ featuredLinks:
     items:
       - ./nekodraw/overview
 
-  # - title: Power Rename
-  #   items:
-  #     - ./power-rename/overview
+  - title: Power Rename
+    items:
+      - ./power-rename/overview
 
   # - title: Refined Animation Property
   #   items:
