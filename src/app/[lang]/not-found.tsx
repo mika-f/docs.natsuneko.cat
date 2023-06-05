@@ -1,7 +1,12 @@
-export default function Home() {
+import { Heading } from "@/components/Typography";
+
+const NotFound = () => {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      Not Found
-    </main>
+    <div className="flex h-full flex-col items-center justify-center">
+      <Heading level={1}>404 Not Found</Heading>
+      <p>The requested page is not found on server.</p>
+    </div>
   );
-}
+};
+
+export default NotFound;

@@ -21,7 +21,7 @@ const getTitle = (ctx: ArticleContextT) => {
     return `${article?.title} - ${product}`;
   }
 
-  return article?.title;
+  return article?.title ?? "Not Found";
 };
 
 const getMetadata = async (
