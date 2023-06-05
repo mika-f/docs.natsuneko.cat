@@ -23,7 +23,7 @@ const generateMetadata = async (
   );
 };
 
-const Page: React.FC<Props> = ({ params }) => {
+const Page = async ({ params }: Props) => {
   return (
     <RouteContext.Provider
       value={{

@@ -3,6 +3,7 @@ import { FallbackContent } from "../FallbackContent";
 import { OverlayNav } from "../OverlayNav";
 import { SideNav } from "../SideNav";
 import { useArticleContext } from "../contexts/ArticleContext";
+import { useRouteContext } from "../contexts/RouteContext";
 
 type Props = {
   children?: React.ReactNode;
@@ -10,6 +11,7 @@ type Props = {
 
 const BaseLayout: React.FC<Props> = ({ children }) => {
   const ctx = useArticleContext();
+  const route = useRouteContext();
   const { article, isFallbackContent, product, sidebar } = ctx;
 
   return (
@@ -20,7 +22,10 @@ const BaseLayout: React.FC<Props> = ({ children }) => {
         </div>
       )}
       {isFallbackContent ? (
-        <FallbackContent originalLang={article!.lang} />
+        <>
+          {/* @ts-expect-error Async Server Component */}
+          <FallbackContent originalLang={article!.lang} lang={route.language} />
+        </>
       ) : null}
       <div className="container mx-auto flex h-full">
         {sidebar && (

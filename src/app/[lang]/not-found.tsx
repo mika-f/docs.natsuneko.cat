@@ -1,10 +1,17 @@
 import { Heading } from "@/components/Typography";
+import { useTranslation } from "@/hooks/useTranslation";
 
-const NotFound = () => {
+type Props = {
+  params: { lang: string };
+};
+
+const NotFound = async ({ params }: Props) => {
+  const { t } = await useTranslation(params?.lang, "not-found");
+
   return (
     <div className="flex h-full flex-col items-center justify-center">
-      <Heading level={1}>404 Not Found</Heading>
-      <p>The requested page is not found on server.</p>
+      <Heading level={1}>{t("title")}</Heading>
+      <p>{t("message")}</p>
     </div>
   );
 };

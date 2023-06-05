@@ -1,8 +1,13 @@
+import { useTranslation } from "@/hooks/useTranslation";
+
 type Props = {
   originalLang: string;
+  lang: string;
 };
 
-const FallbackContent: React.FC<Props> = ({ originalLang }) => {
+const FallbackContent = async ({ originalLang, lang }: Props) => {
+  const { t } = await useTranslation(lang, "translation");
+
   return (
     <div className="border-b border-purple-800 bg-purple-950 px-4">
       <div className="container mx-auto flex min-h-[64px] items-center justify-center">
@@ -10,10 +15,7 @@ const FallbackContent: React.FC<Props> = ({ originalLang }) => {
           <span className="mr-2">
             <i className="fa-regular fa-circle-exclamation" />
           </span>
-          <span>
-            This topic is not available in your language. Therefore, the
-            original version ({originalLang}) is displayed.
-          </span>
+          <span>{t("fallbackContent", { originalLang })}</span>
         </p>
       </div>
     </div>
