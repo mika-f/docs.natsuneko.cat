@@ -12,6 +12,7 @@ import {
 import { Hyperlink } from "./Hyperlink";
 import { ListItem, OrderedList, UnorderedList } from "./List";
 import { Paragraph } from "./Paragraph";
+import { Table, TableData, TableHead, TableHeader, TableRow } from "./Table";
 
 type Props = {
   markdown: string;
@@ -30,13 +31,11 @@ const components: any = {
   ul: UnorderedList,
   ol: OrderedList,
   li: ListItem,
-  /*
   table: Table,
   thead: TableHead,
   th: TableHeader,
   tr: TableRow,
   td: TableData,
-  */
   pre: Preformatted,
   code: Code,
 };
