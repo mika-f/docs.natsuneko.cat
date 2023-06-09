@@ -36,11 +36,11 @@ featuredLinks:
   #     - ./installation
   #     - ./using-addon
 
-  # - title: "@natsuneko-laboratory/create-unitypackage"
-  #   items:
-  #     - ./security-guides
-  #     - ./installation
-  #     - ./using-addon
+  - title: "create-unitypackage"
+    items:
+      - ./security-guides
+      - ./installation
+      - ./using-addon
 
   # - title: "@natsuneko-laboratory/create-vpmpackage"
   #   items:
@@ -121,6 +121,7 @@ featuredLinks:
   #     - ./using-addon
 
 children:
+  - ./create-unitypackage
   - ./drag-and-drop-support
   - ./nekodraw
   - ./power-rename
