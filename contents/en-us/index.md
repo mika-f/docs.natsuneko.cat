@@ -38,9 +38,7 @@ featuredLinks:
 
   - title: "create-unitypackage"
     items:
-      - ./security-guides
-      - ./installation
-      - ./using-addon
+      - ./create-unitypackage/overview
 
   # - title: "@natsuneko-laboratory/create-vpmpackage"
   #   items:
