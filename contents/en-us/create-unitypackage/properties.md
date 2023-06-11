@@ -21,3 +21,23 @@ versions:
 - \*1 Required one of `meta`, `package`, `packages`
 - \*2 Required if `package` or `meta` is specified
 - \*3 Required if `packages` is specified
+
+## Packaging Files
+
+If you specify `package` or `packages`, `@natsuneko-laboratory/create-unitypackage` will respect `.npmignore` and `.gitignore` to determine which files should be ignored.
+The priority is `.npmignore` > `.gitignore` and the following files will be ignored by default.
+
+- `.*swp`
+- `._*`
+- `.DS_Store`
+- `.git`
+- `.gitignore`
+- `.hg`
+- `.npmignore`
+- `.npmrc`
+- `.lock-wscript`
+- `.svn`
+- `.wafpickle-*`
+- `config.gypi`
+- `CVS`
+- `npm-debug.log`
