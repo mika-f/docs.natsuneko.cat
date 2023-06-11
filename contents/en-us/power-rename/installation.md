@@ -23,7 +23,7 @@ This is recommended for regular Unity projects.
 
 ### Update
 
-1. Download Latest Installation Archive from [GitHub Releases](https://github.com/mika-f/blender-drag-and-drop/releases/latest)
+1. Download Latest Installation Archive from [GitHub Releases](https://github.com/natsuneko-laboratory/power-rename/releases)
 2. Extract downloaded archive
 3. Double click `PowerRename-vx.x.x.unitypackage`
 4. Install (Overwrite)

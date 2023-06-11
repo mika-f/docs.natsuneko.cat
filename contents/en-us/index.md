@@ -6,11 +6,9 @@ intro: Welcome to Natsuneko Laboratory documentation!
 versions:
   - "latest"
 featuredLinks:
-  # - title: Animation Auto Assignment
-  #   items:
-  #     - ./security-guides
-  #     - ./installation
-  #     - ./using-addon
+  - title: Animation Auto Assignment
+    items:
+      - ./animation-auto-assignment/overview
 
   # - title: Animator Controller Tool Post Processing
   #   items:
@@ -117,8 +115,10 @@ featuredLinks:
   #     - ./using-addon
 
 children:
+  - ./animation-auto-assignment
   - ./create-unitypackage
   - ./drag-and-drop-support
   - ./nekodraw
   - ./power-rename
+  - ./unitypackage
 ---
