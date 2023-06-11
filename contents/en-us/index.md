@@ -100,11 +100,9 @@ featuredLinks:
   #     - ./installation
   #     - ./using-addon
 
-  # - title: "@natsuneko-laboratory/unitypackage"
-  #   items:
-  #     - ./security-guides
-  #     - ./installation
-  #     - ./using-addon
+  - title: "unitypackage"
+    items:
+      - ./unitypackage/overview
 
   # - title: "VPM Registry"
   #   items:
