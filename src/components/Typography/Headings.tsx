@@ -12,7 +12,10 @@ const Heading: React.FC<Props> = ({ level, children, className, ...props }) => {
   switch (level) {
     case 1:
       return (
-        <h1 className={merge("mb-4 text-3xl font-bold", className)} {...props}>
+        <h1
+          className={merge("mb-4 break-words text-3xl font-bold", className)}
+          {...props}
+        >
           {children}
         </h1>
       );
@@ -21,7 +24,7 @@ const Heading: React.FC<Props> = ({ level, children, className, ...props }) => {
       return (
         <h2
           className={merge(
-            "border-b border-neutral-600 pb-2 text-2xl font-bold [&:not(:first-child)]:mt-12",
+            "break-words border-b border-neutral-600 pb-2 text-2xl font-bold [&:not(:first-child)]:mt-12",
             className
           )}
           {...props}
@@ -34,7 +37,7 @@ const Heading: React.FC<Props> = ({ level, children, className, ...props }) => {
       return (
         <h3
           className={merge(
-            "border-b border-neutral-600 pb-2 text-xl font-bold [&:not(:first-child)]:mt-12",
+            "break-words border-b border-neutral-600 pb-2 text-xl font-bold [&:not(:first-child)]:mt-12",
             className
           )}
           {...props}
@@ -45,21 +48,27 @@ const Heading: React.FC<Props> = ({ level, children, className, ...props }) => {
 
     case 4:
       return (
-        <h4 className={merge("text-md pb-2 font-bold", className)} {...props}>
+        <h4
+          className={merge("text-md break-words pb-2 font-bold", className)}
+          {...props}
+        >
           {children}
         </h4>
       );
 
     case 5:
       return (
-        <h5 className={merge("", className)} {...props}>
+        <h5 className={merge("break-words", className)} {...props}>
           {children}
         </h5>
       );
 
     case 6:
       return (
-        <h6 className={merge("text-sm font-bold", className)} {...props}>
+        <h6
+          className={merge("break-words text-sm font-bold", className)}
+          {...props}
+        >
           {children}
         </h6>
       );
