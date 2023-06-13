@@ -68,6 +68,29 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="scroll-pt-20" dir={dir(params.lang ?? FALLBACK)}>
+      <head>
+        <link
+          rel="apple-touch-icon"
+          sizes="144x144"
+          href="/apple-touch-icon.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="32x32"
+          href="/favicon-32x32.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="16x16"
+          href="/favicon-16x16.png"
+        />
+        <link rel="manifest" href="/site.webmanifest" />
+        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#ffbfff" />
+        <meta name="msapplication-TileColor" content="#2d89ef" />
+        <meta name="theme-color" content="#000000" />
+      </head>
       <body
         className={merge(
           "grid min-h-screen grid-cols-1 grid-rows-[auto_1fr_auto] bg-neutral-800 text-neutral-300",
