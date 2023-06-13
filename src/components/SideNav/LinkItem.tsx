@@ -12,12 +12,15 @@ type Props = {
 
 const LinkItem: React.FC<Props> = ({ item }) => {
   const pathname = usePathname();
-  const isActive = `${item.href}/` === pathname;
+  const isActive =
+    `${item.href}/` === pathname ||
+    item.href === pathname ||
+    item.href === `${pathname}/`;
 
   return (
     <li
       className={merge(
-        "my-2 ml-4 text-sm text-neutral-500 hover:text-neutral-400",
+        "my-2 whitespace-break-spaces break-words text-sm text-neutral-500 hover:text-neutral-400",
         isActive && "text-neutral-300"
       )}
     >

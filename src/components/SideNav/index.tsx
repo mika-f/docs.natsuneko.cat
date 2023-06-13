@@ -4,6 +4,7 @@ import { LinkItem } from "./LinkItem";
 
 import type { SideBar } from "@/components/contexts/ArticleContext";
 import React from "react";
+import { LinkTree } from "./LinkTree";
 
 type Props = {
   title?: string;
@@ -34,17 +35,13 @@ const SideNav: React.FC<Props> = ({ title, items }) => {
         </div>
       )}
 
-      <ul className="mr-2">
+      <ul className="ml-4 mr-2">
         {items.map((w) => {
           if ("href" in w) {
             return <LinkItem key={w.href} item={w} />;
           }
 
-          return (
-            <React.Fragment key={JSON.stringify(w)}>
-              {JSON.stringify(w)}
-            </React.Fragment>
-          );
+          return <LinkTree key={w.title} item={w} />;
         })}
       </ul>
     </nav>
