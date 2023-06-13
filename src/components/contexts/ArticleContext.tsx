@@ -1,4 +1,4 @@
-import { Article, allArticles } from "contentlayer/generated";
+import { Article, Category, allArticles } from "contentlayer/generated";
 import { createServerContext, useContext } from "react";
 
 import { FALLBACK } from "@/lib/i18n";
@@ -23,9 +23,18 @@ type SideBarItem = SideBarLinkItem | SideBarNestItem;
 
 type SideBar = SideBarItem[];
 
+type BreadcrumbActiveItem = { label: string };
+
+type BreadcrumbLinkItem = { label: string; href: string };
+
+type BreadcrumbItem = BreadcrumbLinkItem | BreadcrumbActiveItem;
+
+type Breadcrumb = BreadcrumbItem[];
+
 type ArticleContextT = {
   article: Article | null;
   sidebar: SideBar | null;
+  breadcrumbs: Breadcrumb | null;
   product: string | null;
   isFallbackContent: boolean;
 };
@@ -52,55 +61,191 @@ const findArticle = (route: RouteContextProps): Article | null => {
   return article;
 };
 
-const findRootArticle = (route: RouteContextProps): Article | null => {
+type RootFinderProps = {
+  isMostClosest?: boolean;
+};
+
+const findRootArticle = (
+  route: RouteContextT,
+  params?: RootFinderProps
+): Article | null => {
+  let r = route;
+  let opts: RootFinderProps = {
+    isMostClosest: true,
+    ...params,
+  };
+
+  while (true) {
+    const article = findArticle(r);
+    if (article) {
+      if (article.navigation) {
+        if (opts.isMostClosest) {
+          return article;
+        }
+      }
+
+      r = r.assign({ rest: r.rest.slice(0, -1) });
+    }
+
+    break;
+  }
+
   return findArticle({ ...route, rest: [] });
 };
 
-const getSidebarItems = (route: RouteContextT): SideBar | null => {
+const getSideBarItems = (
+  product: string | null,
+  route: RouteContextT,
+  path: string
+): SideBarItem[] => {
+  const routing = route.assign({ relative: path });
+  const article = findArticle(routing);
+
+  if (!article || route.product !== product) {
+    return [];
+  }
+
+  const items: SideBarItem[] = [];
+
+  if (path !== "./") {
+    // first, add normal children
+    if (article?.navigation?.children?.length) {
+      const { children } = article.navigation;
+      children
+        .map((w) => getSideBarItems(product, routing, w))
+        .forEach((w) => items.push(...w));
+    }
+
+    // second, add categorized children
+    if (article?.navigation?.categories?.length) {
+      const { categories } = article.navigation;
+      categories
+        .map((w) => getCategorizedSidebarItems(product, routing, w))
+        .forEach((w) => items.push(...w));
+    }
+
+    if (items.length > 0) {
+      return [
+        {
+          title: article.shortTitle ?? article.title,
+          items,
+        },
+      ];
+    }
+  }
+
+  return [
+    {
+      title: article.shortTitle ?? article.title,
+      href: routing.build({}),
+    },
+  ];
+};
+
+const getCategorizedSidebarItems = (
+  product: string | null,
+  route: RouteContextT,
+  category: Category
+): SideBarItem[] => {
+  const categorizedItems = category.items
+    .flatMap((w) => getSideBarItems(product, route, w))
+    .filter((w) => !!w)
+    .map((w) => w!);
+
+  const article = findArticle(route);
+
+  if (categorizedItems.length > 0) {
+    if (category.name) {
+      return [
+        {
+          title: category.name ?? article!.shortTitle ?? article!.title,
+          items: categorizedItems,
+        },
+      ];
+    }
+  }
+
+  return categorizedItems;
+};
+
+const getRootSidebarItems = (route: RouteContextT): SideBar | null => {
+  console.log("====================================");
+
+  const product = route.product;
   const article = findRootArticle(route);
-  if (!article || !article.children || article.children.length === 0) {
+  const hasNavigation =
+    article?.navigation &&
+    (article?.navigation?.children?.length ||
+      article?.navigation?.categories?.length);
+
+  if (!hasNavigation) {
     return null;
   }
 
-  return article.children
-    .flatMap((child) => {
-      const rel = route.assign({ relative: child, rest: [] });
-      const item = findArticle(rel);
+  const items: SideBar = [];
 
-      if (item) {
-        const navigations: SideBar = [
-          {
-            title: item.shortTitle ?? item.title,
-            href: rel.build({}),
-          },
-        ];
+  // first, add normal children
+  if (article?.navigation?.children?.length) {
+    const { children } = article.navigation;
+    children
+      .map((w) => getSideBarItems(product, route, w))
+      .forEach((w) => items.push(...w));
+  }
 
-        if (item.children && item.children.length > 0) {
-          const items = getSidebarItems(rel);
+  // second, add categorized children
+  if (article?.navigation?.categories?.length) {
+    const { categories } = article.navigation;
+    categories
+      .map((w) => getCategorizedSidebarItems(product, route, w))
+      .forEach((w) => items.push(...w));
+  }
 
-          if (items) {
-            navigations.push(...items);
-          }
-        }
+  return items;
+};
 
-        return navigations;
+const getBreadcrumbsItems = (route: RouteContextT): Breadcrumb | null => {
+  const items: Breadcrumb = [];
+  let r = route;
+
+  while (true) {
+    const article = findArticle(r);
+
+    if (article) {
+      if (r === route) {
+        items.push({
+          label: article.shortTitle ?? article.title,
+        });
+      } else {
+        items.push({
+          label: article.shortTitle ?? article.title,
+          href: r.build({}),
+        });
       }
 
-      return null;
-    })
-    .filter((w) => !!w)
-    .map((w) => w!);
+      if (r.rest.length === 0) break;
+
+      r = r.assign({ rest: r.rest.slice(0, -1) });
+      continue;
+    }
+
+    break;
+  }
+
+  items.reverse();
+  return items;
 };
 
 const getArticleContext = (route: RouteContextProps): ArticleContextT => {
   const article = findArticle(route);
-  const root = findRootArticle(route);
-  const sidebar =
-    "assign" in route ? getSidebarItems(route as RouteContextT) : null;
+  const ctx = "assign" in route ? (route as RouteContextT) : null;
+  const root = ctx ? findRootArticle(ctx, { isMostClosest: false }) : null;
+  const sidebar = ctx ? getRootSidebarItems(ctx.assign({ rest: [] })) : null;
+  const breadcrumbs = ctx ? getBreadcrumbsItems(ctx) : null;
 
   return {
     article,
     sidebar,
+    breadcrumbs,
     product: root?.shortTitle ?? null,
     isFallbackContent: route.language !== article?.lang,
   };

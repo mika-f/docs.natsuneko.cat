@@ -13,9 +13,10 @@ featuredLinks:
 versions:
   - latest
   - "2.0"
-children:
-  - ./overview
-  - ./installation
+navigation:
+  children:
+    - ./overview
+    - ./installation
 changelog:
   repository: mika-f/nekodraw
 ---

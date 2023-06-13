@@ -33,6 +33,22 @@ const Changelog = defineNestedType(() => ({
   },
 }));
 
+const Category = defineNestedType(() => ({
+  name: "Category",
+  fields: {
+    name: { type: "string", required: false },
+    items: { type: "list", of: { type: "string" }, required: true },
+  },
+}));
+
+const Navigation = defineNestedType(() => ({
+  name: "Navigation",
+  fields: {
+    children: { type: "list", of: { type: "string", required: false } },
+    categories: { type: "list", of: Category, required: false },
+  },
+}));
+
 const Article = defineDocumentType(() => ({
   name: "Article",
   filePathPattern: "**/*.{md,mdx}",
@@ -50,7 +66,7 @@ const Article = defineDocumentType(() => ({
     introLinks: { type: "list", of: IntroLinks, required: false },
     featuredLinks: { type: "list", of: FeaturedLinks, required: false },
     versions: { type: "list", of: { type: "string" } },
-    children: { type: "list", of: { type: "string" }, required: false },
+    navigation: { type: "nested", of: Navigation, required: false },
     changelog: { type: "nested", of: Changelog, required: false },
   },
   computedFields: {

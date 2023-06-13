@@ -1,5 +1,5 @@
 import { getTableOfContents } from "@/lib/toc";
-import { Breadcrumb, BreadcrumbItem } from "../Breadcrumb";
+import { Breadcrumb } from "../Breadcrumb";
 import { Markdown } from "../Markdown";
 import { TableOfContents } from "../TableOfContents";
 import { Heading } from "../Typography";
@@ -11,24 +11,18 @@ const ProductArticle = () => {
   const ctx = useArticleContext();
   const route = useRouteContext();
 
-  const { article, product } = ctx;
+  const { article, breadcrumbs } = ctx;
   const body = article!.body;
   const { shortTitle, intro } = article!;
   const toc = getTableOfContents(body.raw);
-  const items: BreadcrumbItem[] = product
-    ? [
-        { label: product, href: route.build({ rest: [] }) },
-        { label: article!.shortTitle! },
-      ]
-    : [];
 
   return (
     <BaseLayout>
       <div className="items-start 2xl:flex">
         <div className="flex-1">
-          {items.length > 1 && (
+          {breadcrumbs && breadcrumbs.length > 1 && (
             <div className="mb-4">
-              <Breadcrumb items={items} />
+              <Breadcrumb items={breadcrumbs} />
             </div>
           )}
           <Heading level={1}>{shortTitle}</Heading>

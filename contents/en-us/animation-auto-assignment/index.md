@@ -14,10 +14,11 @@ featuredLinks:
 versions:
   - latest
   - "2.0"
-children:
-  - ./overview
-  - ./installation
-  - ./using-extension
+navigation:
+  children:
+    - ./overview
+    - ./installation
+    - ./using-extension
 changelog:
   repository: natsuneko-laboratory/animation-auto-assignment
 ---

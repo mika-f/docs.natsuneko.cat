@@ -14,10 +14,11 @@ featuredLinks:
 versions:
   - latest
   - "2.0"
-children:
-  - ./overview
-  - ./getting-started
-  - ./properties
+navigation:
+  children:
+    - ./overview
+    - ./getting-started
+    - ./properties
 changelog:
   repository: natsuneko-laboratory/create-unitypackage
 ---

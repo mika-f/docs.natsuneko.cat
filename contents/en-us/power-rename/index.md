@@ -18,14 +18,15 @@ featuredLinks:
 versions:
   - latest
   - "2.0"
-children:
-  - ./overview
-  - ./installation
-  - ./usage
-  - ./conventions
-  - ./recipes
-  - ./extensions
-  - ./with-animation
+navigation:
+  children:
+    - ./overview
+    - ./installation
+    - ./usage
+    - ./conventions
+    - ./recipes
+    - ./extensions
+    - ./with-animation
 changelog:
   repository: natsuneko-laboratory/power-rename
 ---

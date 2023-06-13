@@ -16,10 +16,11 @@ featuredLinks:
 versions:
   - latest
   - "2.0"
-children:
-  - ./overview
-  - ./getting-started
-  - ./methods
+navigation:
+  children:
+    - ./overview
+    - ./getting-started
+    - ./methods
 changelog:
   repository: natsuneko-laboratory/unitypackage
 ---

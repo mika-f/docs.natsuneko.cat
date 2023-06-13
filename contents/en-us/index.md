@@ -28,11 +28,9 @@ featuredLinks:
   #     - ./installation
   #     - ./using-addon
 
-  # - title: "@natsuneko-laboratory/checkout-lfs"
-  #   items:
-  #     - ./security-guides
-  #     - ./installation
-  #     - ./using-addon
+  - title: "checkout-lfs"
+    items:
+      - ./checkout-lfs/overview
 
   - title: "create-unitypackage"
     items:
@@ -74,11 +72,9 @@ featuredLinks:
   #     - ./installation
   #     - ./using-addon
 
-  # - title: Refractions
-  #   items:
-  #     - ./security-guides
-  #     - ./installation
-  #     - ./using-addon
+  - title: Refractions
+    items:
+      - ./refractions/overview
 
   # - title: SDK2 Compat View
   #   items:
@@ -114,11 +110,14 @@ featuredLinks:
   #     - ./installation
   #     - ./using-addon
 
-children:
-  - ./animation-auto-assignment
-  - ./create-unitypackage
-  - ./drag-and-drop-support
-  - ./nekodraw
-  - ./power-rename
-  - ./unitypackage
+navigation:
+  children:
+    - ./animation-auto-assignment
+    - ./checkout-lfs
+    - ./create-unitypackage
+    - ./drag-and-drop-support
+    - ./nekodraw
+    - ./power-rename
+    - ./refractions
+    - ./unitypackage
 ---
