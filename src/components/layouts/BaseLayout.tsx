@@ -29,7 +29,7 @@ const BaseLayout: React.FC<Props> = ({ children }) => {
       ) : null}
       <div className="container mx-auto flex h-full">
         {sidebar && (
-          <div className="hidden py-8 md:w-64 lg:block lg:w-72 xl:w-80 2xl:w-96">
+          <div className="hidden grow-0 overflow-hidden py-8 md:w-64 lg:block lg:w-72 xl:w-80 2xl:w-96">
             <SideNav title={product ?? undefined} items={sidebar} />
           </div>
         )}

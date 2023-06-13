@@ -27,7 +27,6 @@ const getReleases = async (repo: string): Promise<Response> => {
 
 const Changelog = async ({ repo }: Props) => {
   const re = await getReleases(repo);
-  console.log(re);
 
   return (
     <div className="flex flex-col">
