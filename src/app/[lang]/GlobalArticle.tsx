@@ -8,6 +8,7 @@ import {
 } from "@/components/contexts/ArticleContext";
 import {
   RouteContextProps,
+  buildRouteContext,
   useRouteContext,
 } from "@/components/contexts/RouteContext";
 import { ProductArticle } from "@/components/layouts/ProductArticle";
@@ -28,7 +29,8 @@ const getMetadata = async (
   route: RouteContextProps,
   parent: ResolvingMetadata
 ): Promise<Metadata> => {
-  const ctx = getArticleContext({ ...route });
+  const routing = buildRouteContext(route);
+  const ctx = getArticleContext({ ...routing });
   const { article } = ctx;
   const title = getTitle(ctx);
 

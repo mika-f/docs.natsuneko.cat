@@ -94,5 +94,13 @@ const useRouteContext = (): RouteContextT => {
   };
 };
 
-export { RouteContext, useRouteContext };
+const buildRouteContext = (context: RouteContextProps): RouteContextT => {
+  return {
+    ...context,
+    assign: (ctx: ModifiedPathParams) => assign(context, ctx),
+    build: (ctx: ModifiedPathParams) => build(context, ctx),
+  };
+};
+
+export { RouteContext, useRouteContext, buildRouteContext };
 export type { RouteContextT, RouteContextProps };
