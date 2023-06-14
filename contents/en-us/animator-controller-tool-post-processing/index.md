@@ -10,7 +10,6 @@ featuredLinks:
   - title: Start Here
     items:
       - ./installation
-      - ./using-extension
 versions:
   - latest
   - "2.0"
@@ -18,7 +17,7 @@ navigation:
   children:
     - ./overview
     - ./installation
-    - ./using-extension
+    - ./license
 changelog:
   repository: natsuneko-laboratory/animator-controller-tool-post-processing
 ---

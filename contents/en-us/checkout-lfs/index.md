@@ -21,6 +21,7 @@ navigation:
     - ./overview
     - ./getting-started
     - ./properties
+    - ./license
 changelog:
   repository: natsuneko-laboratory/checkout-lfs
 ---

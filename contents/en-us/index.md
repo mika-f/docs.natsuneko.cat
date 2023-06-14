@@ -14,6 +14,10 @@ featuredLinks:
     items:
       - ./animator-controller-tool-post-processing/overview
 
+  - title: Automatic Material Duplicator
+    items:
+      - ./automatic-material-duplicator/overview
+
   #- title: Asset Lens
   #  items:
   #    - ./security-guides
@@ -112,6 +116,7 @@ navigation:
   children:
     - ./animation-auto-assignment
     - ./animator-controller-tool-post-processing
+    - ./automatic-material-duplicator
     - ./checkout-lfs
     - ./create-unitypackage
     - ./drag-and-drop-support

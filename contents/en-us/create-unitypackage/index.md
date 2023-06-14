@@ -19,6 +19,7 @@ navigation:
     - ./overview
     - ./getting-started
     - ./properties
+    - ./license
 changelog:
   repository: natsuneko-laboratory/create-unitypackage
 ---

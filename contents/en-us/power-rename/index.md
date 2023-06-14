@@ -27,6 +27,7 @@ navigation:
     - ./recipes
     - ./extensions
     - ./with-animation
+    - ./license
 changelog:
   repository: natsuneko-laboratory/power-rename
 ---

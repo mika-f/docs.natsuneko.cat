@@ -21,6 +21,7 @@ navigation:
     - ./overview
     - ./getting-started
     - ./methods
+    - ./license
 changelog:
   repository: natsuneko-laboratory/unitypackage
 ---

@@ -22,6 +22,7 @@ navigation:
     - ./getting-started
     - ./api
     - ./example
+    - ./license
 changelog:
   repository: natsuneko-laboratory/refractions
 ---

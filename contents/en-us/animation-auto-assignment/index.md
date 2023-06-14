@@ -19,6 +19,7 @@ navigation:
     - ./overview
     - ./installation
     - ./using-extension
+    - ./license
 changelog:
   repository: natsuneko-laboratory/animation-auto-assignment
 ---

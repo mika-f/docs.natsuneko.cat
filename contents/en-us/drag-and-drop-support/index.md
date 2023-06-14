@@ -26,6 +26,7 @@ navigation:
     - ./supported-versions
     - ./issues
     - ./security-guides
+    - ./license
 changelog:
   repository: mika-f/blender-drag-and-drop
 ---
