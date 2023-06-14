@@ -10,11 +10,9 @@ featuredLinks:
     items:
       - ./animation-auto-assignment/overview
 
-  # - title: Animator Controller Tool Post Processing
-  #   items:
-  #     - ./security-guides
-  #     - ./installation
-  #     - ./using-addon
+  - title: Animator Controller Tool Post Processing
+    items:
+      - ./animator-controller-tool-post-processing/overview
 
   #- title: Asset Lens
   #  items:
@@ -113,6 +111,7 @@ featuredLinks:
 navigation:
   children:
     - ./animation-auto-assignment
+    - ./animator-controller-tool-post-processing
     - ./checkout-lfs
     - ./create-unitypackage
     - ./drag-and-drop-support
