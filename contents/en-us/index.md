@@ -18,11 +18,9 @@ featuredLinks:
     items:
       - ./automatic-material-duplicator/overview
 
-  #- title: Asset Lens
-  #  items:
-  #    - ./security-guides
-  #    - ./installation
-  #    - ./using-addon
+  - title: Asset Lens
+    items:
+      - ./asset-lens/overview
 
   # - title: Bone Convention Switcher
   #   items:
@@ -116,6 +114,7 @@ navigation:
   children:
     - ./animation-auto-assignment
     - ./animator-controller-tool-post-processing
+    - ./asset-lens
     - ./automatic-material-duplicator
     - ./checkout-lfs
     - ./create-unitypackage
