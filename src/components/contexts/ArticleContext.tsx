@@ -169,8 +169,6 @@ const getCategorizedSidebarItems = (
 };
 
 const getRootSidebarItems = (route: RouteContextT): SideBar | null => {
-  console.log("====================================");
-
   const product = route.product;
   const article = findRootArticle(route);
   const hasNavigation =
