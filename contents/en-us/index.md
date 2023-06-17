@@ -100,15 +100,11 @@ featuredLinks:
 
   # - title: "VPM Registry"
   #   items:
-  #     - ./security-guides
-  #     - ./installation
-  #     - ./using-addon
+  #     - ./vpm/overview
 
-  # - title: "@natsuneko-laboratory/vpmpackage"
-  #   items:
-  #     - ./security-guides
-  #     - ./installation
-  #     - ./using-addon
+  - title: "vpmpackage"
+    items:
+      - ./vpmpackage/overview
 
 navigation:
   children:
@@ -123,4 +119,5 @@ navigation:
     - ./power-rename
     - ./refractions
     - ./unitypackage
+    - ./vpmpackage
 ---
