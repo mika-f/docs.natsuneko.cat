@@ -36,11 +36,9 @@ featuredLinks:
     items:
       - ./create-unitypackage/overview
 
-  # - title: "@natsuneko-laboratory/create-vpmpackage"
-  #   items:
-  #     - ./security-guides
-  #     - ./installation
-  #     - ./using-addon
+  - title: "create-vpmpackage"
+    items:
+      - ./create-vpmpackage/overview
 
   - title: Drag and Drop Support
     items:
@@ -114,6 +112,7 @@ navigation:
     - ./automatic-material-duplicator
     - ./checkout-lfs
     - ./create-unitypackage
+    - ./create-vpmpackage
     - ./drag-and-drop-support
     - ./nekodraw
     - ./power-rename
