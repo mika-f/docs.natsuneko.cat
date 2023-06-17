@@ -9,7 +9,7 @@ versions:
 
 `@natsuneko-laboratory/vpmpackage` provides the following method(s).
 
-## archive(name: string, package: string, dist: string): Promise&lt;void&gt;
+## archive(args: { name: string, package: string, dist: string }): Promise&lt;void&gt;
 
 ### Signature
 
