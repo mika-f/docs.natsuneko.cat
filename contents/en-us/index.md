@@ -32,6 +32,10 @@ featuredLinks:
     items:
       - ./checkout-lfs/overview
 
+  - title: "Constraint by Humanoid"
+    items:
+      - ./constraint-by-humanoid/overview
+
   - title: "create-unitypackage"
     items:
       - ./create-unitypackage/overview
@@ -111,6 +115,7 @@ navigation:
     - ./asset-lens
     - ./automatic-material-duplicator
     - ./checkout-lfs
+    - ./constraint-by-humanoid
     - ./create-unitypackage
     - ./create-vpmpackage
     - ./drag-and-drop-support
