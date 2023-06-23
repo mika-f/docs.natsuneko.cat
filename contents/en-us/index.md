@@ -54,6 +54,10 @@ featuredLinks:
   #     - ./installation
   #     - ./using-addon
 
+  - title: Material Split View
+    items:
+      - ./material-split-view/overview
+
   # - title: NekoBridge
   #   items:
   #     - ./security-guides
@@ -119,6 +123,7 @@ navigation:
     - ./create-unitypackage
     - ./create-vpmpackage
     - ./drag-and-drop-support
+    - ./material-split-view
     - ./nekodraw
     - ./power-rename
     - ./refractions
