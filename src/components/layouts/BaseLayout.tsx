@@ -23,7 +23,6 @@ const BaseLayout: React.FC<Props> = ({ children }) => {
       )}
       {isFallbackContent ? (
         <>
-          {/* @ts-expect-error Async Server Component */}
           <FallbackContent originalLang={article!.lang} lang={route.language} />
         </>
       ) : null}
