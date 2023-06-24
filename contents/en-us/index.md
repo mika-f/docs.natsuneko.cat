@@ -88,11 +88,9 @@ featuredLinks:
   #     - ./installation
   #     - ./using-addon
 
-  # - title: TextMesh Creator
-  #   items:
-  #     - ./security-guides
-  #     - ./installation
-  #     - ./using-addon
+  - title: TextMesh Creator
+    items:
+      - ./text-mesh-creator/overview
 
   # - title: TraceMate
   #   items:
@@ -127,6 +125,7 @@ navigation:
     - ./nekodraw
     - ./power-rename
     - ./refractions
+    - ./text-mesh-creator
     - ./unitypackage
     - ./vpmpackage
 ---
