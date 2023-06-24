@@ -69,7 +69,6 @@ const ProductLanding = () => {
               Changelog
             </div>
             <Suspense fallback={<p className="px-2 py-4">Fetching......</p>}>
-              {/* @ts-expect-error Async Server Component */}
               <Changelog repo={changelog.repository} />
             </Suspense>
           </div>
