@@ -41,7 +41,7 @@ This is recommended for already managing existing packages by Unity Package Mana
 
 1. Open Package Manager Window
 1. Select `Add package by name`
-1. Enter `cat.natsuneko.hierarchy-stalker`
+1. Enter `cat.natsuneko.animation-auto-assignment`
 1. Click `Add`
 
 ### Update
