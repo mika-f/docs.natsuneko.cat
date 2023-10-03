@@ -13,7 +13,7 @@
   @apply border-b border-slate-600;
 }
 
-.rehype-code-title ~ [data-rehype-pretty-code-fragment] pre {
+.rehype-code-title + [data-rehype-pretty-code-fragment] pre {
   @apply mt-0;
 }
 
