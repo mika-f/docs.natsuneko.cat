@@ -4,7 +4,6 @@ shortTitle: Properties
 intro: ""
 versions:
   - latest
-  - "2.0"
 ---
 
 `@natsuneko-laboratory/create-vpmpackage` can configure the following properties:

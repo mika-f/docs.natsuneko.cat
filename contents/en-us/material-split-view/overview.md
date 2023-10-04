@@ -4,7 +4,6 @@ shortTitle: Overview
 intro: "Material Split View is a Unity editor extension to preview the material with the split view."
 versions:
   - latest
-  - "2.0"
 ---
 
 You can easily compare two materials in split view with Material Split View.

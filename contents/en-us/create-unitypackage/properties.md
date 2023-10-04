@@ -4,7 +4,6 @@ shortTitle: Properties
 intro: ""
 versions:
   - latest
-  - "2.0"
 ---
 
 `@natsuneko-laboratory/create-unitypackage` can configure the following properties:

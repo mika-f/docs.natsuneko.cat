@@ -3,7 +3,6 @@ title: Recipes
 shortTitle: Recipes
 versions:
   - latest
-  - "2.0"
 ---
 
 This article describe some recipes for Power Rename.

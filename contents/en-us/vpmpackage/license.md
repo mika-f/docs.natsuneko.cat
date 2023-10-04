@@ -4,10 +4,9 @@ shortTitle: License
 intro: ""
 versions:
   - latest
-  - "2.0"
 ---
 
-This section describes the license and support information for this extension.
+This section describes the license and support information for this package.
 
 ## Open Source License
 

@@ -4,7 +4,6 @@ shortTitle: Usage
 intro:
 versions:
   - latest
-  - "2.0"
 ---
 
 Asset Lens can be used from the context menu `Find References in Project` of the Project window.

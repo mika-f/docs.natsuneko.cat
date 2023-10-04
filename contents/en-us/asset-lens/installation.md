@@ -4,7 +4,6 @@ shortTitle: Installation
 intro: ""
 versions:
   - latest
-  - "2.0"
 ---
 
 You can install Asset Lens using UnityPackage, OpenUPM, or VPM.

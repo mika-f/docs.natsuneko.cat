@@ -66,7 +66,7 @@ const ProductLanding = () => {
         {changelog && (
           <div>
             <div className="border-b border-neutral-600 pb-4 text-lg font-bold">
-              Changelog
+              {route.language === "ja-jp" ? "更新履歴" : "Changelog"}
             </div>
             <Suspense fallback={<p className="px-2 py-4">Fetching......</p>}>
               <Changelog repo={changelog.repository} />

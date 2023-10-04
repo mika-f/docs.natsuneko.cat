@@ -4,7 +4,6 @@ shortTitle: Getting Started
 intro: ""
 versions:
   - latest
-  - "2.0"
 ---
 
 `@natsuneko-laboratory/checkout-lfs` is available as GitHub Actions and you can use it by adding following code to your workflow.

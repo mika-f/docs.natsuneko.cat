@@ -4,7 +4,6 @@ shortTitle: Overview
 intro: "Animation Auto Assignment is an editor extension for Unity to automatically re-assign animation clips to the object based on the hierarchy movements of the animation clip."
 versions:
   - latest
-  - "2.0"
 ---
 
 Animation Auto Assignment is an editor extension for Unity to automatically re-assign animation clips to the object based on the hierarchy movements of the animation clip.

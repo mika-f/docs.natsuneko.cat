@@ -15,7 +15,7 @@ featuredLinks:
       - ./methods
 versions:
   - latest
-  - "2.0"
+
 navigation:
   children:
     - ./overview

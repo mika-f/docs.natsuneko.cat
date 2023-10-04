@@ -4,7 +4,6 @@ shortTitle: Settings
 intro:
 versions:
   - latest
-  - "2.0"
 ---
 
 Asset Lens can be configured from `Project Settings` > `Editor` > `Asset Lens`.

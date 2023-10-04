@@ -4,7 +4,6 @@ shortTitle: Properties
 intro:
 versions:
   - latest
-  - "2.0"
 ---
 
 TextMesh Creator has the following properties to customize the text mesh.
@@ -30,8 +29,12 @@ TextMesh Creator has the following properties to customize the text mesh.
 | Use Decimate            |    No    | `bool`                                                   | Use decimate modifier to reduce vertices     |
 | Decimate Ratio          |    No    | `float`                                                  | The ratio of decimate modifier               |
 | Separate by Loose Parts |    No    | `bool`                                                   | Separate by loose parts                      |
+| Outlined                |    No    | `bool`                                                   | Generate mesh as outlined                    |
+| Outline Thickness       |    No    | `float`                                                  | The thickness of outline                     |
+| Outline Threshold       |    No    | `float`                                                  | The threshold of outline                     |
 | Center to Origin        |    No    | `bool`                                                   | Center to origin                             |
 | Enable Preview Mode     |    No    | `bool`                                                   | Enable preview mode                          |
+| Enable Legacy Preview   |    No    | `bool`                                                   | Enable legacy preview mode                   |
 | Increment From          |    No    | `int`                                                    | The number to start incrementing from        |
 | Export Directory        |   Yes    | `string`                                                 | The directory to export the text mesh to     |
 

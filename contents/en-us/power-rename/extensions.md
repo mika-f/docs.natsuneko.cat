@@ -4,7 +4,6 @@ shortTitle: Extensions
 intro: "Power Rename can be extended by adding your own naming convention."
 versions:
   - latest
-  - "2.0"
 ---
 
 If you can write C#, you can add your own naming convention to Power Rename.

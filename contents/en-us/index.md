@@ -102,6 +102,10 @@ featuredLinks:
     items:
       - ./unitypackage/overview
 
+  - title: "UStyled"
+    items:
+      - ./ustyled/overview
+
   # - title: "VPM Registry"
   #   items:
   #     - ./vpm/overview
@@ -127,5 +131,6 @@ navigation:
     - ./refractions
     - ./text-mesh-creator
     - ./unitypackage
+    - ./ustyled
     - ./vpmpackage
 ---

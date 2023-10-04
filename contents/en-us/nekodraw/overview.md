@@ -4,7 +4,6 @@ shortTitle: Overview
 intro: "NekoDraw is an AI powered Illustration Assistant for CLIP STUDIO PAINT."
 versions:
   - latest
-  - "2.0"
 ---
 
 ![](https://user-images.githubusercontent.com/10832834/235712973-cb5b32a6-ad2d-4beb-8aa3-575d20566c87.png)

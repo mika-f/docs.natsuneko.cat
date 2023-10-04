@@ -4,7 +4,6 @@ shortTitle: Security Guides
 intro: ""
 versions:
   - latest
-  - "2.0"
 ---
 
 This add-on uses a technology called [DLL Injection](https://www.wikiwand.com/en/DLL%20injection) to achieve the following behaviours:

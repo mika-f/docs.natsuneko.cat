@@ -4,7 +4,6 @@ shortTitle: Overview
 intro: "Animator Controller Tool Post Processing is an editor extension for Unity to improve default behavior of Animator Controller Tool."
 versions:
   - latest
-  - "2.0"
 ---
 
 Animator Controller Tool Post Processing is an editor extension for Unity to improve default behavior of Animator Controller Tool to VRChat officially recommended settings.  

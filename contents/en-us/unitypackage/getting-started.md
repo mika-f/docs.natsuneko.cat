@@ -4,7 +4,6 @@ shortTitle: Getting Started
 intro: ""
 versions:
   - latest
-  - "2.0"
 ---
 
 ## Requirements

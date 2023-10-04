@@ -4,7 +4,6 @@ shortTitle: Overview
 intro: "Power Rename for Unity is Unity editor extension for renaming GameObjects in hierarchy."
 versions:
   - latest
-  - "2.0"
 ---
 
 This extension supports renaming GameObjects in hierarchy.

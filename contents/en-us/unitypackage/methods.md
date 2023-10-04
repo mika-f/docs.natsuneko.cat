@@ -4,7 +4,6 @@ shortTitle: Methods
 intro: ""
 versions:
   - latest
-  - "2.0"
 ---
 
 `@natsuneko-laboratory/unitypackage` provides the following method(s).

@@ -4,7 +4,6 @@ shortTitle: Installation
 intro: ""
 versions:
   - latest
-  - "2.0"
 ---
 
 ## Install
@@ -18,7 +17,6 @@ versions:
 
 ## Update
 
-
 1. Download Latest Installation Archive from [GitHub Releases](https://github.com/mika-f/text-mesh-creator/releases/latest)
 2. Extract downloaded archive
 3. Open the `Preferences` window and select `Add-ons` tab
@@ -28,6 +26,6 @@ versions:
 
 ## Disable
 
-You can disable this add-on via `Preferences` window.  
+You can disable this add-on via `Preferences` window.
 
 ## Uninstall

@@ -3,7 +3,6 @@ title: Supports Conventions
 shortTitle: Conventions
 versions:
   - latest
-  - "2.0"
 ---
 
 Power Rename supports the following naming conventions by default.

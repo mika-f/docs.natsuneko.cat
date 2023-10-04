@@ -4,7 +4,6 @@ shortTitle: Using Extension
 intro: "How to use Animation Auto Assignment"
 versions:
   - latest
-  - "2.0"
 ---
 
 ## Start Tracking Changes

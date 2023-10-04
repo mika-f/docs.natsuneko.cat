@@ -4,7 +4,6 @@ shortTitle: RefractionsResolver.GetStrictly
 intro: Reference
 versions:
   - latest
-  - "2.0"
 ---
 
 ## Definition

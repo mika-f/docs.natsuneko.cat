@@ -4,7 +4,6 @@ shortTitle: Overview
 intro: "Drag and Drop Support is an Blender add-on for enabling file imports by drag-and-drop via Explorer."
 versions:
   - latest
-  - "2.0"
 ---
 
 This addon supports the following formats for import:

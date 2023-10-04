@@ -4,7 +4,6 @@ shortTitle: Overview
 intro: Refractions is a .NET reflection library for .NET Standard 2.0 (for Unity backward compatibles).
 versions:
   - latest
-  - "2.0"
 ---
 
 Refractions provides the interface-based reflection for type-safe and fast reflection.  

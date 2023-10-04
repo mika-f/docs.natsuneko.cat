@@ -4,7 +4,6 @@ shortTitle: Usage
 intro:
 versions:
   - latest
-  - "2.0"
 ---
 
 Material Split View can be used from the `Natsuneko Laboratory` > `Split Material` in the menu bar.  

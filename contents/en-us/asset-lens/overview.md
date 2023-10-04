@@ -4,7 +4,6 @@ shortTitle: Overview
 intro: "Asset Lens is the fastest editor extension for Unity to search asset references and dependencies."
 versions:
   - latest
-  - "2.0"
 ---
 
 Asset Lens is the fastest editor extension for Unity to search asset references.

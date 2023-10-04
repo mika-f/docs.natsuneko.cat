@@ -4,7 +4,6 @@ shortTitle: Usage
 intro:
 versions:
   - latest
-  - "2.0"
 ---
 
 ## Enable Automatic Material Duplicator

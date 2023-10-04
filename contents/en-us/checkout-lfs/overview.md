@@ -4,7 +4,6 @@ shortTitle: Overview
 intro: "@natsuneko-laboratory/checkout-lfs is a GitHub Actions to use non-GitHub provided Git LFS server in your workflow."
 versions:
   - latest
-  - "2.0"
 ---
 
 `@natsuneko-laboratory/create-unitypackage` is a GitHub Actions to use **own** Git LFS server in your workflow.

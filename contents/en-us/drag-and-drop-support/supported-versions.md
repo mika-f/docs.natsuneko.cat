@@ -4,7 +4,6 @@ shortTitle: Supported Versions
 intro: ""
 versions:
   - latest
-  - "2.0"
 ---
 
 This add-on supports the following versions of Blender:

@@ -27,7 +27,7 @@ const LanguageSwitch: React.FC = () => {
   const changeLanguage = useCallback(
     (code: string) => {
       const url = [code, params.product, params.version, params.rest].join("/");
-      router.push(url);
+      router.push(`/${url}`);
     },
     // eslint-disable-next-line react-hooks/exhaustive-deps
     [pathname, router, setLocked]
