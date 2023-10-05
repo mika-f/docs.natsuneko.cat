@@ -33,6 +33,7 @@ TextMesh Creator has the following properties to customize the text mesh.
 | Outline Thickness       |    No    | `float`                                                  | The thickness of outline                     |
 | Outline Threshold       |    No    | `float`                                                  | The threshold of outline                     |
 | Center to Origin        |    No    | `bool`                                                   | Center to origin                             |
+| Unique                  |    No    | `bool`                                                   | Filter output files as unique                |
 | Enable Preview Mode     |    No    | `bool`                                                   | Enable preview mode                          |
 | Enable Legacy Preview   |    No    | `bool`                                                   | Enable legacy preview mode                   |
 | Increment From          |    No    | `int`                                                    | The number to start incrementing from        |

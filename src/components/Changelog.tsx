@@ -16,7 +16,7 @@ type Response = Release[];
 const getReleases = async (repo: string): Promise<Response> => {
   const response = await fetch(
     `https://api.github.com/repos/${repo}/releases?per_page=5`,
-    { next: { revalidate: 60 * 60 * 24 } }
+    { next: { revalidate: 60 * 60 * 1 } }
   );
   if (response.ok) {
     return response.json() as Promise<Response>;
