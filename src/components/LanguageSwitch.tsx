@@ -10,7 +10,12 @@ const LanguageSwitch: React.FC = () => {
   const [state, setState] = useState(false);
   const [locked, setLocked] = useLockedBody(false, "body");
   const pathname = usePathname();
-  const params = useParams();
+  const params = useParams<{
+    lang: string;
+    product: string;
+    version: string;
+    rest: string;
+  }>()!;
   const router = useRouter();
   const { lang } = params;
 
