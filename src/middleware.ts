@@ -13,10 +13,11 @@ export const config = {
      * - api (API routes)
      * - _next/static (static files)
      * - _next/image (image optimization files)
+     * - sitemap-dynamic
      * - favicon.ico (favicon file)
      */
     // "/((?!api|_next/static|_next/image|favicon.ico).*)",
-    "/((?!api|_next/static|_next/image|.well-known|.*.ico|.*.png|.*.svg|.*.txt).*)",
+    "/((?!api|_next/static|_next/image|.well-known|sitemap-dynamic/|.*.ico|.*.png|.*.svg|.*.txt|sitemap.xml).*)",
   ],
 };
 
