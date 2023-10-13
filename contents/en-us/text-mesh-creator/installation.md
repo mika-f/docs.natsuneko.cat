@@ -8,7 +8,7 @@ versions:
 
 ## Install
 
-1. Download Installation Archive from [GitHub Releases](https://github.com/mika-f/text-mesh-creator/releases/latest)
+1. Download Installation Archive from [BOOTH](https://natsuneko-vrc.booth.pm/items/3853084)
 2. Extract downloaded archive
 3. Open the `Preferences` window and select `Add-ons` tab
 4. Press `Install` button
@@ -17,7 +17,7 @@ versions:
 
 ## Update
 
-1. Download Latest Installation Archive from [GitHub Releases](https://github.com/mika-f/text-mesh-creator/releases/latest)
+1. Download Latest Installation Archive from [BOOTH](https://natsuneko-vrc.booth.pm/items/3853084)
 2. Extract downloaded archive
 3. Open the `Preferences` window and select `Add-ons` tab
 4. Press `Install` button
