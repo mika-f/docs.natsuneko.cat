@@ -1,5 +1,5 @@
 import { allDocuments } from ".contentlayer/generated";
-import { LANGUAGE_CODES } from "./i18n";
+import { LANGUAGE_CODES } from "@/configurations/internationalization";
 
 const HOST = "https://docs.natsuneko.cat";
 const THRESHOLD = 10000;
