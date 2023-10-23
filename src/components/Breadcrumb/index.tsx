@@ -11,7 +11,7 @@ type Props = {
 const Breadcrumb: React.FC<Props> = ({ items }) => {
   return (
     <nav>
-      <ul className="flex gap-x-2 text-sm text-neutral-300">
+      <ul className="flex flex-wrap gap-x-2 gap-y-2 text-sm text-neutral-300">
         {items.map((w, i) => {
           const isNotLast = i !== items.length - 1;
           return (

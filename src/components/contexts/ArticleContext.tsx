@@ -1,7 +1,7 @@
 import { Article, Category, allArticles } from "contentlayer/generated";
 import { createServerContext, useContext } from "react";
 
-import { FALLBACK } from "@/lib/i18n";
+import { FALLBACK_LANGUAGE } from "@/configurations/internationalization";
 
 import {
   RouteContextProps,
@@ -55,7 +55,7 @@ const findArticle = (route: RouteContextProps): Article | null => {
 
   const article =
     matchedVersionArticles.find((w) => w.lang === route.language) ??
-    matchedRouteArticles.find((w) => w.lang === FALLBACK) ??
+    matchedRouteArticles.find((w) => w.lang === FALLBACK_LANGUAGE) ??
     null;
 
   return article;

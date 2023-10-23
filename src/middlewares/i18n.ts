@@ -1,9 +1,10 @@
 import acceptLanguage from "accept-language";
-import { NextResponse } from "next/server";
+import { NextRequest, NextResponse } from "next/server";
 
-import { FALLBACK, LANGUAGE_CODES } from "@/lib/i18n";
-
-import { NextRequest } from "next/server";
+import {
+  FALLBACK_LANGUAGE,
+  LANGUAGE_CODES,
+} from "@/configurations/internationalization";
 
 const cookie = "lang";
 
@@ -11,14 +12,20 @@ acceptLanguage.languages(LANGUAGE_CODES);
 
 const getLanguageFromRequest = (req: NextRequest) => {
   if (req.cookies.has(cookie)) {
-    return acceptLanguage.get(req.cookies.get(cookie)?.value) ?? FALLBACK;
+    return (
+      acceptLanguage.get(req.cookies.get(cookie)?.value) ?? FALLBACK_LANGUAGE
+    );
   }
 
-  return acceptLanguage.get(req.headers.get("accept-language")) ?? FALLBACK;
+  return (
+    acceptLanguage.get(req.headers.get("accept-language")) ?? FALLBACK_LANGUAGE
+  );
 };
 
 const getLanguageFromPath = (path: string) => {
-  return LANGUAGE_CODES.find((w) => path.startsWith(`/${w}`)) ?? FALLBACK;
+  return (
+    LANGUAGE_CODES.find((w) => path.startsWith(`/${w}`)) ?? FALLBACK_LANGUAGE
+  );
 };
 
 const hasLanguageInPath = (path: string) => {

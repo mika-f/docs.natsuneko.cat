@@ -1,7 +1,11 @@
-import { FALLBACK, LANGUAGE_CODES } from "@/lib/i18n";
 import { createInstance } from "i18next";
 import resourcesToBackend from "i18next-resources-to-backend";
 import { initReactI18next } from "react-i18next/initReactI18next";
+
+import {
+  FALLBACK_LANGUAGE,
+  LANGUAGE_CODES,
+} from "@/configurations/internationalization";
 
 const initI18next = async (lang: string | undefined, ns: string | string[]) => {
   const instance = createInstance();
@@ -16,7 +20,7 @@ const initI18next = async (lang: string | undefined, ns: string | string[]) => {
     .init(
       {
         supportedLngs: LANGUAGE_CODES,
-        fallbackLng: FALLBACK,
+        fallbackLng: FALLBACK_LANGUAGE,
         lng: lang,
         fallbackNS: "translation",
         defaultNS: "translation",
@@ -38,7 +42,7 @@ const useTranslation = async (
 
   return {
     t: instance.getFixedT(
-      lang ?? FALLBACK,
+      lang ?? FALLBACK_LANGUAGE,
       Array.isArray(ns) ? ns[0] : ns,
       options.keyPrefix
     ),

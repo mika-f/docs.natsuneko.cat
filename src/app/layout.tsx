@@ -2,15 +2,15 @@ import { Metadata } from "next";
 import { Noto_Sans_JP } from "next/font/google";
 import Script from "next/script";
 
+import { dir } from "i18next";
+
 import { Analytics } from "@vercel/analytics/react";
 
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
-
-import { FALLBACK } from "@/lib/i18n";
+import { FALLBACK_LANGUAGE } from "@/configurations/internationalization";
 import { merge } from "@/lib/utils";
 import "@/styles/globals.css";
-import { dir } from "i18next";
 
 const noto = Noto_Sans_JP({ subsets: ["latin"] });
 
@@ -67,7 +67,11 @@ export default function RootLayout({
   params: { lang?: string };
 }) {
   return (
-    <html lang="en" className="scroll-pt-20" dir={dir(params.lang ?? FALLBACK)}>
+    <html
+      lang="en"
+      className="scroll-pt-20"
+      dir={dir(params.lang ?? FALLBACK_LANGUAGE)}
+    >
       <head>
         <link
           rel="apple-touch-icon"

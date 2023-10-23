@@ -1,7 +1,7 @@
 "use client";
 
+import { LANGUAGES } from "@/configurations/internationalization";
 import { useLockedBody } from "@/hooks/useLockedBody";
-import { LANGUAGES } from "@/lib/i18n";
 import { useParams, usePathname, useRouter } from "next/navigation";
 import { useCallback, useEffect, useState } from "react";
 import { Portal } from "./Portal";

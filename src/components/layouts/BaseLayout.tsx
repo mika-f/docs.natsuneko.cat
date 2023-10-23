@@ -1,4 +1,7 @@
+import { FALLBACK_LANGUAGE } from "@/configurations/internationalization";
+import { BANNER } from "@/configurations/notification";
 import { merge } from "@/lib/utils";
+import { Banner } from "../Banner";
 import { FallbackContent } from "../FallbackContent";
 import { OverlayNav } from "../OverlayNav";
 import { SideNav } from "../SideNav";
@@ -13,6 +16,7 @@ const BaseLayout: React.FC<Props> = ({ children }) => {
   const ctx = useArticleContext();
   const route = useRouteContext();
   const { article, isFallbackContent, product, sidebar } = ctx;
+  const { content } = BANNER;
 
   return (
     <div className="flex h-full w-full max-w-full flex-col">
@@ -24,6 +28,13 @@ const BaseLayout: React.FC<Props> = ({ children }) => {
       {isFallbackContent ? (
         <>
           <FallbackContent originalLang={article!.lang} lang={route.language} />
+        </>
+      ) : null}
+      {content ? (
+        <>
+          <Banner
+            content={content[route.language ?? content[FALLBACK_LANGUAGE]]}
+          />
         </>
       ) : null}
       <div className="container mx-auto flex h-full">

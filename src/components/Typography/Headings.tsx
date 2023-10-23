@@ -24,7 +24,7 @@ const Heading: React.FC<Props> = ({ level, children, className, ...props }) => {
       return (
         <h2
           className={merge(
-            "break-words border-b border-neutral-600 pb-2 text-2xl font-bold [&:not(:first-child)]:mt-12",
+            "mb-4 break-words border-b border-neutral-600 pb-2 text-2xl font-bold [&:not(:first-child)]:mt-12",
             className
           )}
           {...props}
@@ -37,7 +37,7 @@ const Heading: React.FC<Props> = ({ level, children, className, ...props }) => {
       return (
         <h3
           className={merge(
-            "break-words border-b border-neutral-600 pb-2 text-xl font-bold [&:not(:first-child)]:mt-12",
+            "mb-4 break-words border-b border-neutral-600 pb-2 text-xl font-bold [&:not(:first-child)]:mt-12",
             className
           )}
           {...props}
