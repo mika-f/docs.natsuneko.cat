@@ -98,6 +98,10 @@ featuredLinks:
   #     - ./installation
   #     - ./using-addon
 
+  - title: "Udon Analyzer"
+    items:
+      - ./udon-analyzer/overview
+
   - title: "unitypackage"
     items:
       - ./unitypackage/overview
@@ -130,6 +134,7 @@ navigation:
     - ./power-rename
     - ./refractions
     - ./text-mesh-creator
+    - ./udon-analyzer
     - ./unitypackage
     - ./ustyled
     - ./vpmpackage
