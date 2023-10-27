@@ -14,7 +14,7 @@ const LanguageSwitch: React.FC = () => {
     lang: string;
     product: string;
     version: string;
-    rest: string;
+    rest: string | string[];
   }>()!;
   const router = useRouter();
   const { lang } = params;
@@ -31,7 +31,8 @@ const LanguageSwitch: React.FC = () => {
 
   const changeLanguage = useCallback(
     (code: string) => {
-      const url = [code, params.product, params.version, params.rest].join("/");
+      const rest = Array.isArray(params.rest) ? params.rest : [params.rest];
+      const url = [code, params.product, params.version, ...rest].join("/");
       router.push(`/${url}`);
     },
     // eslint-disable-next-line react-hooks/exhaustive-deps
