@@ -72,11 +72,9 @@ featuredLinks:
     items:
       - ./power-rename/overview
 
-  # - title: Refined Animation Property
-  #   items:
-  #     - ./security-guides
-  #     - ./installation
-  #     - ./using-addon
+  - title: Refined Animation Property
+    items:
+      - ./refined-animation-property/overview
 
   - title: Refractions
     items:
@@ -132,6 +130,7 @@ navigation:
     - ./material-split-view
     - ./nekodraw
     - ./power-rename
+    - ./refined-animation-property
     - ./refractions
     - ./text-mesh-creator
     - ./udon-analyzer
