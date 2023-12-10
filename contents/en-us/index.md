@@ -54,6 +54,10 @@ featuredLinks:
   #     - ./installation
   #     - ./using-addon
 
+  - title: FBX Batch Export
+    items:
+      - ./fbx-batch-export/overview
+
   - title: Material Split View
     items:
       - ./material-split-view/overview
@@ -127,6 +131,7 @@ navigation:
     - ./create-unitypackage
     - ./create-vpmpackage
     - ./drag-and-drop-support
+    - ./fbx-batch-export
     - ./material-split-view
     - ./nekodraw
     - ./power-rename
