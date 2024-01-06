@@ -8,6 +8,9 @@ dependencies:
   '@contentlayer/source-files':
     specifier: ^0.3.4
     version: 0.3.4(esbuild@0.19.4)
+  '@natsuneko-laboratory/ui':
+    specifier: ^0.1.10
+    version: 0.1.10(react-dom@18.2.0)(react@18.2.0)
   '@vercel/analytics':
     specifier: ^1.0.1
     version: 1.0.1
@@ -144,6 +147,13 @@ packages:
 
   /@babel/runtime@7.23.1:
     resolution: {integrity: sha512-hC2v6p8ZSI/W0HUzh3V8C5g+NwSKzKPtJwSpTjwl0o297GP9+ZLQSkdvHz46CM3LqyoXxq+5G9komY+eSqSO0g==}
+    engines: {node: '>=6.9.0'}
+    dependencies:
+      regenerator-runtime: 0.14.0
+    dev: false
+
+  /@babel/runtime@7.23.7:
+    resolution: {integrity: sha512-w06OXVOFso7LcbzMiDGt+3X7Rh7Ho8MmgPoWU3rarH+8upf+wSU/grlGbWzQyr3DkdN6ZeuMFjpdwW0Q+HxobA==}
     engines: {node: '>=6.9.0'}
     dependencies:
       regenerator-runtime: 0.14.0
@@ -697,6 +707,18 @@ packages:
       vfile: 5.3.7
     transitivePeerDependencies:
       - supports-color
+    dev: false
+
+  /@natsuneko-laboratory/ui@0.1.10(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-GlsGQ618fAjmNNJ71VKHbPZsnvQm0oCMnTRHJhxHoOhNnAbYGxqrSkYZycRCtmcJQ+SRN8MCTY8WwOncNljkug==}
+    peerDependencies:
+      react: ^18.2.0
+      react-dom: ^18.2.0
+    dependencies:
+      clsx: 2.1.0
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+      tailwind-merge: 2.2.0
     dev: false
 
   /@next/env@13.5.4:
@@ -1675,6 +1697,11 @@ packages:
 
   /clsx@1.2.1:
     resolution: {integrity: sha512-EcR6r5a8bj6pu3ycsa/E/cKVGuTgZJZdsyUYHOksG/UHIiKfjxzRxYJpyVBwYaQeOvghal9fcc4PidlgzugAQg==}
+    engines: {node: '>=6'}
+    dev: false
+
+  /clsx@2.1.0:
+    resolution: {integrity: sha512-m3iNNWpd9rl3jvvcBnu70ylMdrXt8Vlq4HYadnU5fwcOtvkSQWPmj7amUcDT2qYI7risszBjI5AUIUox9D16pg==}
     engines: {node: '>=6'}
     dev: false
 
@@ -5034,6 +5061,12 @@ packages:
 
   /tailwind-merge@1.13.2:
     resolution: {integrity: sha512-R2/nULkdg1VR/EL4RXg4dEohdoxNUJGLMnWIQnPKL+O9Twu7Cn3Rxi4dlXkDzZrEGtR+G+psSXFouWlpTyLhCQ==}
+    dev: false
+
+  /tailwind-merge@2.2.0:
+    resolution: {integrity: sha512-SqqhhaL0T06SW59+JVNfAqKdqLs0497esifRrZ7jOaefP3o64fdFNDMrAQWZFMxTLJPiHVjRLUywT8uFz1xNWQ==}
+    dependencies:
+      '@babel/runtime': 7.23.7
     dev: false
 
   /tailwindcss@3.3.2:

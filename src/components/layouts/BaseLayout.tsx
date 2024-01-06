@@ -1,7 +1,9 @@
+import { Banner } from "@natsuneko-laboratory/ui/miscellaneous/banner";
+
 import { FALLBACK_LANGUAGE } from "@/configurations/internationalization";
 import { BANNER } from "@/configurations/notification";
 import { merge } from "@/lib/utils";
-import { Banner } from "../Banner";
+
 import { FallbackContent } from "../FallbackContent";
 import { OverlayNav } from "../OverlayNav";
 import { SideNav } from "../SideNav";
@@ -32,9 +34,9 @@ const BaseLayout: React.FC<Props> = ({ children }) => {
       ) : null}
       {content ? (
         <>
-          <Banner
-            content={content[route.language ?? content[FALLBACK_LANGUAGE]]}
-          />
+          <Banner type="important">
+            {content[route.language ?? content[FALLBACK_LANGUAGE]]}
+          </Banner>
         </>
       ) : null}
       <div className="container mx-auto flex h-full">

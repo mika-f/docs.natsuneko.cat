@@ -2,6 +2,7 @@
   "name": "docs.natsuneko.cat",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -11,6 +12,7 @@
   },
   "dependencies": {
     "@contentlayer/source-files": "^0.3.4",
+    "@natsuneko-laboratory/ui": "^0.1.10",
     "@vercel/analytics": "^1.0.1",
     "accept-language": "^3.0.18",
     "clsx": "^1.2.1",
