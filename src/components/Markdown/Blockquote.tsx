@@ -1,5 +1,6 @@
+import { Admonition} from "@natsuneko-laboratory/ui/miscellaneous/admonition"
+
 import { merge } from "@/lib/utils";
-import { Admonition } from "./Admonition";
 
 type Props = {
   className?: string;
@@ -12,7 +13,7 @@ const Blockquote: React.FC<Props> = ({ className, ...props }) => {
     const { children, ...rest } = props;
 
     return (
-      <Admonition type={type} {...rest}>
+      <Admonition type={type as any} {...rest}>
         {children}
       </Admonition>
     );

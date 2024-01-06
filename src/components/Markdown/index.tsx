@@ -1,3 +1,4 @@
+import { Table, TableBody, TableData, TableHead, TableHeader, TableRow } from "@natsuneko-laboratory/ui/data/table";
 import {
   ListItem,
   OrderedList,
@@ -17,7 +18,6 @@ import {
 } from "./Headings";
 import { Hyperlink } from "./Hyperlink";
 import { Paragraph } from "./Paragraph";
-import { Table, TableData, TableHead, TableHeader, TableRow } from "./Table";
 
 type Props = {
   markdown: string;
@@ -37,6 +37,7 @@ const components: any = {
   ol: OrderedList,
   li: ListItem,
   table: Table,
+  tbody: TableBody,
   thead: TableHead,
   th: TableHeader,
   tr: TableRow,
