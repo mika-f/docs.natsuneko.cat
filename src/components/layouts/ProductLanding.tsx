@@ -1,7 +1,8 @@
+import { LinkButton } from "@natsuneko-laboratory/ui/navigations/link-button";
+
 import Link from "next/link";
 import { Suspense } from "react";
 import { Changelog } from "../Changelog";
-import { LinkButton } from "../LinkButton";
 import { Heading } from "../Typography";
 import { useArticleContext } from "../contexts/ArticleContext";
 import { useRouteContext } from "../contexts/RouteContext";
@@ -23,7 +24,7 @@ const ProductLanding = () => {
           {introLinks?.map((w, i) => {
             return (
               <LinkButton
-                primary={i === 0}
+                variant={i === 0 ? "primary" : "secondary"}
                 key={w._id}
                 href={route.build({ relative: w.link })}
               >
