@@ -9,8 +9,8 @@ dependencies:
     specifier: ^0.3.4
     version: 0.3.4(esbuild@0.19.4)
   '@natsuneko-laboratory/ui':
-    specifier: ^0.1.10
-    version: 0.1.10(react-dom@18.2.0)(react@18.2.0)
+    specifier: ^0.1.11
+    version: 0.1.11(next@13.5.4)(react-dom@18.2.0)(react@18.2.0)
   '@vercel/analytics':
     specifier: ^1.0.1
     version: 1.0.1
@@ -709,13 +709,15 @@ packages:
       - supports-color
     dev: false
 
-  /@natsuneko-laboratory/ui@0.1.10(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-GlsGQ618fAjmNNJ71VKHbPZsnvQm0oCMnTRHJhxHoOhNnAbYGxqrSkYZycRCtmcJQ+SRN8MCTY8WwOncNljkug==}
+  /@natsuneko-laboratory/ui@0.1.11(next@13.5.4)(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-B1hR0Xheu+iMDgwFXTUBPNkTFszDS1PzjBDDTn6RndgjuR2YZ6RntXtRRSGcYYbcd692YdBqyg3mEMcU4gK0GA==}
     peerDependencies:
+      next: ^14.0.4
       react: ^18.2.0
       react-dom: ^18.2.0
     dependencies:
       clsx: 2.1.0
+      next: 13.5.4(@opentelemetry/api@1.6.0)(react-dom@18.2.0)(react@18.2.0)
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
       tailwind-merge: 2.2.0

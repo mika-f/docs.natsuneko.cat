@@ -1,4 +1,4 @@
-import { LinkButton } from "@natsuneko-laboratory/ui/navigations/link-button";
+import { LinkButton } from "@natsuneko-laboratory/ui/navigations/link-button/next";
 
 import Link from "next/link";
 import { Suspense } from "react";
