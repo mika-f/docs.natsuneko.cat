@@ -1,6 +1,5 @@
-import { Admonition} from "@natsuneko-laboratory/ui/miscellaneous/admonition"
-
-import { merge } from "@/lib/utils";
+import { Admonition } from "@natsuneko-laboratory/ui/miscellaneous/admonition";
+import { Blockquote as BQ } from "@natsuneko-laboratory/ui/typography/blockquote";
 
 type Props = {
   className?: string;
@@ -19,7 +18,7 @@ const Blockquote: React.FC<Props> = ({ className, ...props }) => {
     );
   }
 
-  return <blockquote className={merge("bg-white", className)} {...props} />;
+  return <BQ {...props} />;
 };
 
 export { Blockquote };

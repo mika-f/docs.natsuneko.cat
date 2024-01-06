@@ -2,12 +2,14 @@ import { Metadata } from "next";
 import { Noto_Sans_JP } from "next/font/google";
 import Script from "next/script";
 
+import { Footer } from "@natsuneko-laboratory/ui/templates/footer";
+import { Header } from "@natsuneko-laboratory/ui/templates/header";
+
 import { dir } from "i18next";
 
 import { Analytics } from "@vercel/analytics/react";
 
-import { Footer } from "@/components/Footer";
-import { Header } from "@/components/Header";
+import { LanguageSwitch } from "@/components/LanguageSwitch";
 import { FALLBACK_LANGUAGE } from "@/configurations/internationalization";
 import { merge } from "@/lib/utils";
 import "@/styles/globals.css";
@@ -101,10 +103,31 @@ export default function RootLayout({
           noto.className
         )}
       >
-        <Header />
+        <Header
+          brand={{
+            alt: "logo",
+            title: "Natsuneko Docs",
+            src: {
+              dark: "/logo.png",
+              light: "/logo.png",
+            },
+            width: 36,
+            height: 36,
+          }}
+          href="/"
+        >
+          <LanguageSwitch />
+        </Header>
         <main>{children}</main>
         <div id="portal" />
-        <Footer />
+        <Footer
+          logo={{
+            dark: "/natsuneko-laboratory.png",
+            light: "/natsuneko-laboratory.png",
+            width: 1217 / 6,
+            height: 358 / 6,
+          }}
+        />
 
         <Script
           src="https://kit.fontawesome.com/c291a616a9.js"
