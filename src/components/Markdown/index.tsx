@@ -1,3 +1,9 @@
+import {
+  ListItem,
+  OrderedList,
+  UnorderedList,
+} from "@natsuneko-laboratory/ui/miscellaneous/list";
+
 import { useMDXComponent } from "next-contentlayer/hooks";
 import { Blockquote } from "./Blockquote";
 import { Code, Preformatted } from "./Code";
@@ -10,7 +16,6 @@ import {
   Heading6,
 } from "./Headings";
 import { Hyperlink } from "./Hyperlink";
-import { ListItem, OrderedList, UnorderedList } from "./List";
 import { Paragraph } from "./Paragraph";
 import { Table, TableData, TableHead, TableHeader, TableRow } from "./Table";
 
