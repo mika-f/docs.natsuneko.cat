@@ -1,9 +1,9 @@
 "use client";
 
+import { useLockedBody } from "@natsuneko-laboratory/ui/hooks/useLockedBody";
 import { Portal } from "@natsuneko-laboratory/ui/miscellaneous/portal";
 
 import { LANGUAGES } from "@/configurations/internationalization";
-import { useLockedBody } from "@/hooks/useLockedBody";
 import { useParams, usePathname, useRouter } from "next/navigation";
 import { useCallback, useEffect, useState } from "react";
 

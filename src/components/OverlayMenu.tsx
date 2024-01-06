@@ -1,8 +1,8 @@
 "use client";
 
+import { useLockedBody } from "@natsuneko-laboratory/ui/hooks/useLockedBody";
 import { Portal } from "@natsuneko-laboratory/ui/miscellaneous/portal";
 
-import { useLockedBody } from "@/hooks/useLockedBody";
 import { merge } from "@/lib/utils";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
