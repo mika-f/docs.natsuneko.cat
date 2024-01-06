@@ -1,10 +1,11 @@
 "use client";
 
+import { Portal } from "@natsuneko-laboratory/ui/miscellaneous/portal";
+
 import { LANGUAGES } from "@/configurations/internationalization";
 import { useLockedBody } from "@/hooks/useLockedBody";
 import { useParams, usePathname, useRouter } from "next/navigation";
 import { useCallback, useEffect, useState } from "react";
-import { Portal } from "./Portal";
 
 const LanguageSwitch: React.FC = () => {
   const [state, setState] = useState(false);

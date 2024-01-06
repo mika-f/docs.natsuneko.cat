@@ -1,10 +1,11 @@
 "use client";
 
+import { Portal } from "@natsuneko-laboratory/ui/miscellaneous/portal";
+
 import { useLockedBody } from "@/hooks/useLockedBody";
 import { merge } from "@/lib/utils";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
-import { Portal } from "./Portal";
 
 type Props = {
   title?: string;
