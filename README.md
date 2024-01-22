@@ -1,9 +1,9 @@
-# docs.natsuneko.cat
+# docs.natsuneko.com
 
 Markdown-based documentation system for Natsuneko Laboratory, powered by Next.js.
 
-EN: https://docs.natsuneko.cat/en-us/
-JP: https://docs.natsuneko.cat/ja-jp/
+EN: https://docs.natsuneko.com/en-us/
+JP: https://docs.natsuneko.com/ja-jp/
 
 ## Features
 

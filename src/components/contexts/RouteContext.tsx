@@ -49,7 +49,7 @@ const build = (context: RouteContextProps, ctx: ModifiedPathParams): string => {
   const assign =
     absolute ?? (relative?.startsWith("/") ? `.${relative}` : relative);
   if (assign) {
-    return new URL(assign, `https://docs.natsuneko.cat${path}`).pathname;
+    return new URL(assign, `https://docs.natsuneko.com${path}`).pathname;
   }
 
   return path;
@@ -102,5 +102,5 @@ const buildRouteContext = (context: RouteContextProps): RouteContextT => {
   };
 };
 
-export { RouteContext, useRouteContext, buildRouteContext };
-export type { RouteContextT, RouteContextProps };
+export { RouteContext, buildRouteContext, useRouteContext };
+export type { RouteContextProps, RouteContextT };

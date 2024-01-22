@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   generator: "Next.js",
   applicationName: "Natsuneko Docs",
   keywords: ["Natsuneko", "Natsuneko Laboratory"],
-  authors: [{ name: "Natsuneko", url: "https://natsuneko.cat" }],
+  authors: [{ name: "Natsuneko", url: "https://natsuneko.com" }],
   colorScheme: "dark",
   creator: "Natsuneko",
   publisher: "Natsuneko",

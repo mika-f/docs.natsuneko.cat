@@ -1,7 +1,7 @@
 import { allDocuments } from ".contentlayer/generated";
 import { LANGUAGE_CODES } from "@/configurations/internationalization";
 
-const HOST = "https://docs.natsuneko.cat";
+const HOST = "https://docs.natsuneko.com";
 const THRESHOLD = 10000;
 
 const sitemapLoc = (category: string, count: number) =>
