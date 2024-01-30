@@ -44,7 +44,7 @@ const OverlayMenu: React.FC<Props> = ({ title, children }) => {
       {state && (
         <Portal>
           <div className="fixed inset-0 top-28 z-10 bg-neutral-800 px-4">
-            <div className="z-10 overflow-y-auto pt-2">{children}</div>
+            <div className="z-10 h-full overflow-y-auto py-2">{children}</div>
           </div>
         </Portal>
       )}
