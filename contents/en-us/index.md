@@ -58,6 +58,10 @@ featuredLinks:
     items:
       - ./fbx-batch-export/overview
 
+  - title: Kozeki
+    items:
+      - ./kozeki/overview
+
   - title: Material Split View
     items:
       - ./material-split-view/overview
@@ -71,6 +75,10 @@ featuredLinks:
   - title: NekoDraw
     items:
       - ./nekodraw/overview
+
+  - title: Plana
+    items:
+      - ./plana/overview
 
   - title: Power Rename
     items:

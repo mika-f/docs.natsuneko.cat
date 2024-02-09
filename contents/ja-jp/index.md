@@ -2,7 +2,7 @@
 title: Docs
 shortTitle: Introduction
 layout: product-landing
-intro: "Natsuneko Laboratory のドキュメントへようこそ！"
+intro: Welcome to Natsuneko Laboratory documentation!
 versions:
   - "latest"
 featuredLinks:
@@ -54,6 +54,14 @@ featuredLinks:
   #     - ./installation
   #     - ./using-addon
 
+  - title: FBX Batch Export
+    items:
+      - ./fbx-batch-export/overview
+
+  - title: Kozeki
+    items:
+      - ./kozeki/overview
+
   - title: Material Split View
     items:
       - ./material-split-view/overview
@@ -68,15 +76,17 @@ featuredLinks:
     items:
       - ./nekodraw/overview
 
+  - title: Plana
+    items:
+      - ./plana/overview
+
   - title: Power Rename
     items:
       - ./power-rename/overview
 
-  # - title: Refined Animation Property
-  #   items:
-  #     - ./security-guides
-  #     - ./installation
-  #     - ./using-addon
+  - title: Refined Animation Property
+    items:
+      - ./refined-animation-property/overview
 
   - title: Refractions
     items:
@@ -98,13 +108,17 @@ featuredLinks:
   #     - ./installation
   #     - ./using-addon
 
+  - title: "Udon Analyzer"
+    items:
+      - ./udon-analyzer/overview
+
   - title: "unitypackage"
     items:
       - ./unitypackage/overview
 
-  # - title: "UStyled"
-  #   items:
-  #     - ./ustyled/overview
+  - title: "UStyled"
+    items:
+      - ./ustyled/overview
 
   # - title: "VPM Registry"
   #   items:
@@ -125,12 +139,15 @@ navigation:
     - ./create-unitypackage
     - ./create-vpmpackage
     - ./drag-and-drop-support
+    - ./fbx-batch-export
     - ./material-split-view
     - ./nekodraw
     - ./power-rename
+    - ./refined-animation-property
     - ./refractions
     - ./text-mesh-creator
+    - ./udon-analyzer
     - ./unitypackage
-    # - ./ustyled
+    - ./ustyled
     - ./vpmpackage
 ---
