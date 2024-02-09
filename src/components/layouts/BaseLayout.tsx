@@ -41,14 +41,14 @@ const BaseLayout: React.FC<Props> = ({ children }) => {
       ) : null}
       <div className="container mx-auto flex h-full">
         {sidebar && (
-          <div className="hidden grow-0 overflow-hidden py-8 md:w-64 lg:block lg:w-72 xl:w-80 2xl:w-96">
+          <div className="hidden overflow-hidden py-8 lg:block lg:w-64 lg:shrink-0 lg:grow-0 xl:w-72 2xl:w-80">
             <SideNav title={product ?? undefined} items={sidebar} />
           </div>
         )}
-        <div className="w-full max-w-full ">
+        <div className="w-full flex-1 lg:min-w-0 lg:max-w-full">
           <article
             className={merge(
-              "mx-4 h-full flex-1 py-6 md:border-neutral-600 lg:mx-0",
+              "mx-4 h-full py-6 md:border-neutral-600 lg:mx-0",
               sidebar && "lg:border-l lg:pl-16 xl:pl-20"
             )}
           >

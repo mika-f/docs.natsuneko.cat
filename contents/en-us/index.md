@@ -14,13 +14,15 @@ featuredLinks:
     items:
       - ./animator-controller-tool-post-processing/overview
 
+  - title: Asset Lens
+    items:
+      - ./asset-lens/overview
+
+
   - title: Automatic Material Duplicator
     items:
       - ./automatic-material-duplicator/overview
 
-  - title: Asset Lens
-    items:
-      - ./asset-lens/overview
 
   # - title: Bone Convention Switcher
   #   items:
@@ -140,8 +142,10 @@ navigation:
     - ./create-vpmpackage
     - ./drag-and-drop-support
     - ./fbx-batch-export
+    - ./kozeki
     - ./material-split-view
     - ./nekodraw
+    - ./plana
     - ./power-rename
     - ./refined-animation-property
     - ./refractions

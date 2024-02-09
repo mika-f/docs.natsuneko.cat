@@ -13,7 +13,7 @@ const TreeItem: React.FC<Props> = ({ items }) => {
         return (
           <li
             key={w.title}
-            className="my-2 text-sm text-gray-400 hover:text-gray-300"
+            className="my-2 break-all text-sm text-gray-400 hover:text-gray-300"
           >
             <a className="hover:underline" href={w.url}>
               {w.title}

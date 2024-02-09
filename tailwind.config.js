@@ -15,6 +15,29 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    function ({ addComponents }) {
+      addComponents({
+        ".container": {
+          maxWidth: "90%",
+          "@screen sm": {
+            maxWidth: `${640 - 24}px`, // 640px - 24px
+          },
+          "@screen md": {
+            maxWidth: `${768 - 24}px`, // 768px - 48px
+          },
+          "@screen lg": {
+            maxWidth: `${1024 - 64}px`, // 1024px - 64px
+          },
+          "@screen xl": {
+            maxWidth: `${1280 - 72}px`, // 1280px - 72px
+          },
+          "@screen 2xl": {
+            maxWidth: `${1536 - 96}px`,
+          },
+        },
+      });
+    },
+  ],
   safelist: ["hidden"],
 };

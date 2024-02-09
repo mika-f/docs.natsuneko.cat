@@ -19,7 +19,7 @@ const ProductArticle = () => {
   return (
     <BaseLayout>
       <div className="items-start 2xl:flex">
-        <div className="flex-1">
+        <div className="flex-1 2xl:min-w-0">
           {breadcrumbs && breadcrumbs.length > 1 && (
             <div className="mb-4">
               <Breadcrumb items={breadcrumbs} />
