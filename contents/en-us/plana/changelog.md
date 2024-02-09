@@ -9,14 +9,19 @@ All full changelog of past releases in [available on GitHub](https://github.com/
 
 ## Unreleased
 
+**Full Changelog:** [v1.0.0-alpha.8...main](https://github.com/mika-f/plana/compare/v1.0.0-alpha.8...main)
+
+## Version 1.0.0-alpha.8
+
 - feat: rearchitecture plugin system
 - feat: display friend name
 - feat: load preferences when scan
 - feat: display tooltip
 - fix: invalid path output in console
 - fix: display friendly name instead of id
+- refactor: extension implementations to plana.composition.extensions
 
-**Full Changelog:** [v1.0.0-alpha.7...main](https://github.com/mika-f/plana/compare/v1.0.0-alpha.7...main)
+**Full Changelog:** [v1.0.0-alpha.7...v1.0.0-alpha.8](https://github.com/mika-f/plana/compare/v1.0.0-alpha.7...v1.0.0-alpha.8)
 
 ## Version 1.0.0-alpha.7
 
