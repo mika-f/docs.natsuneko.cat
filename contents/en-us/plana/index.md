@@ -26,5 +26,5 @@ navigation:
     - ./changelog
     - ./license
 changelog:
-  repository: natsuneko-laboratory/plana
+  repository: mika-f/plana
 ---
