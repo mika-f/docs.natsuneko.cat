@@ -96,6 +96,7 @@ export default function RootLayout({
         <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#ffbfff" />
         <meta name="msapplication-TileColor" content="#2d89ef" />
         <meta name="theme-color" content="#000000" />
+        <meta name="msvalidate.01" content="BF2121AFF12579FA40551639542CE4ED" />
       </head>
       <body
         className={merge(
