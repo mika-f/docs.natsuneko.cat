@@ -32,7 +32,7 @@ const BaseLayout: React.FC<Props> = ({ children }) => {
           <FallbackContent originalLang={article!.lang} lang={route.language} />
         </>
       ) : null}
-      {content ? (
+      {content && content[route.language] ? (
         <>
           <Banner type="important">
             {content[route.language ?? content[FALLBACK_LANGUAGE]]}
