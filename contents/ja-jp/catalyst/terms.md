@@ -1,6 +1,6 @@
 ---
 title: 利用規約
-shortTitle:利用規約
+shortTitle: 利用規約
 intro: ""
 versions:
   - latest
