@@ -17,7 +17,11 @@ const ProductLanding = () => {
   return (
     <BaseLayout>
       <Heading level={1}>{shortTitle}</Heading>
-      {intro && <p className="text-lg text-neutral-400">{intro}</p>}
+      {intro && (
+        <p className="text-lg text-neutral-600 dark:text-neutral-400">
+          {intro}
+        </p>
+      )}
 
       {introLinks && (
         <div className="my-8 flex gap-x-4 text-lg">
@@ -40,7 +44,7 @@ const ProductLanding = () => {
           featuredLinks.map((w) => {
             return (
               <div key={w._id}>
-                <div className="border-b border-neutral-600 pb-4 text-lg font-bold">
+                <div className="border-b border-neutral-400 pb-4 text-lg font-bold dark:border-neutral-600">
                   {w.title}
                 </div>
 
@@ -50,12 +54,16 @@ const ProductLanding = () => {
                   return ref ? (
                     <Link
                       key={v}
-                      className="block border-neutral-600 px-2 py-4 hover:bg-neutral-700 [&:not(:last-child)]:border-b"
+                      className="block border-neutral-600 px-2 py-4 hover:bg-neutral-200 dark:hover:bg-neutral-700 [&:not(:last-child)]:border-b"
                       href={route.build({ relative: v })}
                     >
-                      <p className="text-sky-300">{ref.shortTitle}</p>
+                      <p className="text-sky-600 dark:text-sky-300">
+                        {ref.shortTitle}
+                      </p>
                       {ref.intro && (
-                        <p className="my-2 text-neutral-400">{ref.intro}</p>
+                        <p className="my-2 text-neutral-600 dark:text-neutral-400">
+                          {ref.intro}
+                        </p>
                       )}
                     </Link>
                   ) : null;

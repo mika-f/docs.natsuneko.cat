@@ -12,6 +12,7 @@ const Blockquote: React.FC<Props> = ({ className, ...props }) => {
     const { children, ...rest } = props;
 
     return (
+      // biome-ignore lint/suspicious/noExplicitAny: <explanation>
       <Admonition type={type as any} {...rest}>
         {children}
       </Admonition>

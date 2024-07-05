@@ -14,7 +14,9 @@ const ProductOverview = () => {
         <div>
           <Heading level={1}>{article!.shortTitle}</Heading>
           {article!.intro && (
-            <p className="text-xl text-neutral-400">{article!.intro}</p>
+            <p className="text-xl text-neutral-600 dark:text-neutral-400">
+              {article!.intro}
+            </p>
           )}
           <Markdown markdown={body.code} />
         </div>

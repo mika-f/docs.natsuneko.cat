@@ -1,9 +1,17 @@
-import { Table, TableBody, TableData, TableHead, TableHeader, TableRow } from "@natsuneko-laboratory/ui/data/table";
+import {
+  Table,
+  TableBody,
+  TableData,
+  TableHead,
+  TableHeader,
+  TableRow,
+} from "@natsuneko-laboratory/ui/data/table";
 import {
   ListItem,
   OrderedList,
   UnorderedList,
 } from "@natsuneko-laboratory/ui/miscellaneous/list";
+import { Hyperlink } from "@natsuneko-laboratory/ui/navigations/hyperlink";
 
 import { useMDXComponent } from "next-contentlayer/hooks";
 import { Blockquote } from "./Blockquote";
@@ -16,7 +24,6 @@ import {
   Heading5,
   Heading6,
 } from "./Headings";
-import { Hyperlink } from "./Hyperlink";
 import { Paragraph } from "./Paragraph";
 
 type Props = {

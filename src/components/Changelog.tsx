@@ -1,3 +1,5 @@
+import { Hyperlink } from "@natsuneko-laboratory/ui/navigations/hyperlink";
+
 type Props = {
   repo: string;
 };
@@ -37,17 +39,15 @@ const Changelog = async ({ repo }: Props) => {
       ) : (
         re.map((w) => {
           return (
-            <a
+            <Hyperlink
               key={w.id}
               href={w.html_url}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="block border-neutral-600 px-2 py-4 hover:bg-neutral-700 [&:not(:last-child)]:border-b"
+              className="block border-neutral-300 px-2 py-4 hover:bg-neutral-200 dark:border-neutral-700 dark:hover:bg-neutral-700 [&:not(:last-child)]:border-b"
             >
               <p className="text-sky-300">
                 {w.name || w.tag_name}
                 {w.prerelease && (
-                  <span className="ml-2 text-sm text-orange-300">
+                  <span className="ml-2 text-sm text-orange-700 dark:text-orange-300">
                     Prerelease
                   </span>
                 )}
@@ -55,7 +55,7 @@ const Changelog = async ({ repo }: Props) => {
               <p className="mt-2 text-sm text-neutral-400">
                 {new Date(w.published_at).toLocaleDateString("ja-JP")}
               </p>
-            </a>
+            </Hyperlink>
           );
         })
       )}

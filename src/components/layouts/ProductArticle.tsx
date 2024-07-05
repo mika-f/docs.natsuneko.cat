@@ -1,5 +1,5 @@
 import { getTableOfContents } from "@/lib/toc";
-import { Breadcrumb } from "../Breadcrumb";
+import { Breadcrumb } from "@natsuneko-laboratory/ui/navigations/breadcrumbs";
 import { Markdown } from "../Markdown";
 import { TableOfContents } from "../TableOfContents";
 import { Heading } from "../Typography";
@@ -26,7 +26,11 @@ const ProductArticle = () => {
             </div>
           )}
           <Heading level={1}>{shortTitle}</Heading>
-          {intro && <p className="text-lg text-neutral-400">{intro}</p>}
+          {intro && (
+            <p className="text-lg text-neutral-500 dark:text-neutral-400">
+              {intro}
+            </p>
+          )}
           <Markdown markdown={body.code} />
         </div>
 

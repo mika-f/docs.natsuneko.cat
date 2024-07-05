@@ -1,17 +1,14 @@
-import { Metadata } from "next";
-import { Noto_Sans_JP } from "next/font/google";
-import Script from "next/script";
-
-import { Footer } from "@natsuneko-laboratory/ui/templates/footer";
-import { Header } from "@natsuneko-laboratory/ui/templates/header";
-
-import { dir } from "i18next";
-
-import { Analytics } from "@vercel/analytics/react";
-
 import { LanguageSwitch } from "@/components/LanguageSwitch";
 import { FALLBACK_LANGUAGE } from "@/configurations/internationalization";
 import { merge } from "@/lib/utils";
+import { Footer } from "@natsuneko-laboratory/ui/templates/footer";
+import { Header } from "@natsuneko-laboratory/ui/templates/header";
+import { Analytics } from "@vercel/analytics/react";
+import { dir } from "i18next";
+import type { Metadata } from "next";
+import { Noto_Sans_JP } from "next/font/google";
+import Script from "next/script";
+
 import "@/styles/globals.css";
 
 const noto = Noto_Sans_JP({ subsets: ["latin"] });
@@ -100,7 +97,7 @@ export default function RootLayout({
       </head>
       <body
         className={merge(
-          "grid min-h-screen grid-cols-1 grid-rows-[auto_1fr_auto] bg-neutral-800 text-neutral-300",
+          "grid min-h-screen grid-cols-1 grid-rows-[auto_1fr_auto] bg-neutral-100 text-neutral-700 dark:bg-neutral-800 dark:text-neutral-300",
           noto.className
         )}
       >
@@ -123,8 +120,8 @@ export default function RootLayout({
         <div id="portal" />
         <Footer
           logo={{
-            dark: "/natsuneko-laboratory.png",
-            light: "/natsuneko-laboratory.png",
+            dark: "/natsuneko-laboratory-dark.png",
+            light: "/natsuneko-laboratory-light.png",
             width: 1217 / 6,
             height: 358 / 6,
           }}

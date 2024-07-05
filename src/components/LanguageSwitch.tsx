@@ -47,10 +47,10 @@ const LanguageSwitch: React.FC = () => {
       </button>
       {state && (
         <Portal>
-          <div className="fixed inset-0 top-16 z-20 bg-neutral-800 px-4">
+          <div className="fixed inset-0 top-16 z-20 bg-neutral-100 px-4 dark:bg-neutral-800">
             <div className="z-10 overflow-y-auto">
               <div className="lg:container lg:mx-auto lg:py-6">
-                <div className="flex h-12 items-center border-b border-neutral-600 px-4 text-sm lg:mb-2 lg:h-auto lg:pb-4 lg:text-2xl lg:font-bold">
+                <div className="flex h-12 items-center border-b border-neutral-300 px-4 text-sm dark:border-neutral-700 lg:mb-2 lg:h-auto lg:pb-4 lg:text-2xl lg:font-bold">
                   Switch Language
                 </div>
                 <ul className="flex flex-col px-4 text-base lg:text-lg">

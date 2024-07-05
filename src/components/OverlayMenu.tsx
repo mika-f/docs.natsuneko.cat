@@ -28,7 +28,7 @@ const OverlayMenu: React.FC<Props> = ({ title, children }) => {
   };
 
   return (
-    <div className="bg-neutral-800">
+    <div className="bg-neutral-100 dark:bg-neutral-800">
       <div
         className="flex h-12 items-center px-4 text-sm"
         onClick={toggleState}
@@ -43,7 +43,7 @@ const OverlayMenu: React.FC<Props> = ({ title, children }) => {
       </div>
       {state && (
         <Portal>
-          <div className="fixed inset-0 top-28 z-10 bg-neutral-800 px-4">
+          <div className="fixed inset-0 top-28 z-10 bg-neutral-100 px-4 dark:bg-neutral-800">
             <div className="z-10 h-full overflow-y-auto py-2">{children}</div>
           </div>
         </Portal>

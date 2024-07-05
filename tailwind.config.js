@@ -40,4 +40,5 @@ module.exports = {
     },
   ],
   safelist: ["hidden"],
+  darkMode: "media",
 };
