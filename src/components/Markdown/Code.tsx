@@ -11,7 +11,7 @@ const Code: React.FC<Props> = ({ className, ...props }) => (
     className={merge(
       "relative mx-0.5 whitespace-break-spaces break-words rounded bg-neutral-400 bg-opacity-25 p-1 font-mono text-sm text-neutral-700 dark:bg-neutral-500 dark:text-neutral-300",
       props["data-theme"] &&
-        "mx-0 grid whitespace-pre break-words bg-transparent",
+        "mx-0 grid whitespace-pre break-words bg-transparent dark:bg-transparent",
       className
     )}
     {...props}
