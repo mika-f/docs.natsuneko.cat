@@ -16,7 +16,7 @@ Catalyst は、 3DCG、特に VR を中心とした SNS などでの写真コン
 
 ### コミュニティサポート
 
-コミュニティによるサポートを受けたい場合、[Discord サーバー](https://discord.gg/vpjhenyT29) に参加してください。
+コミュニティによるサポートを受けたい場合、[Discord サーバー](https://discord.gg/C4Zz6WJXQs) に参加してください。
 
 ### セキュリティサポート
 
