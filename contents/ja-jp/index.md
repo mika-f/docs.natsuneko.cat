@@ -18,11 +18,9 @@ featuredLinks:
     items:
       - ./asset-lens/overview
 
-
   - title: Automatic Material Duplicator
     items:
       - ./automatic-material-duplicator/overview
-
 
   # - title: Bone Convention Switcher
   #   items:
@@ -130,6 +128,10 @@ featuredLinks:
     items:
       - ./vpmpackage/overview
 
+  - title: "Web API"
+    items:
+      - ./web-platform/overview
+
 navigation:
   children:
     - ./animation-auto-assignment
@@ -154,4 +156,5 @@ navigation:
     - ./unitypackage
     - ./ustyled
     - ./vpmpackage
+    - ./web-platform
 ---
