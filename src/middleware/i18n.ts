@@ -1,10 +1,10 @@
+import acceptLanguage from "accept-language";
+import { type NextRequest, NextResponse } from "next/server";
 import {
   ALIAS_LANGUAGE_MAP,
   FALLBACK_LANGUAGE,
   LANGUAGE_CODES,
 } from "@/configurations/i18n";
-import acceptLanguage from "accept-language";
-import { NextRequest, NextResponse } from "next/server";
 
 const cookie = "lang";
 

@@ -1,5 +1,7 @@
 "use client";
 
+import { usePathname, useRouter } from "next/navigation";
+import { useCallback } from "react";
 import {
   Sheet,
   SheetContent,
@@ -8,8 +10,6 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 import { LANGUAGES } from "@/configurations/i18n";
-import { usePathname, useRouter } from "next/navigation";
-import { useCallback } from "react";
 
 type Props = {
   lang: string;
@@ -46,6 +46,7 @@ export const SwitchLanguage = ({ lang }: Props) => {
                   >
                     <button
                       disabled={isCurrentLang}
+                      type="button"
                       onClick={() => switchLanguage(w.code)}
                     >
                       {w.name}

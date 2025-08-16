@@ -1,17 +1,7 @@
+import type { Metadata } from "next";
 import { Footer } from "@/components/layout/Footer";
 import { Header } from "@/components/layout/Header";
 import { FALLBACK_LANGUAGE } from "@/configurations/i18n";
-import type { Metadata } from "next";
-import { Noto_Sans_JP } from "next/font/google";
-import Script from "next/script";
-import React from "react";
-
-import "../globals.css";
-
-const noto = Noto_Sans_JP({
-  variable: "--font-noto-sans-jp",
-  subsets: ["latin"],
-});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -27,18 +17,10 @@ export default async function RootLayout({ children, params }: Props) {
   const { lang } = await params;
 
   return (
-    <html lang="ja" className="scroll-pt-16">
-      <body
-        className={`${noto.variable} bg-background text-foreground grid min-h-[100dvh] grid-cols-1 grid-rows-[auto_1fr_auto] antialiased`}
-      >
-        <Header lang={lang ?? FALLBACK_LANGUAGE} />
-        <main>{children}</main>
-        <Footer />
-        <Script
-          src="https://kit.fontawesome.com/c291a616a9.js"
-          crossOrigin="anonymous"
-        />
-      </body>
-    </html>
+    <>
+      <Header lang={lang ?? FALLBACK_LANGUAGE} />
+      <main>{children}</main>
+      <Footer />
+    </>
   );
 }

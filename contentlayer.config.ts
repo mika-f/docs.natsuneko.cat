@@ -9,13 +9,6 @@ import RehypeSlug from "rehype-slug";
 import RemarkGfm from "remark-gfm";
 import RemarkGitHubAdmonitions from "remark-github-beta-blockquote-admonitions";
 
-const Changelog = defineNestedType(() => ({
-  name: "Changelog",
-  fields: {
-    repository: { type: "string", required: true },
-  },
-}));
-
 const Article = defineDocumentType(() => ({
   name: "Article",
   filePathPattern: "**/*.md",
@@ -24,11 +17,12 @@ const Article = defineDocumentType(() => ({
     title: { type: "string", required: true },
     layout: {
       type: "enum",
-      options: ["overview", "article"],
+      options: ["landing", "overview", "article"],
       default: "article",
       required: false,
     },
-    changelog: { type: "nested", of: Changelog, required: false },
+    repository: { type: "string", required: false },
+    navigation: { type: "list", of: { type: "string" }, required: false },
   },
   computedFields: {
     lang: {

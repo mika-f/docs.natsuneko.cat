@@ -1,5 +1,5 @@
+import { type Article, allArticles } from "contentlayer2/generated";
 import { FALLBACK_LANGUAGE } from "@/configurations/i18n";
-import { Article, allArticles } from "contentlayer2/generated";
 
 export const find = (path: string, lang: string): Article | null => {
   let doc = allArticles.find((w) => w.path === path && w.lang === lang) ?? null;
