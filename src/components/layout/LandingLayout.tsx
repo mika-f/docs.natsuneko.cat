@@ -24,18 +24,20 @@ export const LandingLayout = ({ document, lang, rest }: Props) => {
         {document.description && (
           <Lead className="pt-2 pb-8">{document.description}</Lead>
         )}
-        <ul className="grid md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-x-2 gap-y-4">
+        <ul className="grid md:grid-cols-2 lg:grid-cols-3 gap-x-2 gap-y-4">
           {navigations.map((item) => (
             <li key={item._id}>
               <Link
                 href={`/${lang}/${item.path}`}
-                className="block hover:bg-muted px-4 py-2 rounded-sm"
+                className="block hover:bg-muted px-4 py-3 rounded-sm"
               >
                 <div className="flex flex-col gap-y-2">
                   <div className="font-semibold text-lg border-b border-border pb-2">
                     {item.title}
                   </div>
-                  <div>{item.description}</div>
+                  <div className="text-muted-foreground">
+                    {item.description}
+                  </div>
                 </div>
               </Link>
             </li>

@@ -1,13 +1,29 @@
 ---
-title: Animation Auto Assignment
-description: ヒエラルキー上のコンポーネントの移動を監視し、アニメーションの自動再割り当てを行う Unity エディター拡張
-repository: https://github.com/natsuneko-laboratory/animation-auto-assignment
+title: Otsukai
+description: Ruby ライクなシンタックスで動作を書くことが出来るデプロイメントツール
+layout: overview
+repository: natsuneko-laboratory/otsukai
+introLinks:
+  - title: クイックスタート
+    item: /otsukai/getting-started
+featuredLinks:
+  - title: ここから始める
+    items:
+      - /otsukai/overview
+      - /otsukai/getting-started
+      - /otsukai/cli
+      - /otsukai/github-actions
+  - title: レシピ集
+    items:
+      - /otsukai/recipe/minecraft
+      - /otsukai/recipe/discord-bot
 navigation:
-  - /animation-auto-assignment/
-  - /animation-auto-assignment/getting-started
-  - /animation-auto-assignment/usage
-  - /animation-auto-assignment/license
+  - /otsukai
+  - /otsukai/overview
+  - /otsukai/getting-started
+  - /otsukai/cli
+  - /otsukai/github-actions
 ---
 
-Animation Auto Assignment はヒエラルキー上のコンポーネントの移動を監視し、アニメーションの自動再割り当てを行います。  
-これにより、ヒエラルキーツリーの変更をアニメーションクリップに気を遣う必要が無くなり、アニメーションクリップが破壊される可能性を軽減できます。
+Otsukai は Ruby ライクなシンタックスで動作を書くことが出来るリモートデプロイメントツールです。  
+既存の Ruby のシンタックスハイライトと文法を使えることで覚えることが少なく、誰でも簡単に使い始めることができます。

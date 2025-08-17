@@ -11,6 +11,8 @@ import { Heading1, Heading2, Heading3, Heading4 } from "./Headings";
 import { InlineCode } from "./InlineCode";
 import { ListItem, OrderedList, UnorderedList } from "./List";
 import { Paragraph } from "./Paragraph";
+import { Preformat } from "./Preformat";
+import { Hyperlink } from "./Hyperlink";
 
 type Props = {
   markdown: string;
@@ -27,9 +29,11 @@ export const Markdown = ({ markdown }: Props) => {
         h3: Heading3,
         h4: Heading4,
         p: Paragraph,
+        a: Hyperlink,
         ul: UnorderedList,
         ol: OrderedList,
         li: ListItem,
+        pre: Preformat,
         code: InlineCode,
         table: Table,
         thead: TableHeader,

@@ -30,7 +30,7 @@ export const SidebarContent = ({ document, lang, rest, className }: Props) => {
               return (
                 <li
                   key={item._id}
-                  className="block px-2 py-1 mr-2 font-semibold"
+                  className="block px-3 py-2 mr-2 font-semibold"
                 >
                   {item.title}
                 </li>
@@ -41,7 +41,7 @@ export const SidebarContent = ({ document, lang, rest, className }: Props) => {
               <li key={item._id}>
                 <Link
                   href={`/${lang}/${item.path}`}
-                  className="block hover:bg-muted px-2 py-1 mr-2 rounded-sm"
+                  className="block hover:bg-muted px-3 py-2 mr-2 rounded-sm"
                 >
                   {item.title}
                 </Link>

@@ -17,7 +17,7 @@ export const ArticleLayout = ({ document, lang, rest }: Props) => {
       <HeaderSidebar document={document} lang={lang} rest={rest} />
       <div className="flex gap-x-8 h-full">
         <Sidebar document={document} lang={lang} rest={rest} />
-        <div className="pt-10 pb-20 mx-4 lg:mx-0">
+        <div className="pt-10 pb-20 mx-4 lg:mx-0 w-full overflow-hidden">
           <Heading1>{document.title}</Heading1>
           {document.description && (
             <Lead className="pt-2 pb-4">{document.description}</Lead>

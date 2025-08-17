@@ -3,7 +3,7 @@
 import * as Portal from "@radix-ui/react-portal";
 import type { Article } from "contentlayer2/generated";
 import { ChevronDown, ChevronRight } from "lucide-react";
-import { useState } from "react";
+import { useCallback, useState } from "react";
 import { SidebarContent } from "./content";
 
 type Props = {
@@ -14,18 +14,23 @@ type Props = {
 
 export const HeaderSidebar = ({ document, lang, rest }: Props) => {
   const [state, setState] = useState(false);
+  const toggleValue = useCallback(() => {
+    setState((prev) => {
+      return !prev;
+    });
+  }, []);
 
   return (
-    <div className="flex md:hidden h-12 items-center sticky top-16 z-10 border-b border-border">
+    <div className="flex md:hidden h-12 items-center sticky top-16 z-10 border-b border-border bg-background">
       <button
         className="flex mx-4 lg:mx-0 w-full"
         type="button"
-        onClick={() => setState(!state)}
+        onClick={toggleValue}
       >
         {state ? <ChevronDown /> : <ChevronRight />} Menu
       </button>
       {state && (
-        <Portal.Root className="z-20 absolute bg-background w-full top-26 min-h-[calc(100dvh-6.5rem)] px-4 lg:px-0">
+        <Portal.Root className="z-20 fixed bg-background w-full top-26 min-h-[calc(100dvh-6.5rem)] px-4 lg:px-0">
           <SidebarContent
             document={document}
             lang={lang}
