@@ -1,13 +1,21 @@
 ---
-title: Animation Auto Assignment
-description: ヒエラルキー上のコンポーネントの移動を監視し、アニメーションの自動再割り当てを行う Unity エディター拡張
-repository: https://github.com/natsuneko-laboratory/animation-auto-assignment
+title: Plana
+description: UdonSharp などといった、コンパイル以前に難読化が必要な場合におけるソースコード難読化ソリューション
+layout: overview
+repository: mika-f/plana
+introLinks:
+  - title: クイックスタート
+    item: /plana/getting-started
+featuredLinks:
+  - title: ここから始める
+    items:
+      - /plana/getting-started
+      - /plana/installation
+      - /plana/usage
 navigation:
-  - /animation-auto-assignment/
-  - /animation-auto-assignment/getting-started
-  - /animation-auto-assignment/usage
-  - /animation-auto-assignment/license
+  - /plana/
+  - /plana/getting-started
+  - /plana/installation
+  - /plana/usage
+  - /plana/license
 ---
-
-Animation Auto Assignment はヒエラルキー上のコンポーネントの移動を監視し、アニメーションの自動再割り当てを行います。  
-これにより、ヒエラルキーツリーの変更をアニメーションクリップに気を遣う必要が無くなり、アニメーションクリップが破壊される可能性を軽減できます。

@@ -9,6 +9,22 @@ import RehypeSlug from "rehype-slug";
 import RemarkGfm from "remark-gfm";
 import RemarkGitHubAdmonitions from "remark-github-beta-blockquote-admonitions";
 
+const IntroLinks = defineNestedType(() => ({
+  name: "IntroLinks",
+  fields: {
+    title: { type: "string", required: true },
+    item: { type: "string", required: true },
+  },
+}));
+
+const FeaturedLinks = defineNestedType(() => ({
+  name: "FeaturedLinks",
+  fields: {
+    title: { type: "string", required: true },
+    items: { type: "list", of: { type: "string" }, required: true },
+  },
+}));
+
 const Article = defineDocumentType(() => ({
   name: "Article",
   filePathPattern: "**/*.md",
@@ -22,6 +38,8 @@ const Article = defineDocumentType(() => ({
       default: "article",
       required: false,
     },
+    introLinks: { type: "list", of: IntroLinks, required: false },
+    featuredLinks: { type: "list", of: FeaturedLinks, required: false },
     repository: { type: "string", required: false },
     navigation: { type: "list", of: { type: "string" }, required: false },
   },
