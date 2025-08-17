@@ -9,6 +9,10 @@ const normalizePath = (path: string): string => {
   return path;
 };
 
+const getParent = (path: string): string => {
+  return path.split("/").slice(0, -1).join("/");
+};
+
 export const find = (path: string, lang: string): Article | null => {
   let doc =
     allArticles.find(
@@ -19,4 +23,21 @@ export const find = (path: string, lang: string): Article | null => {
   }
 
   return doc;
+};
+
+export const navigation = (
+  doc: Article,
+  lang: string
+): { root: string; paths: string[] } => {
+  if (doc.navigation) {
+    return { root: doc.path, paths: doc.navigation };
+  }
+
+  const path = doc.path;
+  const parentDoc = find(getParent(path), lang);
+  if (parentDoc) {
+    return { root: parentDoc.path, paths: parentDoc.navigation ?? [] };
+  }
+
+  return { root: path, paths: [] };
 };
