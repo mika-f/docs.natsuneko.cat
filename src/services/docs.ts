@@ -25,6 +25,21 @@ export const find = (path: string, lang: string): Article | null => {
   return doc;
 };
 
+export const breadcrumb = (path: string, lang: string): Article[] => {
+  const parts = path.split("/");
+  const breadcrumbs: Article[] = [];
+
+  for (let i = 1; i <= parts.length; i++) {
+    const subPath = parts.slice(0, i).join("/");
+    const doc = find(subPath, lang);
+    if (doc) {
+      breadcrumbs.push(doc);
+    }
+  }
+
+  return breadcrumbs;
+};
+
 export const navigation = (
   doc: Article,
   lang: string
