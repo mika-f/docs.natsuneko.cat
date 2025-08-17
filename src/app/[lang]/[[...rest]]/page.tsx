@@ -1,4 +1,6 @@
 import { notFound } from "next/navigation";
+import { ArticleLayout } from "@/components/layout/ArticleLayout";
+import { LandingLayout } from "@/components/layout/LandingLayout";
 import { find } from "@/services/docs";
 
 type Props = {
@@ -15,13 +17,21 @@ export default async function Page({ params }: Props) {
   if (document) {
     switch (document.layout) {
       case "landing":
-        return <div>{JSON.stringify(document)}</div>;
+        return (
+          <div className="container mx-auto h-full">
+            <LandingLayout document={document} lang={lang} rest={rest ?? []} />
+          </div>
+        );
 
       case "overview":
         return <div />;
 
       case "article":
-        return <div />;
+        return (
+          <div className="container mx-auto h-full">
+            <ArticleLayout document={document} lang={lang} rest={rest ?? []} />
+          </div>
+        );
     }
   } else {
     notFound();

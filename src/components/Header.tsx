@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { SwitchLanguage } from "../features/i18n/switch-language";
+import { SwitchLanguage } from "./features/i18n/switch-language";
 
 type Props = {
   lang: string;

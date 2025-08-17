@@ -12,9 +12,10 @@ import RemarkGitHubAdmonitions from "remark-github-beta-blockquote-admonitions";
 const Article = defineDocumentType(() => ({
   name: "Article",
   filePathPattern: "**/*.md",
-  contentType: "markdown",
+  contentType: "mdx",
   fields: {
     title: { type: "string", required: true },
+    description: { type: "string", required: false },
     layout: {
       type: "enum",
       options: ["landing", "overview", "article"],
@@ -44,7 +45,7 @@ const Article = defineDocumentType(() => ({
 export default makeSource({
   contentDirPath: "docs",
   documentTypes: [Article],
-  markdown: {
+  mdx: {
     remarkPlugins: [
       RemarkGfm,
       [

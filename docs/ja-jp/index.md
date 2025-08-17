@@ -1,5 +1,6 @@
 ---
 title: Docs
+description: Natsuneko Laboratory のドキュメンテーションサイトへようこそ！
 layout: landing
 navigation:
   - /akasha
@@ -32,5 +33,4 @@ navigation:
   - /unitypackage
   - /ustyled
   - /vpmpackage
-  - /web-api
 ---

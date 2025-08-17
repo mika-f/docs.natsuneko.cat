@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
-import { Footer } from "@/components/layout/Footer";
-import { Header } from "@/components/layout/Header";
+import { Footer } from "@/components/Footer";
+import { Header } from "@/components/Header";
 import { FALLBACK_LANGUAGE } from "@/configurations/i18n";
 
 export const metadata: Metadata = {
