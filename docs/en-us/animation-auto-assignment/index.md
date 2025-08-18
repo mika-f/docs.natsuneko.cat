@@ -1,3 +1,0 @@
----
-title: Animation Auto Assignment
----

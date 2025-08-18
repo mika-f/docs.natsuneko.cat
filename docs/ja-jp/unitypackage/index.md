@@ -1,13 +1,20 @@
 ---
-title: Animation Auto Assignment
-description: ヒエラルキー上のコンポーネントの移動を監視し、アニメーションの自動再割り当てを行う Unity エディター拡張
-repository: https://github.com/natsuneko-laboratory/animation-auto-assignment
+title: unitypackage
+description: 環境依存なしで動作する軽量な UnityPackage 作成パッケージ
+layout: overview
+repository: natsuneko-laboratory/unitypackage
+featuredLinks:
+  - title: Start Here
+    items:
+      - /unitypackage/getting-started
+      - /unitypackage/functions
 navigation:
-  - /animation-auto-assignment/
-  - /animation-auto-assignment/getting-started
-  - /animation-auto-assignment/usage
-  - /animation-auto-assignment/license
+  - /unitypackage/getting-started
+  - /unitypackage/functions
+  - /unitypackage/license
 ---
 
-Animation Auto Assignment はヒエラルキー上のコンポーネントの移動を監視し、アニメーションの自動再割り当てを行います。  
-これにより、ヒエラルキーツリーの変更をアニメーションクリップに気を遣う必要が無くなり、アニメーションクリップが破壊される可能性を軽減できます。
+`@natsuneko-laboratory/unitypackage` は、Unity Editor やその他の外部ソフトウェア（Windows の 7-Zip、Unix の gz や tar コマンドなど）に依存せずに動作する軽量な UnityPackage 作成パッケージです。
+このパッケージは単純なメソッドを一つを提供いています。
+
+- [`archive`](/unitypackage/functions/archive)
