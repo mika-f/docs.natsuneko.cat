@@ -3,14 +3,14 @@ import { FALLBACK_LANGUAGE } from "@/configurations/i18n";
 
 const normalizePath = (path: string): string => {
   if (path.startsWith("/")) {
-    return path.substring(1);
+    return path.substring(1).trim();
   }
 
-  return path;
+  return path.trim();
 };
 
 const getParent = (path: string): string => {
-  return path.split("/").slice(0, -1).join("/");
+  return path.split("/").slice(0, -1).join("/").trim();
 };
 
 export const find = (path: string, lang: string): Article | null => {

@@ -20,7 +20,7 @@ export const Heading2 = ({ children }: Props) => {
 
 export const Heading3 = ({ children }: Props) => {
   return (
-    <h3 className="scroll-m-20 text-2xl pb-4 mt-6 font-semibold tracking-tight first:mt-0">
+    <h3 className="scroll-m-20 text-2xl mt-8 font-semibold tracking-tight first:mt-0">
       {children}
     </h3>
   );
@@ -28,7 +28,7 @@ export const Heading3 = ({ children }: Props) => {
 
 export const Heading4 = ({ children }: Props) => {
   return (
-    <h4 className="scroll-m-20 text-xl pb-4 mt-4 font-semibold tracking-tight">
+    <h4 className="scroll-m-20 text-xl mt-8 font-semibold tracking-tight">
       {children}
     </h4>
   );

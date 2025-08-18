@@ -35,7 +35,11 @@ export const Markdown = ({ markdown }: Props) => {
         li: ListItem,
         pre: Preformat,
         code: InlineCode,
-        table: Table,
+        table: ({ children, ...rest }) => (
+          <Table className="my-4" {...rest}>
+            {children}
+          </Table>
+        ),
         thead: TableHeader,
         tbody: TableBody,
         tr: TableRow,

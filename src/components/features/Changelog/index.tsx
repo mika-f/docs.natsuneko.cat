@@ -54,12 +54,14 @@ export const Changelog = async ({ repository }: Props) => {
             href={release.html_url}
             target="_blank"
             rel="noopener noreferrer"
-            className="block border-b border-border px-2 py-4 hover:bg-muted [:last-child]:border-b-0"
+            className="block border-b border-border px-2 py-4 hover:bg-muted [:last-child]:border-b-0 overflow-hidden text-ellipsis whitespace-nowrap"
           >
             <div className="flex items-baseline">
               {release.name}
               {release.prerelease && (
-                <div className="ml-2 text-sm text-warning">プレリリース</div>
+                <div className="ml-2 text-sm text-warning overflow-hidden text-ellipsis whitespace-nowrap">
+                  プレリリース
+                </div>
               )}
             </div>
             <div className="mt-2 text-sm text-muted-foreground">

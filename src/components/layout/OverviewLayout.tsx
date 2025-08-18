@@ -7,6 +7,7 @@ import { HeaderSidebar } from "../features/Sidebar/header";
 import { Heading1 } from "../markdown/Headings";
 import { Lead } from "../markdown/Lead";
 import { Button } from "../ui/button";
+import { Markdown } from "../markdown";
 
 type Props = {
   document: Article;
@@ -26,6 +27,11 @@ export const OverviewLayout = ({ document, lang, rest }: Props) => {
           {document.description && (
             <Lead className="pt-2 pb-4">{document.description}</Lead>
           )}
+
+          <div>
+            <Markdown markdown={document.body.code} />
+          </div>
+
           <div>
             {introLinks && introLinks.length > 0 && (
               <div className="my-8 flex gap-x-4 text-lg">

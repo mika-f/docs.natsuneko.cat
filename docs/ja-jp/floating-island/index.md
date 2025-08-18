@@ -1,13 +1,25 @@
 ---
-title: Animation Auto Assignment
-description: ヒエラルキー上のコンポーネントの移動を監視し、アニメーションの自動再割り当てを行う Unity エディター拡張
-repository: https://github.com/natsuneko-laboratory/animation-auto-assignment
+title: Floating Island
+description: ちょっと懐かしい浮遊島ワールドタイプを追加する Minecraft の Mod
+layout: overview
+repository: natsuneko-laboratory/FloatingIsland
+introLinks:
+  - title: 導入する
+    item: /floating-island/getting-started
+  - title: GitHub
+    item: https://github.com/natsuneko-laboratory/FloatingIsland
+featuredLinks:
+  - title: ここから始める
+    items:
+      - /floating-island/getting-started
+      - /floating-island/gallery
 navigation:
-  - /animation-auto-assignment/
-  - /animation-auto-assignment/getting-started
-  - /animation-auto-assignment/usage
-  - /animation-auto-assignment/license
+  - /floating-island/
+  - /floating-island/getting-started
+  - /floating-island/gallery
+  - /floating-island/license
 ---
 
-Animation Auto Assignment はヒエラルキー上のコンポーネントの移動を監視し、アニメーションの自動再割り当てを行います。  
-これにより、ヒエラルキーツリーの変更をアニメーションクリップに気を遣う必要が無くなり、アニメーションクリップが破壊される可能性を軽減できます。
+![](https://images.natsuneko.com/6bb4ef8c7c5e873ee4d4b7be5921fe7528d73bac59e38dece267a7e928e30c74.png)
+
+Floating Island は、 Minecraft へ新しいワールドタイプ「FloatingIsland」を追加する Fabric 対応 Mod です。
