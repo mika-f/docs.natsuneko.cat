@@ -3,6 +3,11 @@ title: unitypackage
 description: 環境依存なしで動作する軽量な UnityPackage 作成パッケージ
 layout: overview
 repository: natsuneko-laboratory/unitypackage
+introLinks:
+  - title: クイックスタート
+    item: /unitypackage/getting-started
+  - title: GitHub
+    item: https://github.com/natsuneko-laboratory/unitypackage
 featuredLinks:
   - title: Start Here
     items:

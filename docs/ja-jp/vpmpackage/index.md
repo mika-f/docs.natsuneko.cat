@@ -3,6 +3,11 @@ title: vpmpackage
 description: 環境依存なしで動作する軽量な VPMPackage 作成パッケージ
 layout: overview
 repository: natsuneko-laboratory/vpmpackage
+introLinks:
+  - title: クイックスタート
+    item: /vpmpackage/getting-started
+  - title: GitHub
+    item: https://github.com/natsuneko-laboratory/vpmpackage
 featuredLinks:
   - title: Start Here
     items:
