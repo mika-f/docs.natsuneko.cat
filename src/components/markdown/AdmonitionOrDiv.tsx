@@ -12,5 +12,5 @@ export const AdmonitionOrDiv = ({ className, ...rest }: Props) => {
     return <Admonition type={type as any} className={className} {...rest} />;
   }
 
-  return <div {...rest} />;
+  return <div className={className} {...rest} />;
 };

@@ -1,13 +1,22 @@
 ---
-title: Animation Auto Assignment
-description: ヒエラルキー上のコンポーネントの移動を監視し、アニメーションの自動再割り当てを行う Unity エディター拡張
-repository: https://github.com/natsuneko-laboratory/animation-auto-assignment
+title: NekoDraw
+description: AI powered Illustration Assistant for CLIP STUDIO PAINT
+layout: overview
+repository: mika-f/nekodraw
+featuredLinks:
+  - title: ここから始める
+    items:
+      - /nekodraw/installation
 navigation:
-  - /animation-auto-assignment/
-  - /animation-auto-assignment/getting-started
-  - /animation-auto-assignment/usage
-  - /animation-auto-assignment/license
+  - /nekodraw/overview
+  - /nekodraw/installation
 ---
 
-Animation Auto Assignment はヒエラルキー上のコンポーネントの移動を監視し、アニメーションの自動再割り当てを行います。  
-これにより、ヒエラルキーツリーの変更をアニメーションクリップに気を遣う必要が無くなり、アニメーションクリップが破壊される可能性を軽減できます。
+![](https://user-images.githubusercontent.com/10832834/235712973-cb5b32a6-ad2d-4beb-8aa3-575d20566c87.png)
+
+NekoDraw is an AI powered Illustration Assistant for CLIP STUDIO PAINT.
+This addon provides AI-powered features to CLIP STUDIO PAINT powered by Stable Diffusion.
+
+> ![NOTE]
+> This addon is still in development and currently only supports Windows, high-end NVIDIA GPUs, VRAMs, and CPUs.
+> Please check your system **hardware** requirements before using this addon.

@@ -87,7 +87,6 @@ export default makeSource({
             "![TIP]",
             "![WARNING]",
           ],
-          titleLift: true,
         },
       ],
     ],
