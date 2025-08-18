@@ -44,14 +44,14 @@ export const navigation = (
   doc: Article,
   lang: string
 ): { root: string; paths: string[] } => {
-  if (doc.navigation) {
+  if (doc.navigation?.length) {
     return { root: doc.path, paths: doc.navigation };
   }
 
   const path = doc.path;
   const parentDoc = find(getParent(path), lang);
   if (parentDoc) {
-    return { root: parentDoc.path, paths: parentDoc.navigation ?? [] };
+    return navigation(parentDoc, lang);
   }
 
   return { root: path, paths: [] };
