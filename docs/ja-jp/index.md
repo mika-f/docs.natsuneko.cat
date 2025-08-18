@@ -5,7 +5,7 @@ layout: landing
 navigation:
   - /akasha
   - /animation-auto-assignment
-  - /animator-controller-post-processing
+  - /animator-controller-tool-post-processing
   - /asset-explorer
   - /automatic-material-duplicator
   - /catalyst
