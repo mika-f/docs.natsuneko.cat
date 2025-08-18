@@ -1,13 +1,22 @@
 ---
-title: Animation Auto Assignment
-description: ヒエラルキー上のコンポーネントの移動を監視し、アニメーションの自動再割り当てを行う Unity エディター拡張
-repository: https://github.com/natsuneko-laboratory/animation-auto-assignment
+title: vpmpackage
+description: 環境依存なしで動作する軽量な VPMPackage 作成パッケージ
+layout: overview
+repository: natsuneko-laboratory/vpmpackage
+featuredLinks:
+  - title: Start Here
+    items:
+      - /vpmpackage/getting-started
+      - /vpmpackage/functions
 navigation:
-  - /animation-auto-assignment/
-  - /animation-auto-assignment/getting-started
-  - /animation-auto-assignment/usage
-  - /animation-auto-assignment/license
+  - /vpmpackage/getting-started
+  - /vpmpackage/functions
+  - /vpmpackage/license
 ---
 
-Animation Auto Assignment はヒエラルキー上のコンポーネントの移動を監視し、アニメーションの自動再割り当てを行います。  
-これにより、ヒエラルキーツリーの変更をアニメーションクリップに気を遣う必要が無くなり、アニメーションクリップが破壊される可能性を軽減できます。
+`@natsuneko-laboratory/vpmpackage` は、Unity Editor や VRChat、その他の外部ソフトウェア（Windows の 7-Zip、Unix の gz や tar コマンドなど）に依存せずに動作する軽量な VPMPackage 作成パッケージです。  
+また、プロジェクトの形式にも依存しません。これは、 OpenUPM や今まで通りの UnityPackage などとパッケージの配布方法が共存できるということです。
+
+このパッケージは単純なメソッドを一つを提供いています。
+
+- [`archive`](/vpmpackage/functions/archive)
