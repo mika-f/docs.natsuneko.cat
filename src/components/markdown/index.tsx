@@ -7,12 +7,14 @@ import {
   TableHeader,
   TableRow,
 } from "../ui/table";
+import { AdmonitionOrDiv } from "./AdmonitionOrDiv";
 import { Heading1, Heading2, Heading3, Heading4 } from "./Headings";
 import { InlineCode } from "./InlineCode";
 import { ListItem, OrderedList, UnorderedList } from "./List";
 import { Paragraph } from "./Paragraph";
 import { Preformat } from "./Preformat";
 import { Hyperlink } from "./Hyperlink";
+import { Blockquote } from "./Blockquote";
 
 type Props = {
   markdown: string;
@@ -45,6 +47,8 @@ export const Markdown = ({ markdown }: Props) => {
         tr: TableRow,
         th: TableHead,
         td: TableCell,
+        div: AdmonitionOrDiv,
+        blockquote: Blockquote,
       }}
     />
   );

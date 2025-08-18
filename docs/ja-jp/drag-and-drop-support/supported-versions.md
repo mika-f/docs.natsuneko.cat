@@ -1,0 +1,46 @@
+---
+title: 対応 Blender バージョン (3.x)
+---
+
+このアドオンは、以下のバージョンの Blender をサポートしています。
+
+- Blender 3.1.0 (x64 - Windows)
+- Blender 3.1.1 (x64 - Windows)
+- Blender 3.1.2 (x64 - Windows)
+- Blender 3.2.0 (x64 - Windows)
+- Blender 3.2.1 (x64 - Windows)
+- Blender 3.2.2 (x64 - Windows)
+- Blender 3.3.0 (x64 - Windows)
+- Blender 3.3.1 (x64 - Windows)
+- Blender 3.3.2 (x64 - Windows)
+- Blender 3.3.3 (x64 - Windows)
+- Blender 3.3.4 (x64 - Windows)
+- Blender 3.4.0 (x64 - Windows)
+- Blender 3.4.1 (x64 - Windows)
+- Blender 3.5.0 (x64 - Windows)
+- Blender 3.5.1 (x64 - Windows)
+- Blender 3.6.0 (x64 - Windows)
+- Blender 3.6.1 (x64 - Windows)
+- Blender 3.6.2 (x64 - Windows)
+- Blender 3.6.4 (x64 - Windows)
+- Blender 3.6.5 (x64 - Windows)
+- Blender 3.6.7 (x64 - Windows)
+- Blender 3.6.8 (x64 - Windows)
+- Blender 3.6.9 (x64 - Windows)
+- Blender 3.6.10 (x64 - Windows)
+- Blender 3.6.11 (x64 - Windows)
+- Blender 3.6.12 (x64 - Windows)
+- Blender 3.6.13 (x64 - Windows)
+- Blender 3.6.14 (x64 - Windows)
+- Blender 3.6.15 (x64 - Windows)
+- Blender 3.6.16 (x64 - Windows)
+- Blender 3.6.17 (x64 - Windows)
+- Blender 3.6.18 (x64 - Windows)
+- Blender 3.6.19 (x64 - Windows)
+- Blender 3.6.20 (x64 - Windows)
+- Blender 4.0.0 (x64 - Windows)
+- Blender 4.0.1 (x64 - Windows)
+- Blender 4.0.2 (x64 - Windows)
+
+このアドオンは、上記以外のバージョンでは動作しません。
+他の Blender バージョンをサポートしたい場合は、[新しい issue を作成](https://github.com/mika-f/blender-drag-and-drop/issues)してください。

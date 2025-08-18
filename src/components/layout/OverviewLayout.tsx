@@ -34,7 +34,7 @@ export const OverviewLayout = ({ document, lang, rest }: Props) => {
 
           <div>
             {introLinks && introLinks.length > 0 && (
-              <div className="my-8 flex gap-x-4 text-lg">
+              <div className="my-8 flex flex-wrap gap-x-4 gap-y-2 text-lg">
                 {introLinks.map((link, index) => {
                   return (
                     <Button
