@@ -1,13 +1,24 @@
 ---
-title: Animation Auto Assignment
-description: ヒエラルキー上のコンポーネントの移動を監視し、アニメーションの自動再割り当てを行う Unity エディター拡張
-repository: https://github.com/natsuneko-laboratory/animation-auto-assignment
+title: UStyled
+layout: overview
+description: UnoCSS, Windi CSS および TailwindCSS にインスパイアされた next-generation ユーティリティファースト USS フレームワーク
+repository: mika-f/UStyled
+introLinks:
+  - title: Getting Started
+    item: /ustyled/getting-started
+  - title: GitHub
+    item: https://github.com/mika-f/UStyled
+featuredLinks:
+  - title: Start Here
+    items:
+      - /ustyled/getting-started
+      - /ustyled/functions
 navigation:
-  - /animation-auto-assignment/
-  - /animation-auto-assignment/getting-started
-  - /animation-auto-assignment/usage
-  - /animation-auto-assignment/license
+  - /ustyled/installation
+  - /ustyled/features
+  - /ustyled/functions
+  - /ustyled/license
 ---
 
-Animation Auto Assignment はヒエラルキー上のコンポーネントの移動を監視し、アニメーションの自動再割り当てを行います。  
-これにより、ヒエラルキーツリーの変更をアニメーションクリップに気を遣う必要が無くなり、アニメーションクリップが破壊される可能性を軽減できます。
+UStyled は TailwindCSS や UnoCSS、 WindiCSS などにインスパイアされた、次世代のユーティリティファースト USS フレームワークです。  
+ユーティリティファーストなクラスを多数提供することで、開発者は USS のスコープや名前衝突などに悩まされることなく、迅速に UI を構築できます。
