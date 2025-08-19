@@ -1,13 +1,24 @@
 ---
-title: Animation Auto Assignment
-description: ヒエラルキー上のコンポーネントの移動を監視し、アニメーションの自動再割り当てを行う Unity エディター拡張
-repository: https://github.com/natsuneko-laboratory/animation-auto-assignment
+title: TextMesh Creator
+description: 様々な文字メッシュを簡単に Blender で作成、出力できる Blender アドオン
+layout: overview
+repository: natsuneko-laboratory/text-mesh-creator
+introLinks:
+  - title: "BOOTH"
+    item: "https://natsuneko-vrc.booth.pm/items/3853084"
+  - title: "始める"
+    item: /text-mesh-creator/installation
+featuredLinks:
+  - title: ここから始める
+    items:
+      - /text-mesh-creator/installation
+      - /text-mesh-creator/properties
 navigation:
-  - /animation-auto-assignment/
-  - /animation-auto-assignment/getting-started
-  - /animation-auto-assignment/usage
-  - /animation-auto-assignment/license
+  - /text-mesh-creator/
+  - /text-mesh-creator/installation
+  - /text-mesh-creator/properties
+  - /text-mesh-creator/license
 ---
 
-Animation Auto Assignment はヒエラルキー上のコンポーネントの移動を監視し、アニメーションの自動再割り当てを行います。  
-これにより、ヒエラルキーツリーの変更をアニメーションクリップに気を遣う必要が無くなり、アニメーションクリップが破壊される可能性を軽減できます。
+TextMesh Creator は、様々な形の文字メッシュを、任意のフォントで、簡単に作成、出力できる Blender アドオンです。
+Unity や Unreal Engine 、その他のゲームエンジンなどで使える便利な文字メッシュが作成できます。
