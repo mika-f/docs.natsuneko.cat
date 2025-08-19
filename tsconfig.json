@@ -1,14 +1,13 @@
 {
   "compilerOptions": {
-    "target": "es5",
+    "baseUrl": ".",
+    "target": "ES2017",
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
     "strict": true,
-    "forceConsistentCasingInFileNames": true,
     "noEmit": true,
     "esModuleInterop": true,
-    "baseUrl": ".",
     "module": "esnext",
     "moduleResolution": "bundler",
     "resolveJsonModule": true,
@@ -22,7 +21,7 @@
     ],
     "paths": {
       "@/*": ["./src/*"],
-      "contentlayer/generated": ["./.contentlayer/generated"]
+      "contentlayer2/generated": ["./.contentlayer/generated"]
     }
   },
   "include": [

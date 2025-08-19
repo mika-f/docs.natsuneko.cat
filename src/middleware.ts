@@ -1,10 +1,5 @@
-import { chain } from "@/middlewares/chain";
-import { i18n } from "@/middlewares/i18n";
-
-const middleware = chain(
-  //
-  i18n
-);
+import { chain } from "./middleware/chain";
+import { i18n } from "./middleware/i18n";
 
 export const config = {
   matcher: [
@@ -21,4 +16,4 @@ export const config = {
   ],
 };
 
-export { middleware };
+export const middleware = chain(i18n);
