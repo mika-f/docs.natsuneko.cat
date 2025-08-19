@@ -6,7 +6,7 @@ Animator Controller Tool Post Processing は BOOTH から入手可能な UnityPa
 
 ## UnityPackage から
 
-Animator Controller Tool Post Processing を GitHub Release からインストールできます。
+Animator Controller Tool Post Processing を BOOTH からインストールできます。
 これは、通常の Unity プロジェクトに推奨されます。
 
 ### インストール
