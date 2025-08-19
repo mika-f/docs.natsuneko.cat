@@ -56,3 +56,7 @@ export const navigation = (
 
   return { root: path, paths: [] };
 };
+
+export const isFallback = (document: Article, lang: string) => {
+  return document.lang !== lang;
+};

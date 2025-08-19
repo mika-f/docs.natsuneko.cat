@@ -21,7 +21,7 @@ export const HeaderSidebar = ({ document, lang, rest }: Props) => {
   }, []);
 
   return (
-    <div className="flex md:hidden h-12 items-center sticky top-16 z-10 border-b border-border bg-background">
+    <div className="flex md:hidden h-12 items-center sticky top-16 z-20 border-b border-border bg-background">
       <button
         className="flex mx-4 lg:mx-0 w-full"
         type="button"
