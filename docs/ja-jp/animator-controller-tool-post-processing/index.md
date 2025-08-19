@@ -1,9 +1,13 @@
 ---
 title: Animator Controller Tool Post Processing
-description: ヒエラルキー上のコンポーネントの移動を監視し、アニメーションの自動再割り当てを行う Unity エディター拡張
+description: Unity の Animator 周りの挙動を VRChat 推奨設定に変える Unity エディター拡張
 layout: overview
 repository: natsuneko-laboratory/animator-controller-tool-post-processing
 introLinks:
+  - title: BOOTH
+    item: https://natsuneko-vrc.booth.pm/items/3853091
+  - title: OpenUPM
+    item: https://openupm.com/packages/cat.natsuneko.animator-controller-tool-post-processing/
   - title: GitHub
     item: https://github.com/natsuneko-laboratory/animator-controller-tool-post-processing
 navigation:

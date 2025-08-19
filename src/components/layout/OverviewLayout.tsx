@@ -4,10 +4,10 @@ import { find } from "@/services/docs";
 import { Changelog } from "../features/Changelog";
 import { Sidebar } from "../features/Sidebar";
 import { HeaderSidebar } from "../features/Sidebar/header";
+import { Markdown } from "../markdown";
 import { Heading1 } from "../markdown/Headings";
 import { Lead } from "../markdown/Lead";
 import { Button } from "../ui/button";
-import { Markdown } from "../markdown";
 
 type Props = {
   document: Article;
@@ -36,6 +36,7 @@ export const OverviewLayout = ({ document, lang, rest }: Props) => {
             {introLinks && introLinks.length > 0 && (
               <div className="my-8 flex flex-wrap gap-x-4 gap-y-2 text-lg">
                 {introLinks.map((link, index) => {
+                  const isExternal = link.item.startsWith("https");
                   return (
                     <Button
                       key={link.title}
@@ -44,7 +45,12 @@ export const OverviewLayout = ({ document, lang, rest }: Props) => {
                       variant={index === 0 ? "default" : "secondary"}
                       asChild
                     >
-                      <Link href={link.item}>{link.title}</Link>
+                      <Link
+                        href={link.item}
+                        target={isExternal ? "_blank" : "_self"}
+                      >
+                        {link.title}
+                      </Link>
                     </Button>
                   );
                 })}

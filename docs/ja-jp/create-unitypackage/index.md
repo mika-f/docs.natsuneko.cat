@@ -12,7 +12,6 @@ featuredLinks:
       - /create-unitypackage/getting-started
       - /create-unitypackage/properties
 navigation:
-  - /create-unitypackage/overview
   - /create-unitypackage/getting-started
   - /create-unitypackage/properties
   - /create-unitypackage/license

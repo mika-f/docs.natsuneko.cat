@@ -2,6 +2,8 @@
 title: インストールガイド
 ---
 
+Animator Controller Tool Post Processing は BOOTH から入手可能な UnityPackage で、もしくは OpenUPM から Unity Package Manager 経由でインストールが可能です。
+
 ## UnityPackage から
 
 Animator Controller Tool Post Processing を GitHub Release からインストールできます。
@@ -9,14 +11,14 @@ Animator Controller Tool Post Processing を GitHub Release からインスト�
 
 ### インストール
 
-1. [GitHub Releases](https://github.com/natsuneko-laboratory/animator-controller-tool-post-processing/releases) からインストールアーカイブをダウンロードします。
+1. [BOOTH](https://natsuneko-vrc.booth.pm/items/3853091) からインストールアーカイブをダウンロードします。
 2. ダウンロードしたアーカイブを展開します。
 3. `AnimatorControllerToolPostProcessing-vx.x.x.unitypackage` をダブルクリックします。
 4. インストールします。
 
 ### 更新
 
-1. [GitHub Releases](https://github.com/natsuneko-laboratory/animator-controller-tool-post-processing/releases) から最新のインストールアーカイブをダウンロードします。
+1. [BOOTH](https://natsuneko-vrc.booth.pm/items/3853091) から最新のインストールアーカイブをダウンロードします。
 2. ダウンロードしたアーカイブを展開します。
 3. `AnimatorControllerToolPostProcessing-vx.x.x.unitypackage` をダブルクリックします。
 4. Install (Overwrite)
@@ -25,7 +27,7 @@ Animator Controller Tool Post Processing を GitHub Release からインスト�
 
 1. `Assets` ディレクトリから `NatsunekoLaboratory/AnimatorControllerToolPostProcessing` ディレクトリを削除します。
 
-## Via OpenUPM
+## OpenUPM から
 
 Animator Controller Tool Post Processing を OpenUPM からインストールできます。
 これは、Unity Package Manager で既存のパッケージを管理しているユーザーや Unity の専門家に推奨されます。
