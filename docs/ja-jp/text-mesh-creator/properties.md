@@ -58,16 +58,21 @@ TextMesh Creator には、テキストメッシュをカスタマイズするた
 
 ### オプション無し
 
-![](https://images.natsuneko.com/8ad3514557c298d43c7c1b209edd49e440d54275278c1c43b0972fa4cddbd17f.png)
+<figure>
+  <img src="https://images.natsuneko.com/8ad3514557c298d43c7c1b209edd49e440d54275278c1c43b0972fa4cddbd17f.png" />
+  <figcaption>オプション無し</figcaption>
+</figure>
 
 ### "Separate by Loose Parts" オン
 
-![](https://images.natsuneko.com/1b39f05e22109186c62dafa858b4b4b852b286a8390e371c63183fe6ccc8f627.png)
-
-「い」、「う」、「え」、および「お」が分離しているのが分かる
+<figure>
+  <img src="https://images.natsuneko.com/1b39f05e22109186c62dafa858b4b4b852b286a8390e371c63183fe6ccc8f627.png" />
+  <figcaption>"Separate by Loose Parts" オン、「い」、「う」、「え」、および「お」が分離しているのが分かる</figcaption>
+</figure>
 
 ### Outlined オン
 
-![](https://images.natsuneko.com/667f6f495b6f3edcf2fb88711f8ca0f1bce7367e8a3bc5621e5a29846a7360da.png)
-
-文字がアウトライン形式になっているのが分かる
+<figure>
+  <img src="https://images.natsuneko.com/667f6f495b6f3edcf2fb88711f8ca0f1bce7367e8a3bc5621e5a29846a7360da.png" />
+  <figcaption>Outlined オン、文字がアウトライン形式になっているのが分かる</figcaption>
+</figure>

@@ -64,10 +64,27 @@
   @apply mt-0;
 }
 
-[data-rehype-pretty-code-figure] {
+figure[data-rehype-pretty-code-figure] {
   @apply px-3;
   @apply py-2;
   @apply bg-muted;
+}
+
+figure:not([data-rehype-pretty-code-figure]) {
+  @apply my-4;
+}
+
+figure:not([data-rehype-pretty-code-figure]) img {
+  @apply max-w-full;
+  @apply h-auto;
+  @apply mx-auto;
+}
+
+figure:not([data-rehype-pretty-code-figure]) figcaption {
+  @apply text-sm;
+  @apply text-muted-foreground;
+  @apply mt-2;
+  @apply text-center;
 }
 
 span[data-line]:not(:empty) {

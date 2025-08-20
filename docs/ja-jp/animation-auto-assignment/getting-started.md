@@ -18,7 +18,10 @@ Animation Auto Assignment は、ヒエラルキー上の GameObject の変更を
 
 設定後、 `Start Tracking` ボタンを押すと、監視が開始されます。監視が開始されると、次のような表示になります：
 
-![](https://images.natsuneko.com/d73791bd36b5fce374520a49f20a9628aebe184fa949f5f2b316f83e961cddb6.png)
+<figure>
+  <img src="https://images.natsuneko.com/d73791bd36b5fce374520a49f20a9628aebe184fa949f5f2b316f83e961cddb6.png" />
+  <figcaption>監視がされている状態</figcaption>
+</figure>
 
 監視を開始したら、ヒエラルキー上の GameObject の変更を行ってください。変更が自動追従されます。
 

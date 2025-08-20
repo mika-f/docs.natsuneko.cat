@@ -1,4 +1,5 @@
 import { useMDXComponent } from "next-contentlayer2/hooks";
+import { cn } from "@/lib/utils";
 import {
   Table,
   TableBody,
@@ -8,13 +9,13 @@ import {
   TableRow,
 } from "../ui/table";
 import { AdmonitionOrDiv } from "./AdmonitionOrDiv";
+import { Blockquote } from "./Blockquote";
 import { Heading1, Heading2, Heading3, Heading4 } from "./Headings";
+import { Hyperlink } from "./Hyperlink";
 import { InlineCode } from "./InlineCode";
 import { ListItem, OrderedList, UnorderedList } from "./List";
 import { Paragraph } from "./Paragraph";
 import { Preformat } from "./Preformat";
-import { Hyperlink } from "./Hyperlink";
-import { Blockquote } from "./Blockquote";
 
 type Props = {
   markdown: string;
