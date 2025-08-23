@@ -15,7 +15,11 @@ UdonSharp はお使いのエディター上にリアルタイムにエラー情�
 1. ダウンロード可能なパッケージ一覧から、 Visual Studio 2022 用のパッケージをインストールします
    - `NatsunekoLaboratory.UdonAnalyzer.VS2022.vsix`
 2. 拡張機能をインストールします
-3. UdonSharp プロジェクトを開きます
+3. ダウンロード可能なパッケージ一覧から、 Unity Integration 用のパッケージをインストールします
+   - `UdonAnalyzer-xxx.unitypackage`
+4. エディター拡張をインポートします
+5. ソリューションを再生成します
+6. Unity から対象ファイルを、 Visual Studio 2022 で開きます
 
 ### Visual Studio Code / JetBrains Rider
 
