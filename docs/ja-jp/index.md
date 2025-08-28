@@ -7,6 +7,7 @@ navigation:
   - /animation-auto-assignment
   - /animator-controller-tool-post-processing
   - /asset-explorer
+  - /astro-notes
   - /automatic-material-duplicator
   - /catalyst
   - /catalyst-swift
