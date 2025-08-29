@@ -24,3 +24,4 @@ title: ランタイムアナライザーの一覧
 | VRC0018 | [The method specified for SendCustomEvent is not declared in the behaviour](/udon-analyzer/diagnostics/udon/VRC0018/)                                         | Warning  |
 | VRC0019 | [NetworkCallableAttribute must be required for calling method via SendCustomNetworkEvent with parameters](/udon-analyzer/diagnostics/udon/VRC0019/)           | Error    |
 | VRC0020 | [The parameter type of method does not match the Nth argument of SendCustomNetworkEvent](/udon-analyzer/diagnostics/udon/VRC0020/)                            | Error    |
+| VRC0021 | [Unable to send network event to UdonBehaviour with SyncType 'None'](/udon-analyzer/diagnostics/udon/VRC0021/)                                                | Warning  |
