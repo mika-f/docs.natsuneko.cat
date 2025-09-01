@@ -1,13 +1,14 @@
 ---
-title: 開発者用 API
-description: 開発者用 API を使って、各種操作をカスタマイズしましょう
+title: イベントハンドラー
 ---
 
-Astro Notes - Live Machine では、開発者向けに各種イベントハンドラーを提供しています。
+AstroNotes - Live Machine では、開発者向けに各種イベントハンドラーを提供しています。
 各種イベントハンドラーを購読するには、 `NatsunekoLaboratory.AstroNotes.LiveMachineProxyBase` クラスを継承してください。
 
 継承したクラスを作成後、各種 `OnXXX` をオーバーライドし、 `Start` メッセージで `LiveMachine.SetEventListener` を呼び出すことで、イベントハンドラーの登録が可能です。
 なお、すべてのイベントはネットワークを経由しすべてのユーザーに通知されます。
+
+イベントハンドラー (Proxy) には制約があるため、[制限事項](/astro-notes/live-machine/limitations) を参照してください。
 
 ## コード例
 
@@ -215,8 +216,7 @@ namespace NatsunekoLaboratory.Example
         // OnStop イベントハンドラーの購読
         public override void OnStop()
         {
-            if (_target)
-                _target.SetActive(true);
+            //
         }
     }
 }

@@ -5,14 +5,17 @@ layout: overview
 featuredLinks:
   - title: ユーザーとして使う
     items:
-      - /astro-notes/live-machine/usage
+      - /astro-notes/live-machine/setup
       - /astro-notes/live-machine/limitations
+      - /astro-notes/live-machine/components
   - title: 開発者として使う
     items:
       - /astro-notes/live-machine/development
+      - /astro-notes/live-machine/components
 navigation:
   - /astro-notes/live-machine/limitations
-  - /astro-notes/live-machine/usage
+  - /astro-notes/live-machine/setup
+  - /astro-notes/live-machine/components
   - /astro-notes/live-machine/development
   - /astro-notes/live-machine/changelog
   - /astro-notes/live-machine/license
