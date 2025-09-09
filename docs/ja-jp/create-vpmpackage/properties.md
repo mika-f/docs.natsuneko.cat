@@ -10,9 +10,8 @@ title: パラメーター
 | `packages` | `string[]` | No \*1   | -       | Path to `package.json` or `package.json` itself but can specify multiples. |
 | `output`   | `string`   | No \*2   | -       | Path to output UnityPackage.                                               |
 | `outputs`  | `string[]` | No \*3   | -       | Path to output UnityPackage but can specify multiples.                     |
-| `root`     | `string`   | No       | `./`    | Path to root directory of Unity project.                                   |
 
-- \*1 Required one of `meta`, `package`, `packages`
+- \*1 Required one of `package`, `packages`
 - \*2 Required if `package` is specified
 - \*3 Required if `packages` is specified
 

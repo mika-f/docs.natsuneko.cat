@@ -18,7 +18,7 @@ navigation:
   - /create-vpmpackage/license
 ---
 
-`@natsuneko-laboratory/create-unitypackage` は Unity Editor への依存、およびその他の外部ソフトウェア（Windows の 7-Zip、Unix の gz や tar コマンドなど）なしで UnityPackage を作成する GitHub Actions です。
+`@natsuneko-laboratory/create-vpmpackage` は Unity Editor や VRChat SDK への依存、およびその他の外部ソフトウェア（Windows の 7-Zip、Unix の gz や tar コマンドなど）なしで VPM 対応パッケージを作成する GitHub Actions です。
 これにより、カスタマイズされたセルフホステッドランナーなど、任意のプラットフォームでこの Actions を使用できます。
 
 また、 この Actions は VPM Package を作成するための特殊なディレクトリ構造などは必要なく、 OpenUPM へ登録する形そのままでのパッケージングが可能となっています。
