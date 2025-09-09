@@ -37,7 +37,7 @@ declare const archive: (args: ArchiveArgs) => Promise<void>;
 
 | Parameter   | Type                       | Required | Description                                                     |
 | ----------- | -------------------------- | -------- | --------------------------------------------------------------- |
-| `files`     | `string[]`                 | Yes      | アーカイブするファイルの meta ファイルパス                      |
+| `files`     | `string[]`                 | Yes      | アーカイブするファイル実態 (meta ではない) のパス               |
 | `root`      | `string`                   | Yes      | プロジェクトのルートディレクトリへのパス                        |
 | `dest`      | `string`                   | Yes      | 出力先の UnityPackage へのパス                                  |
 | `transform` | `(path: string) => string` | No       | アーカイブ書き込み時にパスを書き換える場合の transform callback |
@@ -58,7 +58,7 @@ declare const archive: (args: ArchiveArgs) => Promise<void>;
 import { archive } from "@natsuneko-laboratory/unitypackage";
 
 await archive({
-  files: ["Assets/Plugins/MyPlugin.cs.meta"],
+  files: ["Assets/Plugins/MyPlugin.cs"],
   root: "./",
   dest: "./output.unitypackage",
 });
