@@ -2,8 +2,6 @@
 title: ライセンス
 ---
 
-## Open Source License
-
 このソフトウェアは [MIT License](https://opensource.org/licenses/MIT) の下でライセンスされています。
 
 ```markdown
