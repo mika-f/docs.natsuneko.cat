@@ -14,9 +14,10 @@ featuredLinks:
       - /checkout-lfs/getting-started
       - /checkout-lfs/properties
 navigation:
-  - /checkout-lfs/getting-started
-  - /checkout-lfs/properties
-  - /checkout-lfs/license
+  items:
+    - /checkout-lfs/getting-started
+    - /checkout-lfs/properties
+    - /checkout-lfs/license
 ---
 
 `@natsuneko-laboratory/create-unitypackage` は**自身でホストしている** Git LFS サーバーをワークフローで使用するためのものです。

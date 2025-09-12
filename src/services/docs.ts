@@ -40,12 +40,44 @@ export const breadcrumb = (path: string, lang: string): Article[] => {
   return breadcrumbs;
 };
 
+type NavigationPathItem = {
+  href: string;
+};
+
+type NavigationNestItem = {
+  children: NavigationItem[];
+  href: string;
+};
+
+type NavigationItem = NavigationPathItem | NavigationNestItem;
+
+const getChildItems = (article: Article, lang: string): NavigationItem[] => {
+  return (
+    article.navigation?.items.map<NavigationItem>((w) => {
+      const item = find(w, lang);
+      if (item?.navigation?.self) {
+        return { children: getChildItems(item, lang), href: item.path };
+      }
+
+      return { href: w };
+    }) ?? []
+  );
+};
+
 export const navigation = (
   doc: Article,
   lang: string
-): { root: string; paths: string[] } => {
-  if (doc.navigation?.length) {
-    return { root: doc.path, paths: doc.navigation };
+): { root: string; paths: NavigationItem[] } => {
+  if (doc.navigation?.items?.length && doc.navigation?.self === false) {
+    const paths = doc.navigation.items.map<NavigationItem>((w) => {
+      const item = find(w, lang);
+      if (item?.navigation?.self) {
+        return { children: getChildItems(item, lang), href: item.path };
+      }
+
+      return { href: w };
+    });
+    return { root: doc.path, paths };
   }
 
   const path = doc.path;

@@ -6,10 +6,11 @@ introLinks:
   - title: Catalyst について
     item: /catalyst/about
 navigation:
-  - /catalyst
-  - /catalyst/about
-  - /catalyst/terms
-  - /catalyst/privacy
-  - /catalyst/cookies
-  - /catalyst/ads
+  items:
+    - /catalyst
+    - /catalyst/about
+    - /catalyst/terms
+    - /catalyst/privacy
+    - /catalyst/cookies
+    - /catalyst/ads
 ---

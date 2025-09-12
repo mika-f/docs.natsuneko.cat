@@ -14,10 +14,11 @@ featuredLinks:
       - /ustyled/getting-started
       - /ustyled/functions
 navigation:
-  - /ustyled/installation
-  - /ustyled/features
-  - /ustyled/functions
-  - /ustyled/license
+  items:
+    - /ustyled/installation
+    - /ustyled/features
+    - /ustyled/functions
+    - /ustyled/license
 ---
 
 UStyled は TailwindCSS や UnoCSS、 WindiCSS などにインスパイアされた、次世代のユーティリティファースト USS フレームワークです。  

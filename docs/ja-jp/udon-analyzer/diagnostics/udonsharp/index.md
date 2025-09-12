@@ -1,5 +1,9 @@
 ---
 title: コンパイラーアナライザーの一覧
+navigation:
+  self: true
+  items:
+    - /udon-analyzer/diagnostics/udonsharp/VSC0001
 ---
 
 | ID      | Title                                                                                                                                                                           | Severity |

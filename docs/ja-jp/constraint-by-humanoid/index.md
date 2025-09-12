@@ -16,9 +16,10 @@ featuredLinks:
       - /constraint-by-humanoid/installation
       - /constraint-by-humanoid/usage
 navigation:
-  - /constraint-by-humanoid/installation
-  - /constraint-by-humanoid/usage
-  - /constraint-by-humanoid/license
+  items:
+    - /constraint-by-humanoid/installation
+    - /constraint-by-humanoid/usage
+    - /constraint-by-humanoid/license
 ---
 
 Constraint by Humanoid は Humanoid ボーンによる GameObject の位置と回転の Constraint コンポーネントを設定するための Unity エディタ拡張です。

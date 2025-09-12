@@ -12,7 +12,7 @@ type Props = {
 };
 
 export const LandingLayout = ({ document, lang, rest }: Props) => {
-  const navigations = (document.navigation ?? [])
+  const navigations = (document.navigation?.items ?? [])
     .map((w) => find(w, lang))
     .filter((w) => w !== null);
 

@@ -22,14 +22,15 @@ featuredLinks:
       - /drag-and-drop-support/installation-via-extensions
       - /drag-and-drop-support/supported-formats
 navigation:
-  - /drag-and-drop-support/
-  - /drag-and-drop-support/installation-via-extensions
-  - /drag-and-drop-support/supported-formats
-  - /drag-and-drop-support/installation
-  - /drag-and-drop-support/security-guides
-  - /drag-and-drop-support/supported-versions
-  - /drag-and-drop-support/supported-platforms
-  - /drag-and-drop-support/license
+  items:
+    - /drag-and-drop-support/
+    - /drag-and-drop-support/installation-via-extensions
+    - /drag-and-drop-support/supported-formats
+    - /drag-and-drop-support/installation
+    - /drag-and-drop-support/security-guides
+    - /drag-and-drop-support/supported-versions
+    - /drag-and-drop-support/supported-platforms
+    - /drag-and-drop-support/license
 ---
 
 Drag and Drop Support は、 Blender 4.1 以前においては D&D にてファイルのインポートを可能にし、 4.2 以降ではより高度な設定と共に D&D にてファイルのインポートを可能にする Blender アドオンです。

@@ -1,5 +1,9 @@
 ---
 title: ランタイムアナライザーの一覧
+navigation:
+  self: true
+  items:
+    - /udon-analyzer/diagnostics/udon/VRC0001
 ---
 
 | ID      | Title                                                                                                                                                         | Severity |

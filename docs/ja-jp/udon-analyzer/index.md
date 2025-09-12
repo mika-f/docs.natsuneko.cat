@@ -14,10 +14,13 @@ featuredLinks:
       - /udon-analyzer/getting-started
       - /udon-analyzer/diagnostics
 navigation:
-  - /udon-analyzer/getting-started
-  - /udon-analyzer/diagnostics
-  - /udon-analyzer/dictionary
-  - /udon-analyzer/targeting
+  items:
+    - /udon-analyzer/getting-started
+    - /udon-analyzer/diagnostics
+    - /udon-analyzer/diagnostics/udon
+    - /udon-analyzer/diagnostics/udonsharp
+    - /udon-analyzer/dictionary
+    - /udon-analyzer/targeting
 ---
 
 Udon Analyzer は VRChat の UdonSharp 用の [Roslyn Analyzers](https://learn.microsoft.com/en-us/visualstudio/code-quality/roslyn-analyzers-overview) です。

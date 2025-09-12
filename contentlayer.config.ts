@@ -25,6 +25,14 @@ const FeaturedLinks = defineNestedType(() => ({
   },
 }));
 
+const Navigation = defineNestedType(() => ({
+  name: "Navigation",
+  fields: {
+    self: { type: "boolean", required: false, default: false },
+    items: { type: "list", of: { type: "string" }, required: true },
+  },
+}));
+
 const Article = defineDocumentType(() => ({
   name: "Article",
   filePathPattern: "**/*.md",
@@ -41,7 +49,7 @@ const Article = defineDocumentType(() => ({
     introLinks: { type: "list", of: IntroLinks, required: false },
     featuredLinks: { type: "list", of: FeaturedLinks, required: false },
     repository: { type: "string", required: false },
-    navigation: { type: "list", of: { type: "string" }, required: false },
+    navigation: { type: "nested", of: Navigation },
   },
   computedFields: {
     lang: {

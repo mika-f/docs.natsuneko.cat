@@ -11,8 +11,9 @@ introLinks:
   - title: GitHub
     item: https://github.com/natsuneko-laboratory/animator-controller-tool-post-processing
 navigation:
-  - /animator-controller-tool-post-processing/installation
-  - /animator-controller-tool-post-processing/license
+  items:
+    - /animator-controller-tool-post-processing/installation
+    - /animator-controller-tool-post-processing/license
 ---
 
 Animator Controller Tool Post Processing は Unity の Animator Controller Tool のデフォルトの動作を改善し、VRChat で推奨される設定にするためのエディター拡張です。

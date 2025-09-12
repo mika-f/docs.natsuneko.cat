@@ -22,14 +22,15 @@ featuredLinks:
       - /plana/plugins/rename-symbols
       - /plana/plugins/shuffle-declarations
 navigation:
-  - /plana/
-  - /plana/requirements
-  - /plana/installation
-  - /plana/cli
-  - /plana/unity-integration
-  - /plana/plugins
-  - /plana/license
-  - /plana/changelog
+  items:
+    - /plana/
+    - /plana/requirements
+    - /plana/installation
+    - /plana/cli
+    - /plana/unity-integration
+    - /plana/plugins
+    - /plana/license
+    - /plana/changelog
 ---
 
 > ![NOTE]

@@ -12,9 +12,10 @@ featuredLinks:
       - /create-unitypackage/getting-started
       - /create-unitypackage/properties
 navigation:
-  - /create-unitypackage/getting-started
-  - /create-unitypackage/properties
-  - /create-unitypackage/license
+  items:
+    - /create-unitypackage/getting-started
+    - /create-unitypackage/properties
+    - /create-unitypackage/license
 ---
 
 `@natsuneko-laboratory/create-unitypackage` は Unity Editor への依存、およびその他の外部ソフトウェア（Windows の 7-Zip、Unix の gz や tar コマンドなど）なしで UnityPackage を作成する GitHub Actions です。

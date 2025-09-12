@@ -14,9 +14,10 @@ featuredLinks:
       - /unitypackage/getting-started
       - /unitypackage/functions
 navigation:
-  - /unitypackage/getting-started
-  - /unitypackage/functions
-  - /unitypackage/license
+  items:
+    - /unitypackage/getting-started
+    - /unitypackage/functions
+    - /unitypackage/license
 ---
 
 `@natsuneko-laboratory/unitypackage` は、Unity Editor やその他の外部ソフトウェア（Windows の 7-Zip、Unix の gz や tar コマンドなど）に依存せずに動作する軽量な UnityPackage 作成パッケージです。

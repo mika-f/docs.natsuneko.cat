@@ -17,9 +17,10 @@ featuredLinks:
       - /animation-auto-assignment/installation
       - /animation-auto-assignment/usage
 navigation:
-  - /animation-auto-assignment/
-  - /animation-auto-assignment/getting-started
-  - /animation-auto-assignment/installation
-  - /animation-auto-assignment/usage
-  - /animation-auto-assignment/license
+  items:
+    - /animation-auto-assignment/
+    - /animation-auto-assignment/getting-started
+    - /animation-auto-assignment/installation
+    - /animation-auto-assignment/usage
+    - /animation-auto-assignment/license
 ---

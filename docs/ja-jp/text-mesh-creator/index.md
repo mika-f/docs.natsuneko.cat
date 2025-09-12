@@ -14,10 +14,11 @@ featuredLinks:
       - /text-mesh-creator/installation
       - /text-mesh-creator/properties
 navigation:
-  - /text-mesh-creator/
-  - /text-mesh-creator/installation
-  - /text-mesh-creator/properties
-  - /text-mesh-creator/license
+  items:
+    - /text-mesh-creator/
+    - /text-mesh-creator/installation
+    - /text-mesh-creator/properties
+    - /text-mesh-creator/license
 ---
 
 TextMesh Creator は、様々な形の文字メッシュを、任意のフォントで、簡単に作成、出力できる Blender アドオンです。

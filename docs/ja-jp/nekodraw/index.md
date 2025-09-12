@@ -8,8 +8,9 @@ featuredLinks:
     items:
       - /nekodraw/installation
 navigation:
-  - /nekodraw/overview
-  - /nekodraw/installation
+  items:
+    - /nekodraw/overview
+    - /nekodraw/installation
 ---
 
 ![](https://user-images.githubusercontent.com/10832834/235712973-cb5b32a6-ad2d-4beb-8aa3-575d20566c87.png)

@@ -18,11 +18,12 @@ featuredLinks:
       - /otsukai/recipe/minecraft
       - /otsukai/recipe/discord-bot
 navigation:
-  - /otsukai
-  - /otsukai/overview
-  - /otsukai/getting-started
-  - /otsukai/cli
-  - /otsukai/github-actions
+  items:
+    - /otsukai
+    - /otsukai/overview
+    - /otsukai/getting-started
+    - /otsukai/cli
+    - /otsukai/github-actions
 ---
 
 Otsukai は Ruby ライクなシンタックスで動作を書くことが出来るリモートデプロイメントツールです。  

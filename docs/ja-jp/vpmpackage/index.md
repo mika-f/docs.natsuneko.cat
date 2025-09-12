@@ -14,9 +14,10 @@ featuredLinks:
       - /vpmpackage/getting-started
       - /vpmpackage/functions
 navigation:
-  - /vpmpackage/getting-started
-  - /vpmpackage/functions
-  - /vpmpackage/license
+  items:
+    - /vpmpackage/getting-started
+    - /vpmpackage/functions
+    - /vpmpackage/license
 ---
 
 `@natsuneko-laboratory/vpmpackage` は、Unity Editor や VRChat、その他の外部ソフトウェア（Windows の 7-Zip、Unix の gz や tar コマンドなど）に依存せずに動作する軽量な VPMPackage 作成パッケージです。  

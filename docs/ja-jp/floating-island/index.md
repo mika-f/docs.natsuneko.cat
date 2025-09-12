@@ -14,10 +14,11 @@ featuredLinks:
       - /floating-island/getting-started
       - /floating-island/gallery
 navigation:
-  - /floating-island/
-  - /floating-island/getting-started
-  - /floating-island/gallery
-  - /floating-island/license
+  items:
+    - /floating-island/
+    - /floating-island/getting-started
+    - /floating-island/gallery
+    - /floating-island/license
 ---
 
 ![](https://images.natsuneko.com/6bb4ef8c7c5e873ee4d4b7be5921fe7528d73bac59e38dece267a7e928e30c74.png)

@@ -13,12 +13,13 @@ featuredLinks:
       - /astro-notes/live-machine/development
       - /astro-notes/live-machine/components
 navigation:
-  - /astro-notes/live-machine/limitations
-  - /astro-notes/live-machine/setup
-  - /astro-notes/live-machine/components
-  - /astro-notes/live-machine/development
-  - /astro-notes/live-machine/changelog
-  - /astro-notes/live-machine/license
+  items:
+    - /astro-notes/live-machine/limitations
+    - /astro-notes/live-machine/setup
+    - /astro-notes/live-machine/components
+    - /astro-notes/live-machine/development
+    - /astro-notes/live-machine/changelog
+    - /astro-notes/live-machine/license
 ---
 
 Astro Notes - Live Machine は、パーティクルライブやステージ演出など、 VRChat 上で動作させる Timeline ([`PlayableDirector`](https://docs.unity3d.com/ja/2022.3/ScriptReference/Playables.PlayableDirector.html)) を、ほぼ完全な形で同期させて再生、および停止させるためのスクリプトです。
