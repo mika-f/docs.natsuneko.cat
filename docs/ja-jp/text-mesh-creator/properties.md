@@ -5,36 +5,37 @@ description: TextMesh Creator に搭載されている様々なパラメータ�
 
 TextMesh Creator には、テキストメッシュをカスタマイズするための以下のパラメーターがあります。
 
-| Property                | Required | Type                                                     | Description                                          |
-| ----------------------- | :------: | -------------------------------------------------------- | ---------------------------------------------------- |
-| Strings                 |   Yes    | `string`                                                 | 表示する文字列                                       |
-| Rotation X              |    No    | `float`                                                  | テキストメッシュの X 軸回転                          |
-| Rotation Y              |    No    | `float`                                                  | テキストメッシュの Y 軸回転                          |
-| Rotation Z              |    No    | `float`                                                  | テキストメッシュの Z 軸回転                          |
-| Scale X                 |    No    | `float`                                                  | テキストメッシュの X 軸スケール                      |
-| Scale Y                 |    No    | `float`                                                  | テキストメッシュの Y 軸スケール                      |
-| Scale Z                 |    No    | `float`                                                  | テキストメッシュの Z 軸スケール                      |
-| Font                    |   Yes    | `string`                                                 | 使用するフォント（絶対パスで指定する必要があります） |
-| Separate By             |    No    | `Enum[Space, Tab, Character, None]`                      | 使用するセパレーター                                 |
-| Size                    |    No    | `float`                                                  | 使用するフォントサイズ                               |
-| Thickness               |    No    | `float`                                                  | 使用するフォントの太さ                               |
-| Horizontal Alignment    |    No    | `Enum[Left, Center, Right, Justify, Flush]`              | 水平方向整列                                         |
-| Vertical Alignment      |    No    | `Enum[TopBaseline, Top, Center, Bottom, BottomBaseline]` | 垂直方向整列                                         |
-| Character Spacing       |    No    | `float`                                                  | 文字間隔                                             |
-| Word Spacing            |    No    | `float`                                                  | 単語間隔                                             |
-| ~~Use Blendshape~~      |    No    | ~~`bool`~~                                               | ~~ブレンドシェイプを使用して文字列を表示~~           |
-| Use Decimate            |    No    | `bool`                                                   | デシメートモディファイアを使用して頂点を削減         |
-| Decimate Ratio          |    No    | `float`                                                  | デシメートモディファイアの比率                       |
-| Separate by Loose Parts |    No    | `bool`                                                   | "Loose Parts" で分離                                 |
-| Outlined                |    No    | `bool`                                                   | アウトライン文字として生成                           |
-| Outline Thickness       |    No    | `float`                                                  | アウトラインの太さ                                   |
-| Outline Threshold       |    No    | `float`                                                  | アウトラインのしきい値                               |
-| Center to Origin        |    No    | `bool`                                                   | 原点にセンターを合わせる                             |
-| Unique                  |    No    | `bool`                                                   | 出力ファイルを一意にフィルタリング                   |
-| Enable Preview Mode     |    No    | `bool`                                                   | プレビューモードを有効にする                         |
-| Enable Legacy Preview   |    No    | `bool`                                                   | レガシープレビューモードを有効にする                 |
-| Increment From          |    No    | `int`                                                    | インクリメントを開始する数                           |
-| Export Directory        |   Yes    | `string`                                                 | テキストメッシュをエクスポートするディレクトリ       |
+| Property                | Required | Type                                                        | Description                                          |
+| ----------------------- | :------: | ----------------------------------------------------------- | ---------------------------------------------------- |
+| Strings                 |   Yes    | `string`                                                    | 表示する文字列                                       |
+| Rotation X              |    No    | `float`                                                     | テキストメッシュの X 軸回転                          |
+| Rotation Y              |    No    | `float`                                                     | テキストメッシュの Y 軸回転                          |
+| Rotation Z              |    No    | `float`                                                     | テキストメッシュの Z 軸回転                          |
+| Scale X                 |    No    | `float`                                                     | テキストメッシュの X 軸スケール                      |
+| Scale Y                 |    No    | `float`                                                     | テキストメッシュの Y 軸スケール                      |
+| Scale Z                 |    No    | `float`                                                     | テキストメッシュの Z 軸スケール                      |
+| Font                    |   Yes    | `string`                                                    | 使用するフォント（絶対パスで指定する必要があります） |
+| Separate By             |    No    | `Enum[Space, Tab, Character, None]`                         | 使用するセパレーター                                 |
+| Size                    |    No    | `float`                                                     | 使用するフォントサイズ                               |
+| Thickness               |    No    | `float`                                                     | 使用するフォントの太さ                               |
+| Horizontal Alignment    |    No    | `Enum[Left, Center, Right, Justify, Flush]`                 | 水平方向整列                                         |
+| Vertical Alignment      |    No    | `Enum[TopBaseline, Top, Center, Bottom, BottomBaseline]`    | 垂直方向整列                                         |
+| Character Spacing       |    No    | `float`                                                     | 文字間隔                                             |
+| Word Spacing            |    No    | `float`                                                     | 単語間隔                                             |
+| ~~Use Blendshape~~      |  ~~No~~  | ~~`bool`~~                                                  | ~~ブレンドシェイプを使用して文字列を表示~~           |
+| Use Decimate            |    No    | `bool`                                                      | デシメートモディファイアを使用して頂点を削減         |
+| Decimate Ratio          |    No    | `float`                                                     | デシメートモディファイアの比率                       |
+| Separate by Loose Parts |    No    | `bool`                                                      | "Loose Parts" で分離                                 |
+| Outlined                |    No    | `bool`                                                      | アウトライン文字として生成                           |
+| Outline Thickness       |    No    | `float`                                                     | アウトラインの太さ                                   |
+| Outline Threshold       |    No    | `float`                                                     | アウトラインのしきい値                               |
+| ~~Center to Origin~~    |  ~~No~~  | ~~`bool`~~                                                  | ~~原点にセンターを合わせる~~                         |
+| Origin                  |    No    | `Enum[Default, GeometryToOrigin, GeometryToOriginWithoutZ]` | 原点の位置を設定                                     |
+| Unique                  |    No    | `bool`                                                      | 出力ファイルを一意にフィルタリング                   |
+| Enable Preview Mode     |    No    | `bool`                                                      | プレビューモードを有効にする                         |
+| Enable Legacy Preview   |    No    | `bool`                                                      | レガシープレビューモードを有効にする                 |
+| Increment From          |    No    | `int`                                                       | インクリメントを開始する数                           |
+| Export Directory        |   Yes    | `string`                                                    | テキストメッシュをエクスポートするディレクトリ       |
 
 ## "Separate By" オプションについて
 
