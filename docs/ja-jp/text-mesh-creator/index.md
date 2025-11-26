@@ -17,6 +17,7 @@ navigation:
   - /text-mesh-creator/
   - /text-mesh-creator/installation
   - /text-mesh-creator/properties
+  - /text-mesh-creator/faq
   - /text-mesh-creator/license
 ---
 
