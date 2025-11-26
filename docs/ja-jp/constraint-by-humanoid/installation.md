@@ -51,6 +51,25 @@ Constraint by Humanoid は OpenUPM からインストールできます。
 2. `Constraint by Humanoid` を選択します。
 3. `Remove` をクリックします。
 
-## VPM から
+## Via VPM
 
-現時点では VPM パッケージおよびレジストリは提供されていません。
+Remuria 上のリポジトリから、 VCC を使用してインストールできます。
+
+### インストール
+
+1. VCC を開きます。
+2. `https://remuria.natsuneko.com/repositories/com.natsuneko.vpm.json` をリポジトリとして追加します。
+3. プロジェクト詳細へ移動し、 `Constraint by Humanoid` を検索します。
+4. `Install` をクリックします。
+
+### アップデート
+
+1. VCC を開きます。
+2. プロジェクト詳細へ移動し、 `Constraint by Humanoid` を探します。
+3. `Update` をクリックします。
+
+### アンインストール
+
+1. VCC を開きます。
+2. プロジェクト詳細へ移動し、 `Constraint by Humanoid` を探します。
+3. `Uninstall` をクリックします。

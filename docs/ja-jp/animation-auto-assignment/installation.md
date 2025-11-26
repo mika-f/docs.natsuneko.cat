@@ -53,4 +53,23 @@ Animation Auto Assignment を OpenUPM からインストールできます。
 
 ## Via VPM
 
-現時点では VPM パッケージおよびレジストリは提供されていません。
+Remuria 上のリポジトリから、 VCC を使用してインストールできます。
+
+### インストール
+
+1. VCC を開きます。
+2. `https://remuria.natsuneko.com/repositories/com.natsuneko.vpm.json` をリポジトリとして追加します。
+3. プロジェクト詳細へ移動し、 `Animation Auto Assignment` を検索します。
+4. `Install` をクリックします。
+
+### アップデート
+
+1. VCC を開きます。
+2. プロジェクト詳細へ移動し、 `Animation Auto Assignment` を探します。
+3. `Update` をクリックします。
+
+### アンインストール
+
+1. VCC を開きます。
+2. プロジェクト詳細へ移動し、 `Animation Auto Assignment` を探します。
+3. `Uninstall` をクリックします。
