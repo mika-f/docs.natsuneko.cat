@@ -29,11 +29,7 @@ UdonSharp はお使いのエディター上にリアルタイムにエラー情�
 3. ソリューションを再生成します
 4. Unity から対象ファイルを、対象のエディターで開きます
 
-## Via VPM
-
-Remuria 上のリポジトリから、 VCC を使用してインストールできます。
-
-### インストール
+### Via VPM
 
 1. VCC を開き、 `https://remuria.natsuneko.com/repositories/com.natsuneko.vpm.json` をリポジトリとして追加します。
 2. プロジェクト詳細へ移動し、 `Udon Analyzer` を検索します。
