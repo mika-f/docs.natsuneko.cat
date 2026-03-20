@@ -12,4 +12,5 @@ navigation:
   - /catalyst/privacy
   - /catalyst/cookies
   - /catalyst/ads
+  - /catalyst/child-safety
 ---
