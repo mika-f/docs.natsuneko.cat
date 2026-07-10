@@ -11,8 +11,8 @@ VRChat における Author ID は、`usr_` で始まる英数字の文字列で�
 
 例：
 
-- https://vrchat.com/home/user/usr_d37acd76-341a-46af-9b0e-d5b0ffa2181d
-- usr_d37acd76-341a-46af-9b0e-d5b0ffa2181d
+- https://vrchat.com/home/user/usr_f0ae733a-b3ea-4462-b9a7-8c386e860ac1
+- usr_f0ae733a-b3ea-4462-b9a7-8c386e860ac1
 
 確認するには、ワールドのページから、作者ページへ移動し、URL の末尾の部分を参照してください。
 
@@ -22,7 +22,7 @@ Resonite における Author ID は、`U-` もしくは `G-` で始まる英数�
 
 例：
 
-- U-esnya
+- U-1YDkBVDiAts
 - G-Team-VibeZ
 
 確認するには、 https://go.resonite.com/world からワールドのリソース URL の初めの部分を参照してください。
@@ -37,7 +37,18 @@ Cluster における Author ID は、ユーザーページの末尾にある英�
 
 例：
 
-- https://cluster.mu/u/ichiganryuta
-- ichiganryuta
+- https://cluster.mu/u/natsuneko_vrc
+- natsuneko_vrc
 
 確認するには、ワールドのページから、作者ページへ移動し、URL の末尾の部分を参照してください。
+
+## BOOTH
+
+BOOTH における Author ID は、ユーザーショップページのサブドメインです。
+
+例：
+
+- https://natsuneko-vrc.booth.pm/
+- natsuneko-vrc
+
+確認するには、ユーザーショップページの URL のサブドメイン部分を参照してください。
