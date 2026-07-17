@@ -1,23 +1,6 @@
 ---
 title: Udon Analyzer
 description: エディター上でリアルタイムに UdonSharp のエラーや警告、ベストプラクティスをチェックするツール
-layout: overview
-repository: mika-f/udon-analyzer
-introLinks:
-  - title: 始める
-    item: /udon-analyzer/getting-started
-  - title: GitHub
-    item: https://github.com/mika-f/udon-analyzer
-featuredLinks:
-  - title: ここから始める
-    items:
-      - /udon-analyzer/getting-started
-      - /udon-analyzer/diagnostics
-navigation:
-  - /udon-analyzer/getting-started
-  - /udon-analyzer/diagnostics
-  - /udon-analyzer/dictionary
-  - /udon-analyzer/targeting
 ---
 
 Udon Analyzer は VRChat の UdonSharp 用の [Roslyn Analyzers](https://learn.microsoft.com/en-us/visualstudio/code-quality/roslyn-analyzers-overview) です。

@@ -1,19 +1,6 @@
 ---
 title: Locky Cam
 description: リアルタイムライブでのカメラワークを制御するスクリプト
-layout: overview
-featuredLinks:
-  - title: ユーザーとして使う
-    items:
-      - /astro-notes/locky-cam/setup
-      - /astro-notes/locky-cam/sample
-      - /astro-notes/locky-cam/components
-navigation:
-  - /astro-notes/locky-cam/setup
-  - /astro-notes/locky-cam/sample
-  - /astro-notes/locky-cam/components
-  - /astro-notes/locky-cam/changelog
-  - /astro-notes/locky-cam/license
 ---
 
 Astro Notes - Locky Cam は、 VRChat におけるリアルタイムライブでのカメラワークを制御するためのスクリプトです。

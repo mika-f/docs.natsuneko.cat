@@ -1,10 +1,6 @@
 ---
 title: Astro Notes
 description: VRChat 上で動作する軽量な UdonSharp スクリプト群
-layout: overview
-navigation:
-  - /astro-notes/live-machine
-  - /astro-notes/locky-cam
 ---
 
 Astro Notes は、 VRChat 上で動作する、それぞれ別の機能を持った UdonSharp スクリプト群の総称です。
