@@ -8,4 +8,4 @@ description: 環境依存なしで動作する軽量な VPMPackage 作成パッ�
 
 このパッケージは単純なメソッドを一つを提供いています。
 
-- [`archive`](/vpmpackage/functions/archive)
+- [`archive`](02-functions/archive.md)

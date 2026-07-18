@@ -49,4 +49,4 @@ Hello, Otsukai!
 ```
 
 これで Otsukai での開発フローを一通り体験することができました。お疲れさまでした。  
-Otsukai では、さらに多くの機能を提供しています。次は [Otsukai CLI](/otsukai/cli) や [GitHub Actions](/otsukai/github-actions) を使って、より高度なデプロイメントを実現してみましょう。
+Otsukai では、さらに多くの機能を提供しています。次は [Otsukai CLI](03-cli.md) や [GitHub Actions](/otsukai/github-actions) を使って、より高度なデプロイメントを実現してみましょう。

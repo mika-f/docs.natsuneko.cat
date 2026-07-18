@@ -33,7 +33,7 @@ jobs:
 
 このワークフローは、`v1.0.0` のようなタグをプッシュすると、リポジトリから UnityPackage を作成します。
 UnityPackage は `Assets/NatsunekoLaboratory/Package/package.json` とその依存関係から作成され、`dist/Package.unitypackage` に出力されます。
-`package.json`、複数の `package.json`、または直接指定されたアセットファイルから UnityPackage を作成したい場合は、[プロパティ](/create-unitypackage/properties)を確認してください。
+`package.json`、複数の `package.json`、または直接指定されたアセットファイルから UnityPackage を作成したい場合は、[プロパティ](02-properties.md)を確認してください。
 
 Unity プロジェクトがサブディレクトリにある場合は、`root` プロパティで指定できます。
 

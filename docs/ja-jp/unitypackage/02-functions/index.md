@@ -6,5 +6,5 @@ title: "関数一覧"
 
 ## ESM Exports
 
-- [`archive`](/unitypackage/functions/archive)
-- [`extract`](/unitypackage/functions/extract)
+- [`archive`](archive.md)
+- [`extract`](extract.md)

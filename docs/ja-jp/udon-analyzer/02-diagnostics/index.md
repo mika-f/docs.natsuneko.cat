@@ -4,8 +4,8 @@ title: アナライザー一覧
 
 Udon Analyzer は次のアナライザーデーターを提供します。
 
-- [Udon (`VRC`)](/udon-analyzer/diagnostics/udon/) : Udon 仮想マシンに関する制限による Diagnostics を提供します。
-- [UdonSharp (`VSC`)](/udon-analyzer/diagnostics/udonsharp/) : UdonSharp コンパイラの制限による Diagnostics を提供します。
+- [Udon (`VRC`)](udon/index.md) : Udon 仮想マシンに関する制限による Diagnostics を提供します。
+- [UdonSharp (`VSC`)](udonsharp/index.md) : UdonSharp コンパイラの制限による Diagnostics を提供します。
 
 ## Categories
 

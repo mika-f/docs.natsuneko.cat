@@ -6,4 +6,4 @@ title: "関数一覧"
 
 ## ESM Exports
 
-- [`archive`](/vpmpackage/functions/archive)
+- [`archive`](archive.md)

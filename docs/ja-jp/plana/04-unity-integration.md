@@ -76,11 +76,11 @@ Plana does not perform obfuscation processing if no plugin is specified. Therefo
 
 - ~~[Control Flow Flattening](/plana/control-flow-flattening)~~
 - ~~[Dead Code Injection](/plana/plugins/dead-code-injection)~~
-- [Disable Console Output](/plana/plugins/disable-console-output)
+- [Disable Console Output](05-plugins/disable-console-output.md)
 - ~~[Numbers to Expressions](/plana/plugins/numbers-to-expressions)~~
 - ~~[Remove Comments](/plana/plugins/remove-comments)~~
-- [Rename Symbols](/plana/plugins/rename-symbols)
-- [Shuffle Declarations](/plana/plugins/shuffle-declarations)
+- [Rename Symbols](05-plugins/rename-symbols.md)
+- [Shuffle Declarations](05-plugins/shuffle-declarations.md)
 - ~~[Shuffle Symbols](/plana/plugins/shuffle-symbols)~~
 - ~~[Source Maps](/plana/plugins/source-maps)~~
 - ~~[Split Strings](/plana/plugins/split-strings)~~

@@ -68,7 +68,7 @@ class ExampleBehaviour : UdonSharpBehaviour {
 ## SetEventListener
 
 `SetEventListener` メソッドは、Live Machine のイベントリスナーを設定するためのメソッドです。
-各種[イベントハンドラー](/astro-notes/live-machine/development/handlers) を実装した `UdonSharpBehaviour` を指定します。
+各種[イベントハンドラー](handlers.md) を実装した `UdonSharpBehaviour` を指定します。
 通常は、 `NatsunekoLaboratory.AstroNotes.LiveMachineProxyBase` クラスを継承したクラスにて、自身を指定します。
 
 ```csharp

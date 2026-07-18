@@ -26,7 +26,7 @@ $ pnpm add @natsuneko-laboratory/unitypackage
 
 ## コーディング
 
-[対応している関数](/unitypackage/functions)をインポートしてご利用ください。
+[対応している関数](02-functions/index.md)をインポートしてご利用ください。
 
 ```typescript
 import { archive } from "@natsuneko-laboratory/unitypackage";

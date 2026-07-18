@@ -8,7 +8,7 @@ AstroNotes - Live Machine では、開発者向けに各種イベントハンド
 継承したクラスを作成後、各種 `OnXXX` をオーバーライドし、 `Start` メッセージで `LiveMachine.SetEventListener` を呼び出すことで、イベントハンドラーの登録が可能です。
 なお、すべてのイベントはネットワークを経由しすべてのユーザーに通知されます。
 
-イベントハンドラー (Proxy) には制約があるため、[制限事項](/astro-notes/live-machine/limitations) を参照してください。
+イベントハンドラー (Proxy) には制約があるため、[制限事項](../01-limitations.md) を参照してください。
 
 ## コード例
 

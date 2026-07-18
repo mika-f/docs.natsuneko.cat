@@ -26,7 +26,7 @@ $ pnpm add @natsuneko-laboratory/vpmpackage
 
 ## コーディング
 
-[対応している関数](/vpmpackage/functions)をインポートしてご利用ください。
+[対応している関数](02-functions/index.md)をインポートしてご利用ください。
 
 ```typescript
 import { archive } from "@natsuneko-laboratory/vpmpackage";
