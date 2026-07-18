@@ -1,21 +1,6 @@
 ---
 title: create-vpmpackage
 description: VPMPackage を Unity Editor & VRChat なしで作成する外部依存無しの GitHub Actions
-layout: overview
-repository: natsuneko-laboratory/create-vpmpackage
-introLinks:
-  - title: クイックスタート
-    item: /create-vpmpackage/getting-started
-featuredLinks:
-  - title: Start Here
-    items:
-      - /create-vpmpackage/getting-started
-      - /create-vpmpackage/properties
-navigation:
-  - /create-vpmpackage/overview
-  - /create-vpmpackage/getting-started
-  - /create-vpmpackage/properties
-  - /create-vpmpackage/license
 ---
 
 `@natsuneko-laboratory/create-vpmpackage` は Unity Editor や VRChat SDK への依存、およびその他の外部ソフトウェア（Windows の 7-Zip、Unix の gz や tar コマンドなど）なしで VPM 対応パッケージを作成する GitHub Actions です。
