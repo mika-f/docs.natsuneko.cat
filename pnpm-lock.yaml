@@ -9,8 +9,8 @@ importers:
   .:
     devDependencies:
       '@natsuneko-laboratory/makit':
-        specifier: ^0.2.0
-        version: 0.2.0
+        specifier: ^0.3.0
+        version: 0.3.0
 
 packages:
 
@@ -190,16 +190,16 @@ packages:
   '@jridgewell/trace-mapping@0.3.31':
     resolution: {integrity: sha512-zzNR+SdQSDJzc8joaeP8QQoCQr8NuYx2dIIytl1QeBEZHJ9uW6hebsrYgbz8hJwUQao3TWCMtmfV8Nu1twOLAw==}
 
-  '@natsuneko-laboratory/makit-runtime@0.2.0':
-    resolution: {integrity: sha512-iabhW6ou6eX7smDxhwBNTdVpkl2gMOfteh/McDuCLaJufQV5lUD2cd8I/lBTYlVif80eseqLZwXmMQyMWBFb1A==}
+  '@natsuneko-laboratory/makit-runtime@0.3.0':
+    resolution: {integrity: sha512-eUQCkbEDT6PIqdX+UyLGd6Yt9NWZAiNBeFfIc1d3fAw8PIptaX2gxX63rM2MP3y5SCJES21zNVzt7/eLI/4T1A==}
     engines: {node: '>=20.0.0'}
     peerDependencies:
       next: ^16.0.0
       react: ^19.0.0
       react-dom: ^19.0.0
 
-  '@natsuneko-laboratory/makit@0.2.0':
-    resolution: {integrity: sha512-bldNoOHq2caj6I+KCc/qvNKsNRszUo9m+ZczuwS1pXBUpcWpltAWTWD0Mb+6OWd+k6v6L56A+1zhGuqhU2uong==}
+  '@natsuneko-laboratory/makit@0.3.0':
+    resolution: {integrity: sha512-rzzdjDCmqk/hYQE0iXGY31fUq6+vtr8UnEiPXqHZu16Je5QdsHftgvsxlf1xhpruIBZK0+G1PXt/l/sFpQzjMw==}
     engines: {node: '>=20.0.0'}
     hasBin: true
 
@@ -719,6 +719,11 @@ packages:
   longest-streak@3.1.0:
     resolution: {integrity: sha512-9Ri+o0JYgehTaVBBDoMqIl8GXtbWg711O3srftcHhZ0dqnETqLaoIK0x17fUw9rFSlK/0NlsKe0Ahhyl5pXE2g==}
 
+  lucide-react@0.468.0:
+    resolution: {integrity: sha512-6koYRhnM2N0GGZIdXzSeiNwguv1gt/FAjZOiPl76roBi3xKEXa4WmfpxgQwTTL4KipXjefrnf3oV4IsYhi4JFA==}
+    peerDependencies:
+      react: ^16.5.1 || ^17.0.0 || ^18.0.0 || ^19.0.0-rc
+
   magic-string@0.30.21:
     resolution: {integrity: sha512-vd2F4YUyEXKGcLHoq+TEyCjxueSeHnFxyyjNp80yg0XV4vUhnDer/lvvlqM/arB5bXQN5K2/3oinyCRyx8T2CQ==}
 
@@ -1216,15 +1221,16 @@ snapshots:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.5.5
 
-  '@natsuneko-laboratory/makit-runtime@0.2.0(next@16.2.10(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(react-dom@19.2.7(react@19.2.7))(react@19.2.7)':
+  '@natsuneko-laboratory/makit-runtime@0.3.0(next@16.2.10(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(react-dom@19.2.7(react@19.2.7))(react@19.2.7)':
     dependencies:
+      lucide-react: 0.468.0(react@19.2.7)
       next: 16.2.10(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       react: 19.2.7
       react-dom: 19.2.7(react@19.2.7)
 
-  '@natsuneko-laboratory/makit@0.2.0':
+  '@natsuneko-laboratory/makit@0.3.0':
     dependencies:
-      '@natsuneko-laboratory/makit-runtime': 0.2.0(next@16.2.10(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
+      '@natsuneko-laboratory/makit-runtime': 0.3.0(next@16.2.10(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       '@tailwindcss/postcss': 4.3.3
       '@tailwindcss/typography': 0.5.20(tailwindcss@4.3.3)
       chokidar: 5.0.0
@@ -1234,6 +1240,7 @@ snapshots:
       gray-matter: 4.0.3
       hast-util-to-string: 3.0.1
       jiti: 2.7.0
+      lucide-react: 0.468.0(react@19.2.7)
       next: 16.2.10(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       pagefind: 1.5.2
       picocolors: 1.1.1
@@ -1706,6 +1713,10 @@ snapshots:
       lightningcss-win32-x64-msvc: 1.32.0
 
   longest-streak@3.1.0: {}
+
+  lucide-react@0.468.0(react@19.2.7):
+    dependencies:
+      react: 19.2.7
 
   magic-string@0.30.21:
     dependencies:

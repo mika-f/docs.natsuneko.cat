@@ -18,6 +18,13 @@ export default defineConfig({
     ],
   },
 
+  llms: {
+    enabled: true,
+  },
+  github: {
+    repository: "mika-f/docs.natsuneko.cat",
+  },
+
   navigation: {
     global: [
       {
@@ -39,8 +46,10 @@ export default defineConfig({
         },
         collections: [
           "catalyst",
+          "drag-and-drop-support",
           "epiclese",
           "floating-island",
+          "nekodraw",
         ]
       },
       {
@@ -56,8 +65,6 @@ export default defineConfig({
           "constraint-by-humanoid",
           "create-unitypackage",
           "create-vpmpackage",
-          "drag-and-drop-support",
-          "nekodraw",
           "otsukai",
           "plana",
           "text-mesh-creator",
