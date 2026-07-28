@@ -25,6 +25,13 @@ export default defineConfig({
     repository: "mika-f/docs.natsuneko.cat",
   },
 
+  markdown: {
+    tableOfContents: {
+      minDepth: 2,
+      maxDepth: 4,
+    },
+  },
+
   navigation: {
     global: [
       {

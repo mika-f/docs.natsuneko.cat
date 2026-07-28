@@ -1,4 +1,8 @@
 {
   "typescript.tsdk": "node_modules\\typescript\\lib",
-  "i18n-ally.localesPaths": ["src/locales"]
+  "i18n-ally.localesPaths": ["src/locales"],
+  "editor.defaultFormatter": "oxc.oxc-vscode",
+  "editor.formatOnSave": true,
+  "editor.formatOnSaveMode": "file",
+
 }
