@@ -9,8 +9,8 @@ importers:
   .:
     devDependencies:
       '@natsuneko-laboratory/makit':
-        specifier: ^0.4.0
-        version: 0.4.0
+        specifier: ^0.6.0
+        version: 0.6.0
 
 packages:
 
@@ -190,16 +190,16 @@ packages:
   '@jridgewell/trace-mapping@0.3.31':
     resolution: {integrity: sha512-zzNR+SdQSDJzc8joaeP8QQoCQr8NuYx2dIIytl1QeBEZHJ9uW6hebsrYgbz8hJwUQao3TWCMtmfV8Nu1twOLAw==}
 
-  '@natsuneko-laboratory/makit-runtime@0.4.0':
-    resolution: {integrity: sha512-umYWcU8gCVDjUKJYHAy+LEpsSQU0G1V7V79iXB6L6IHQknfYoYmuyIS0BzUzv1iDmPSu3fIlljYYPuSmi5pKAw==}
+  '@natsuneko-laboratory/makit-runtime@0.6.0':
+    resolution: {integrity: sha512-Lo25DdHPJAzzJW4mQ0j/JlMN7L6UeGAa0/LV6lhr9HVfofEo4pQfEVsd9FQw5qbQS+GeKAGDwNDsV0ZoH0K5Ng==}
     engines: {node: '>=20.0.0'}
     peerDependencies:
       next: ^16.0.0
       react: ^19.0.0
       react-dom: ^19.0.0
 
-  '@natsuneko-laboratory/makit@0.4.0':
-    resolution: {integrity: sha512-36+z5k2LwdsBw8S4wsj+UXbkSAU4Tl7M0vcCC7gbVzQT+4Tjr3dyd0qojr1cjSy1fcXm6pL4T6LZIqiutGqmsw==}
+  '@natsuneko-laboratory/makit@0.6.0':
+    resolution: {integrity: sha512-F+Jx0TWIlrABeknDMqCCZGPrFw4rZu0U9Jr3tofEX2DhAZRSEG4vGKo0WHCB6dSULWnH3A/cU+T9p9VVRQkEVA==}
     engines: {node: '>=20.0.0'}
     hasBin: true
 
@@ -1221,16 +1221,16 @@ snapshots:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.5.5
 
-  '@natsuneko-laboratory/makit-runtime@0.4.0(next@16.2.10(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(react-dom@19.2.7(react@19.2.7))(react@19.2.7)':
+  '@natsuneko-laboratory/makit-runtime@0.6.0(next@16.2.10(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(react-dom@19.2.7(react@19.2.7))(react@19.2.7)':
     dependencies:
       lucide-react: 0.468.0(react@19.2.7)
       next: 16.2.10(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       react: 19.2.7
       react-dom: 19.2.7(react@19.2.7)
 
-  '@natsuneko-laboratory/makit@0.4.0':
+  '@natsuneko-laboratory/makit@0.6.0':
     dependencies:
-      '@natsuneko-laboratory/makit-runtime': 0.4.0(next@16.2.10(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
+      '@natsuneko-laboratory/makit-runtime': 0.6.0(next@16.2.10(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       '@tailwindcss/postcss': 4.3.3
       '@tailwindcss/typography': 0.5.20(tailwindcss@4.3.3)
       chokidar: 5.0.0
