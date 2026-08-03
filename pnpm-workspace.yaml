@@ -3,5 +3,6 @@ allowBuilds:
   sharp: true
   workerd: true
 minimumReleaseAgeExclude:
-  - "@natsuneko-laboratory/makit-runtime@0.1.0 || 0.2.0 || 0.3.0"
-  - "@natsuneko-laboratory/makit@0.1.0 || 0.2.0 || 0.3.0"
+  - '@natsuneko-laboratory/makit-runtime@0.1.0 || 0.2.0 || 0.3.0 || 0.6.1'
+  - '@natsuneko-laboratory/makit@0.1.0 || 0.2.0 || 0.3.0 || 0.6.1'
+  - '@natsuneko-laboratory/makit-adapter-cloudflare-pages@0.6.1'
