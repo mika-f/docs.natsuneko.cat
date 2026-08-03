@@ -8,7 +8,9 @@
   },
   "devDependencies": {
     "@natsuneko-laboratory/makit": "^0.6.0",
-    "oxfmt": "^0.60.0"
+    "@natsuneko-laboratory/makit-adapter-cloudflare-pages": "^0.6.0",
+    "oxfmt": "^0.60.0",
+    "wrangler": "^4.118.0"
   },
   "packageManager": "pnpm@11.9.0"
 }
